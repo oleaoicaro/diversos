@@ -1,0 +1,292 @@
+pt:
+  identity:
+    name: "ÍCARO LEÃO"
+    monogram: "IL"
+    location: "São Paulo, SP"
+    phone: "+55 (17) 98191-7954"
+    email: "icaro.vl@outlook.com"
+    linkedin: "linkedin.com/in/oleaoicaro"
+    github: "github.com/oleaoicaro"
+
+  headline: "Senior Risk & Compliance Consultant · EY · Arquiteto de Compliance-Tech em Setores Regulados · IBM OpenPages · Governança de IA · Python/FastAPI · TPRM"
+
+  executive_summary: >
+    Consultor Sênior com 4+ anos na EY liderando a transformação de áreas de Compliance em instituições altamente
+    reguladas — Seguros (SUSEP, Lei 15.040/2024), Saúde Suplementar (ANS) e Previdência (PREVIC). Opero na
+    interseção entre regulação, tecnologia e Governança de IA, combinando IBM OpenPages, ISO 37301 e Three Lines
+    Model com stack técnica hands-on comprovada por SaaS próprio em produção — combinação rara no mercado
+    brasileiro de GRC.
+
+  competencies:
+    - group: "GRC & Plataformas"
+      skills:
+        - "IBM OpenPages"
+        - "Microsoft Power Automate"
+        - "MS Forms"
+    - group: "Regulação"
+      skills:
+        - "SUSEP"
+        - "ANS"
+        - "PREVIC"
+        - "BACEN"
+        - "Lei 15.040/2024"
+        - "LGPD"
+        - "CVM"
+    - group: "Frameworks"
+      skills:
+        - "ISO 37301"
+        - "Three Lines Model"
+        - "Compliance by Design"
+        - "Governança de IA"
+        - "TPRM"
+        - "Risk Assessment"
+        - "KRIs/KPIs"
+    - group: "Tecnologia"
+      skills:
+        - "Python 3.11"
+        - "FastAPI"
+        - "SQLAlchemy 2.0"
+        - "PostgreSQL"
+        - "Docker"
+        - "Power BI"
+        - "Pandas"
+        - "Pytest"
+        - "ETL"
+        - "REST APIs"
+        - "JWT/OAuth2"
+        - "SQL"
+        - "Alembic"
+        - "Plotly.js"
+
+  languages:
+    - name: "Português"
+      level: "Nativo"
+    - name: "Inglês"
+      level: "B1 — EF SET 47/100"
+    - name: "Espanhol"
+      level: "Básico"
+
+  certifications:
+    - "Registro no CRC"
+    - "EF SET English — B1 Intermediate (47/100)"
+    - "EY Finance Learning (2022)"
+    - "Microsoft Power Automate — Business Process Flows"
+    - "Transformational Governance — Driving Responsible Business Conduct"
+    - "ISO 37301 Lead Implementer (PECB) — em andamento"
+
+  experience:
+    - company: "Ernst & Young (EY)"
+      roles:
+        - title: "Consultor Sênior — Risk & Compliance"
+          period: "ago/2025 – presente"
+          client: "Cliente: Seguradora de Ramos Elementares · Programa Plurianual de Transformação de Compliance (2 anos 5 meses)"
+          bullets:
+            - "Liderança da migração do ciclo regulatório e de avaliação de riscos para <strong>IBM OpenPages</strong>, estabelecendo versionamento, trilha de auditoria, governança de exceções e aderência regulatória contínua."
+            - "Concepção e entrega do <strong>AIRNC</strong> (Autoavaliação de Identificação Regulatória de Não Conformidade) — ferramenta HTML/JavaScript com xlsx.js, hardening de segurança e modelo standalone offline."
+            - "Automação em Python do heatmap corporativo de riscos, eliminando retrabalho manual e inconsistências entre ciclos."
+            - "Estruturação de programa <strong>TPRM</strong> com monitoramento contínuo de terceiros críticos e relevantes."
+            - "Construção de dashboards de <strong>KRIs/KPIs</strong> em Power BI consumidos por comitês executivos."
+            - "Desenho de workflows de <strong>Compliance by Design</strong> conectando mudança regulatória a políticas, controles e treinamentos."
+            - "Governança de dados inter-áreas (taxonomia, qualidade, metadados) sustentando rastreabilidade regulatória."
+            - "Alinhamento a Governança de IA, ISO 37301, Three Lines Model, Lei 15.040/2024, SUSEP, ANS e PREVIC."
+        - title: "Risk Consultant"
+          period: "out/2023 – jul/2025 · 1 ano 10 meses"
+          client: "Cliente: Operadora de Plano Odontológico (ANS) — Auditoria Interna"
+          bullets:
+            - "Planejamento e execução de engajamentos de <strong>auditoria interna risk-based</strong>, com risk assessment dirigindo escopo."
+            - "Implementação pioneira de <strong>IA sob revisão humana</strong> para priorização por risco, sumarização de normativos e padronização de critérios — preservando trilha auditável."
+            - "Testes de desenho e efetividade de controles, classificação de achados e análise de causa-raiz."
+            - "Negociação de planos de ação com a alta gestão (responsável, prazo, métrica de eficácia) e emissão de relatórios finais com peer review."
+        - title: "Business Consultant / Consulting FSO Trainee"
+          period: "fev/2022 – set/2023 · 1 ano 8 meses"
+          client: "Cliente: Seguradora Tradicional · Fase F ALBA (8 meses)"
+          bullets:
+            - "Atuação no <strong>PMO estratégico</strong> de programa de revitalização — orquestração de portfólio, governança executiva, marcos e dependências."
+            - "Redesenho de jornadas do cliente e ciclo de vida dos produtos, integrando cotação, venda e ERP."
+            - "Ajuste de portfólio (mix, proposta de valor, precificação, canais)."
+            - "Estruturação de roadmap em ondas com quick wins e habilitadores de longo prazo."
+
+  previous_experience:
+    - "Rio Preto Produtos de Petróleo Ltda. — Aux. Contabilidade / Faturamento · set/2020 – jan/2022"
+    - "Autônomo — Contador registrado no CRC · abr/2020 – ago/2020"
+    - "Essenza Contabilidade — Assistente · jan/2019 – mar/2020"
+    - "Tribunal de Contas do Estado do Piauí — Estagiário · 2017 – 2019"
+
+  projects:
+    - name: "SUSEP Benchmarking Platform v3.1"
+      status: "SaaS em produção"
+      description: "Plataforma autoral de análise e benchmarking do mercado segurador brasileiro com dados abertos da SUSEP."
+      highlights:
+        - "<strong>10+</strong> dashboards analíticos do mercado segurador"
+        - "Score composto de risco v3.0 com <strong>10 pilares</strong>"
+        - "ETL automatizado (httpx+Playwright fallback, APScheduler)"
+        - "Auth dual JWT+OAuth; freemium; deploy Render+Docker"
+      stack: "Python 3.11 · FastAPI · SQLAlchemy 2.0 · PostgreSQL · Alembic · Pandas · Plotly.js · Pytest (77 testes) · Docker"
+      metrics: "<strong>88+</strong> commits · <strong>35+</strong> PRs mergeados"
+    - name: "Antifraudsystem"
+      status: "MVP em evolução (colaboração)"
+      description: "Sistema antifraude colaborativo com motor de regras e dashboard de monitoramento."
+      highlights:
+        - "Definição das regras de negócio do motor (padrões suspeitos, thresholds, gates de revisão humana)"
+        - "Co-construção do dashboard de monitoramento (KPIs de detecção, falsos positivos)"
+        - "Revisão UX sob ótica de compliance"
+      stack: "React · Vite · TypeScript · MUI · Radix UI"
+      metrics: ""
+
+  education:
+    - degree: "Graduação em Ciência de Dados com ênfase em IA"
+      institution: "Descomplica Faculdade Digital"
+      period: "jul/2024 – jan/2027 (em andamento)"
+    - degree: "Bacharelado em Ciências Contábeis"
+      institution: "Universidade Federal do Piauí (UFPI)"
+      period: "nov/2013 – ago/2019"
+    - degree: "Técnico em Logística"
+      institution: "SENAC"
+      period: "jan/2013 – jun/2014"
+
+en:
+  identity:
+    name: "ÍCARO LEÃO"
+    monogram: "IL"
+    location: "São Paulo, SP"
+    phone: "+55 (17) 98191-7954"
+    email: "icaro.vl@outlook.com"
+    linkedin: "linkedin.com/in/oleaoicaro"
+    github: "github.com/oleaoicaro"
+
+  headline: "Senior Risk & Compliance Consultant · EY · Compliance-Tech Architect in Regulated Markets · IBM OpenPages · AI Governance · Python/FastAPI · TPRM"
+
+  executive_summary: >
+    Senior Consultant with 4+ years at EY leading the transformation of Compliance functions in highly regulated
+    institutions — Insurance (SUSEP, Brazilian Insurance Regulator; Law 15.040/2024), Supplemental Healthcare
+    (ANS, Brazilian Healthcare Regulator) and Private Pensions (PREVIC, Brazilian Pension Regulator). I operate
+    at the intersection of regulation, technology and AI Governance, combining IBM OpenPages, ISO 37301 and the
+    Three Lines Model with a proven hands-on technical stack — evidenced by a proprietary SaaS in production — a
+    rare combination in the Brazilian GRC market.
+
+  competencies:
+    - group: "GRC & Platforms"
+      skills:
+        - "IBM OpenPages"
+        - "Microsoft Power Automate"
+        - "MS Forms"
+    - group: "Regulation"
+      skills:
+        - "SUSEP (Brazilian Insurance Regulator)"
+        - "ANS (Brazilian Healthcare Regulator)"
+        - "PREVIC (Brazilian Pension Regulator)"
+        - "BACEN (Central Bank of Brazil)"
+        - "Law 15.040/2024"
+        - "LGPD"
+        - "CVM"
+    - group: "Frameworks"
+      skills:
+        - "ISO 37301"
+        - "Three Lines Model"
+        - "Compliance by Design"
+        - "AI Governance"
+        - "TPRM"
+        - "Risk Assessment"
+        - "KRIs/KPIs"
+    - group: "Technology"
+      skills:
+        - "Python 3.11"
+        - "FastAPI"
+        - "SQLAlchemy 2.0"
+        - "PostgreSQL"
+        - "Docker"
+        - "Power BI"
+        - "Pandas"
+        - "Pytest"
+        - "ETL"
+        - "REST APIs"
+        - "JWT/OAuth2"
+        - "SQL"
+        - "Alembic"
+        - "Plotly.js"
+
+  languages:
+    - name: "Portuguese"
+      level: "Native"
+    - name: "English"
+      level: "B1 — EF SET 47/100"
+    - name: "Spanish"
+      level: "Basic"
+
+  certifications:
+    - "CRC Accountant Registration"
+    - "EF SET English — B1 Intermediate (47/100)"
+    - "EY Finance Learning (2022)"
+    - "Microsoft Power Automate — Business Process Flows"
+    - "Transformational Governance — Driving Responsible Business Conduct"
+    - "ISO 37301 Lead Implementer (PECB) — in progress"
+
+  experience:
+    - company: "Ernst & Young (EY)"
+      roles:
+        - title: "Senior Consultant — Risk & Compliance"
+          period: "Aug/2025 – Present"
+          client: "Client: Property & Casualty Insurance Company · Multi-Year Compliance Transformation Programme (2 yrs 5 mos)"
+          bullets:
+            - "Led migration of the regulatory cycle and risk assessment to <strong>IBM OpenPages</strong>, establishing versioning, audit trail, exception governance and continuous regulatory adherence."
+            - "Conceived and delivered <strong>AIRNC</strong> (Regulatory Non-Compliance Self-Assessment) — an HTML/JavaScript tool with xlsx.js, security hardening and standalone offline model."
+            - "Automated in Python the corporate risk heatmap generation, eliminating manual rework and inconsistencies between cycles."
+            - "Structured a <strong>TPRM</strong> programme with continuous monitoring of critical and relevant third parties."
+            - "Built <strong>KRI/KPI</strong> dashboards in Power BI consumed by executive committees."
+            - "Designed <strong>Compliance by Design</strong> workflows connecting regulatory changes to policies, controls and training."
+            - "Managed cross-functional data governance (taxonomy, quality, metadata) sustaining regulatory traceability."
+            - "Aligned to AI Governance, ISO 37301, Three Lines Model, Law 15.040/2024, SUSEP, ANS and PREVIC."
+        - title: "Risk Consultant"
+          period: "Oct/2023 – Jul/2025 · 1 yr 10 mos"
+          client: "Client: Dental Health Plan Operator (ANS) — Internal Audit"
+          bullets:
+            - "Planned and executed <strong>risk-based internal audit</strong> engagements, with risk assessment driving scope."
+            - "Pioneered <strong>human-reviewed AI</strong> for risk prioritisation, regulatory summarisation and criteria standardisation — preserving a full audit trail."
+            - "Performed design and operating effectiveness testing, finding classification and root-cause analysis."
+            - "Negotiated action plans with senior management (owner, deadline, effectiveness metric) and issued final reports with peer review."
+        - title: "Business Consultant / Consulting FSO Trainee"
+          period: "Feb/2022 – Sep/2023 · 1 yr 8 mos"
+          client: "Client: Traditional Insurance Company · ALBA Programme Phase F (8 mos)"
+          bullets:
+            - "Served as <strong>Strategic PMO</strong> for a revitalisation programme — portfolio orchestration, executive governance, milestones and dependencies."
+            - "Redesigned customer journeys and product lifecycle, integrating quoting, sales and ERP systems."
+            - "Contributed to portfolio adjustment (product mix, value proposition, pricing, channels)."
+            - "Structured a wave-based roadmap with quick wins and long-term enablers."
+
+  previous_experience:
+    - "Rio Preto Produtos de Petróleo Ltda. — Accounting / Billing Assistant · Sep/2020 – Jan/2022"
+    - "Self-employed — CRC-Registered Accountant · Apr/2020 – Aug/2020"
+    - "Essenza Contabilidade — Accounting Assistant · Jan/2019 – Mar/2020"
+    - "Tribunal de Contas do Estado do Piauí (State Audit Court) — Intern · 2017 – 2019"
+
+  projects:
+    - name: "SUSEP Benchmarking Platform v3.1"
+      status: "SaaS — in production"
+      description: "Proprietary platform for analysis and benchmarking of the Brazilian insurance market using SUSEP open data."
+      highlights:
+        - "<strong>10+</strong> analytical dashboards for the insurance market"
+        - "Composite risk score v3.0 with <strong>10 pillars</strong>"
+        - "Automated ETL (httpx + Playwright fallback, APScheduler)"
+        - "Dual auth JWT+OAuth; freemium model; deployed on Render+Docker"
+      stack: "Python 3.11 · FastAPI · SQLAlchemy 2.0 · PostgreSQL · Alembic · Pandas · Plotly.js · Pytest (77 tests) · Docker"
+      metrics: "<strong>88+</strong> commits · <strong>35+</strong> merged PRs"
+    - name: "Antifraudsystem"
+      status: "MVP — evolving (collaboration)"
+      description: "Collaborative fraud-detection system with a rule engine and monitoring dashboard."
+      highlights:
+        - "Defined business rules for the detection engine (suspicious patterns, thresholds, human review gates)"
+        - "Co-built the monitoring dashboard (detection KPIs, false positives)"
+        - "UX review from a compliance perspective"
+      stack: "React · Vite · TypeScript · MUI · Radix UI"
+      metrics: ""
+
+  education:
+    - degree: "B.Sc. in Data Science with AI Specialisation"
+      institution: "Descomplica Faculdade Digital"
+      period: "Jul/2024 – Jan/2027 (in progress)"
+    - degree: "B.Sc. in Accounting Sciences"
+      institution: "Federal University of Piauí (UFPI)"
+      period: "Nov/2013 – Aug/2019"
+    - degree: "Technical Diploma in Logistics"
+      institution: "SENAC"
+      period: "Jan/2013 – Jun/2014"

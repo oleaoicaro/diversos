@@ -1,0 +1,400 @@
+# RESUMO DE TREINAMENTOS POR CATEGORIA
+================================================================================
+
+Total de treinamentos: 334
+Período: 2022 - 2026
+
+
+## Outros
+**Total: 141 treinamentos**
+
+- [2026] Inside Agentic AI: Foundations and Frontiers (Nota: 100)
+- [2026] Building Autonomous AI Agents with LangGraph (Nota: 1)
+- [2026] AI Agents: From Prompts to Multi-Agent Systems (Nota: 1)
+- [2026] Tax Agents 101: An introduction to AI agents in Tax
+- [2026] Agentic AI and AI Agents: A Primer for Leaders (Nota: 1)
+- [2026] Tax Agents 101: An introduction to AI agents in Tax – Physical Classroom
+- [2026] Tax Agents 101: An introduction to AI agents in Tax – Virtual Other
+- [2026] Introduction to Agentic Systems Bootcamp May 2025: Session 1 Replay
+- [2026] Risk Management Basics - Non-Financial Risk (Nota: 80)
+- [2026] Risk Management Basics – Financial Risk (Nota: 83)
+- [2026] Risk Management Basics - Risk Management Overview (Nota: 100)
+- [2025] Responsible AI 100: AI Governance and Risk Management (Nota: 78)
+- [2025] New Senior - Brasil - V3
+- [2025] Your Future Job at EY AI- ALL SL - FY26
+- [2025] BootCamp 2.0 - Senior
+- [2025] From Generative AI to Agentic AI - Market Trends, Client Impact, and Workforce Evolution
+- [2025] Office Hours Learning
+- [2025] Scope and Strategy: Identify and assess risks - Americas (Nota: 71)
+- [2025] Introduction to EY GAM and EY Atlas - Americas 2019 (Nota: 75)
+- [2025] Introduction to EY Canvas
+- [2025] Welcome to EY and  Audit Foundation Part I - Thailand May 2022
+- [2025] EY First Step - Make-up Session - Thailand 2022
+- [2025] ChatGPT & Generative AI - The Complete Guide
+- [2025] IA e Validação de Modelos na Gestão de Riscos
+- [2025] IA e Validação de Modelos na Gestão de Riscos
+- [2024] Process Model Basics Checklist
+- [2024] Quick guide – Four negotiation styles
+- [2024] Quick guide – Stages of a negotiation
+- [2024] DOJO DNA - LLMOps
+- [2024] IA Generativa en Analítica de Datos Potenciando Insights  - ALLSL -  FY25
+- [2024] Security Risks: Key Risk Terms & Concepts (Nota: 88)
+- [2024] Mastering Prompting Techniques
+- [2024] 6 Practice Exams | AWS Certified Cloud Practitioner CLF-C02
+- [2024] Comunicação Assertiva
+- [2024] Time for a Better Feedback Ciclo 3 - Firmwide - FY24
+- [2024] Programa BootCamp Staff
+- [2024] Programa BootCamp Staff
+- [2024] Programa BootCamp Staff
+- [2024] Programa BootCamp Staff
+- [2024] BootCamp Staff - Pensamento Crítico, Habilidades de Escrita e Produtividade Digital - Mód 2
+- [2024] BootCamp Staff - Autoliderança e gestão do aprendizado - Mód 1
+- [2023] Delivering Long-Term Value (Nota: 75)
+- [2023] ECS - New
+- [2023] Presentation Techniques and Accelerators - Brazil
+- [2023] Active Listening: You Can Be a Great Listener
+- [2023] CPE -  Active Listening: You Can Be a Great Listener
+- [2023] Contabilidade Introdutória
+- [2023] Programa de Contabilidade Introdutória - Brasil
+- [2023] Contabilidade Introdutória - Avaliação Final (Nota: 60)
+- [2023] Assédio - Uma visão holística
+- [2023] Contabilidade Introdutória - Avaliação Inicial (Nota: 67)
+- [2022] The Value of Trust by Design (Nota: 100)
+- [2022] Digital Disruption Masterclass PLUS Agile & Hackathons
+- [2022] MBA ASAP Corporate Finance Fundamentals for Career Success
+- [2022] Finance for Non-Finance: Learn Quick and Easy
+- [2022] Money Laundry Prevention - 2020 (Other)
+- [2022] 2020 Annual Brazilian Law 12.846
+- [2022] Cultura Remote First
+- [2022] Comunicação e Colaboração
+- [2022] Produtividade e Bem-estar
+- [2022] Conexão & Confiança
+- [2022] Programa Equipe OfficeLess_V3
+- [2022] Introduction to Computer Networks for Non-Techies
+- [2022] Programa Equipe OfficeLess
+- [2022] Base de dados (SQL/SAS/Phyton) noções básicas
+- [2022] Gestão de riscos, capital, provisões e pricing
+- [2022] Capital/DLO
+- [2022] IFRS9
+- [2022] Logic Trees Job-aid
+- [2022] Defeating Social Engineers:  Non-US (Nota: 100)
+- [2022] Phishing NON US (Nota: 56)
+- [2022] Password Security NON US (Nota: 78)
+- [2022] Incident Reporting Americas NON US (Nota: 100)
+- [2022] Protecting Mobile Data and Devices - Americas NON-US (Nota: 67)
+- [2022] Interviews: What Good Looks Like
+- [2022] Context Trigger Question Response (CTQR) Email
+- [2022] Business Presentations
+- [2022] Be BeyonLabs
+- [2022] Primer - Fundamentos da Gestao Bancaria - Brasil
+- [2022] Cheguei. E agora, como me organizo?
+- [2022] Presentation Techniques and Accelerators - Brazil
+- [2022] Equipe EM - Programação
+- [2022] Welcome To EY - Brazil - V2
+- [2022] NextWave and you (Nota: 100)
+- [2022] 2020 Annual Brazilian Law 12.846
+- [2022] Conscious Listening
+- [2022] Money Laundry Prevention - 2020 (Other)
+- [2022] Strongest Link (Nota: 100.0)
+- [2022] Problem-solving Process Facilitation Guide
+- [2022] Problem-solving Process Facilitation Guide
+- [2022] Problem-solving Process Slides
+- [2022] Problem-solving Process Slides
+- [2022] SkillBrief: Leading through Problem Solving and Decision Making
+- [2022] SLDP Performance Guide: Problem Solving and Decision Making
+- [2022] SLDP Performance Guide: Problem Solving and Decision Making
+- [2022] Transform for SAP (Nota: 83)
+- [2022] MBA ASAP Corporate Finance Fundamentals for Career Success
+- [2022] Sustainability Now 2.0
+- [2022] Sustainability Now (Nota: 100)
+- [2022] EY VIA Overview (Lesson 1) (Nota: 100)
+- [2022] FoP Week LAS - DDA [Data Strategy & Governance]
+- [2022] Conexão & Confiança
+- [2022] Programa Equipe OfficeLess_V2
+- [2022] Leading with Growth Mindset Brasil
+- [2022] Be BeyonLabs
+- [2022] Produtividade e Bem-estar
+- [2022] Comunicação e Colaboração
+- [2022] Cultura Remote First
+- [2022] Project 2016: Configuring Project
+- [2022] NextWave and you (Nota: 80)
+- [2022] Our Purpose (Nota: 80)
+- [2022] Budgeting
+- [2022] 'Corporate Finance - An Introduction '
+- [2022] Project Management Essentials
+- [2022] ECS - New
+- [2022] Navigating Your Own Emotions
+- [2022] Navigating Your Own Emotions
+- [2022] Logic Trees Job-aid
+- [2022] Lets talk digital - global translations
+- [2022] Let's Talk Digital - Japanese
+- [2022] Introduction to Market Insight and Intelligence
+- [2022] Introduction to Market Insight and Intelligence (Nota: 100)
+- [2022] Robotic Process Automation Overview
+- [2022] Robotic Process Automation Overview (Nota: 100)
+- [2022] Let's Talk Digital
+- [2022] Lets talk digital (Nota: 80)
+- [2022] Design Thinking (Nota: 83)
+- [2022] Defeating Social Engineers:  Non-US (Nota: 100)
+- [2022] Phishing NON US (Nota: 88)
+- [2022] Password Security NON US (Nota: 89)
+- [2022] Incident Reporting Americas NON US (Nota: 100)
+- [2022] Protecting Mobile Data and Devices - Americas NON-US (Nota: 100)
+- [2022] Introduction to Change Management
+- [2022] Introduction to Change Management (Nota: 80.0)
+- [2022] Interviews: What Good Looks Like
+- [2022] Context Trigger Question Response (CTQR) Email
+- [2022] Business Presentations
+- [2022] Politica de Independencia EYG Visao geral (IND204GGPOR) (Nota: 92)
+- [2022] Primer - Fundamentos da Gestao Bancaria - Brasil
+- [2022] Presentation Techniques and Accelerators - Brazil
+- [2022] Welcome To EY - Brazil - V2
+
+--------------------------------------------------------------------------------
+
+## Leadership & Soft Skills
+**Total: 45 treinamentos**
+
+- [2026] All in leadership – Shaping our culture together (French version)
+- [2026] All in leadership – Shaping our culture together (Nota: 100)
+- [2026] All in leadership – Shaping our culture together - Korea
+- [2025] Upstanding Interventions (Nota: 100)
+- [2024] Inclusive Leadership for All Program
+- [2023] Being Client Centric with Exceptional Client Service (Nota: 100)
+- [2023] Let?s apply Exceptional Client Service (ECS)
+- [2023] Business Writing at EY - Content (Nota: 75)
+- [2023] Inclusive Leadership for All Program
+- [2023] Upstanding Interventions (Nota: 100)
+- [2023] Business Writing at EY - Language (Nota: 100)
+- [2023] Introduction to Coaching - eLearning (Nota: 75)
+- [2023] Inclusive Leadership for All Program
+- [2023] Introduction to Inclusive Leadership for All - Portuguese
+- [2023] Inclusive Leadership for All – Podcast 1: The Value of Difference - Portuguese
+- [2023] Inclusive Leadership for All - Course 1: The Value of Difference - Portuguese (Nota: 75)
+- [2023] Inclusive Leadership for All – Podcast 2: Lead and Team with Agility - Portuguese
+- [2023] Inclusive Leadership for All – Course 2: Lead and Team with Agility - Portuguese (Nota: 75)
+- [2023] Inclusive Leadership for All – Podcast 3: Building a Sense of Belonging for All - Portuguese
+- [2023] Inclusive Leadership for All – Course 3: Building a Sense of Belonging for All - Portuguese (Nota: 100)
+- [2023] Introduction to Inclusive Leadership for All
+- [2023] Inclusive Leadership for All - Course 1: The Value of Difference
+- [2023] Inclusive Leadership for All – Course 2: Lead and Team with Agility
+- [2023] Inclusive Leadership for All – Course 3: Building a Sense of Belonging for All
+- [2023] Inclusive Leadership for All – Podcast 1: The Value of Difference
+- [2023] Inclusive Leadership for All – Podcast 2: Lead and Team with Agility
+- [2023] Inclusive Leadership for All – Podcast 3: Building a Sense of Belonging for All
+- [2023] Inclusive Leadership for All Program - Portuguese
+- [2022] 21 Day Crash Course in Emotional Intelligence
+- [2022] Using Communication Strategies to Bridge Cultural Divides
+- [2022] Building the Foundation for an Effective Team
+- [2022] Introduction to Inclusive Leadership for All
+- [2022] Inclusive Leadership for All - Course 1: The Value of Difference (Nota: 75)
+- [2022] Inclusive Leadership for All – Course 2: Lead and Team with Agility (Nota: 100)
+- [2022] Inclusive Leadership for All – Course 3: Building a Sense of Belonging for All (Nota: 100)
+- [2022] Inclusive Leadership for All – Podcast 1: The Value of Difference
+- [2022] Inclusive Leadership for All – Podcast 2: Lead and Team with Agility
+- [2022] Inclusive Leadership for All – Podcast 3: Building a Sense of Belonging for All
+- [2022] Building the Foundation for an Effective Team
+- [2022] Inclusive Leadership for All Program
+- [2022] Being Client Centric with Exceptional Client Service (Nota: 80)
+- [2022] Let?s apply Exceptional Client Service (ECS)
+- [2022] Building Up Your Emotional Intelligence
+- [2022] Making the Most of Making Mistakes
+- [2022] Making the Most of Making Mistakes
+
+--------------------------------------------------------------------------------
+
+## Consulting & Transformation
+**Total: 29 treinamentos**
+
+- [2026] AI Skills for Consulting FY26 - Global Learning Webcast
+- [2025] Encontro Anual Risk Consulting
+- [2025] Encontro Anual Risk Consulting
+- [2025] AI for Consulting - Learning Webcast
+- [2025] AI for Consulting - Learning Webcast
+- [2024] Welcome to Consulting - My Consulting Career - update 2022 (Nota: 75)
+- [2024] Welcome to Consulting - Going to Market in Consulting - update 2022 (Nota: 100)
+- [2024] Welcome to Consulting - Managing Quality & Risk in the Engagement Management Lifecycle - update 2022 (Nota: 75)
+- [2024] Welcome to Consulting - Consulting Service Quality Program – update 2022 (Nota: 100)
+- [2024] Welcome to Consulting Foundations Program - update 2022
+- [2023] Transformation Realized Unpacked – Value Driver Deep Dive – Japanese translation
+- [2023] Transformation Realized – Overview of Strategy (Global CE)
+- [2023] Transformation Realized – Overview of Transformation (Global CE)
+- [2023] Transformation Realized Unpacked – Value Driver Deep Dive (Nota: 82)
+- [2023] Transformation Realized - Overview of Strategy (US CPE) (Nota: 70)
+- [2023] Transformation Realized – Overview of Transformation (US CPE) (Nota: 70)
+- [2023] Transformation Realized Program of Learning (Americas)
+- [2022] Transformation Realized Unpacked – Value Driver Deep Dive – Japanese translation
+- [2022] Transformation Realized Unpacked – Value Driver Deep Dive (Nota: 82)
+- [2022] Transformation Realized Program of Learning (Americas)
+- [2022] Transformation Realized – Overview of Strategy (Global CE)
+- [2022] Transformation Realized – Overview of Transformation (Global CE)
+- [2022] Transformation Realized - Overview of Strategy (US CPE) (Nota: 90.0)
+- [2022] Transformation Realized – Overview of Transformation (US CPE) (Nota: 70)
+- [2022] Consulting Skills Foundations Core eLearning - Program
+- [2022] Consulting Skills Foundations Core eLearning - Program
+- [2022] Consulting Skills Foundations Core eLearning - Program
+- [2022] Consulting Learning Day: opening plenary
+- [2022] Consulting Skills Foundations Core eLearning - Program
+
+--------------------------------------------------------------------------------
+
+## Ética & Independência
+**Total: 26 treinamentos**
+
+- [2025] Independence Update 2025 INDX25GG2 (Nota: 71)
+- [2025] Independence Update 2025 INDX25GG2 (Nota: 100)
+- [2024] Annual Code of Conduct Learning Update 2024 (Nota: 100)
+- [2024] Annual Code of Conduct Learning Update 2024 (Nota: 80)
+- [2024] Independence Update 2024 INDX24BR (Nota: 100)
+- [2024] Independence Update 2024 INDX24BR (Nota: 86)
+- [2023] Independence Update 2023 INDX23BR (Nota: 100)
+- [2023] Independence Update 2023 INDX23BR (Nota: 86)
+- [2023] Code Of Conduct - Brazil - V2
+- [2023] Annual Code of Conduct Learning Update FY23 (Nota: 80)
+- [2023] Annual Code of Conduct Learning Update FY23 (Nota: 80)
+- [2022] Code Of Conduct - Brazil - V2
+- [2022] Conflicts of Interest (Nota: 80)
+- [2022] Global Code of Conduct
+- [2022] Global Code of Conduct (CoC) (Nota: 70)
+- [2022] Global Code of Conduct (CoC)-Program-45 Day
+- [2022] Independence Policy - EYG - Overview - Japanese
+- [2022] Independence Policy - EYG – Overview (IND204GG) (Nota: 75)
+- [2022] Team Communication and Conflict Slides
+- [2022] Team Communication and Conflict Slides
+- [2022] Team Communication and Conflict Slides
+- [2022] Team Communication and Conflict Slides
+- [2022] Global Code of Conduct
+- [2022] Global Code of Conduct (CoC) (Nota: 90)
+- [2022] Conflicts of Interest (Nota: 80)
+- [2022] Global Code of Conduct (CoC)-Program-45 Day
+
+--------------------------------------------------------------------------------
+
+## AML & Financial Crime
+**Total: 19 treinamentos**
+
+- [2025] Lei Anticorrupção (Nota: 80)
+- [2025] Lei Anticorrupção (Nota: 80)
+- [2025] Lavagem de Dinheiro (Nota: 83)
+- [2025] Lavagem de Dinheiro (Nota: 100)
+- [2025] Annual Financial Crime Update 2024.1 (Multilanguage) (Nota: 86)
+- [2025] Annual Financial Crime Update 2024.1 (Multilanguage) (Nota: 86)
+- [2024] Lei Anticorrupção - FY24 (Nota: 100)
+- [2024] Lavagem de Dinheiro - FY24 (Nota: 80)
+- [2024] Interação com Agentes Públicos e Licitações (Nota: 100)
+- [2024] Lei Anticorrupção - FY24 (Nota: 80)
+- [2024] Lavagem de Dinheiro - FY24 (Nota: 90)
+- [2024] Interação com Agentes Públicos e Licitações (Nota: 80)
+- [2024] Interação com Agentes Públicos e Licitações (Nota: 80)
+- [2024] Annual Financial Crime Update FY24 (Multilanguage) (Nota: 83)
+- [2024] Annual Financial Crime Update FY24 (Multilanguage) (Nota: 100)
+- [2022] Financial Crime: Staff – Senior Fundamentals (Nota: 100)
+- [2022] PLD/FT  (AML / KYC)
+- [2022] Financial Crime Money Laundering, Tax Evasion and Terrorist Financing - Multi-language
+- [2022] AML / KYC
+
+--------------------------------------------------------------------------------
+
+## Data Protection & InfoSec
+**Total: 19 treinamentos**
+
+- [2025] Annual Data Protection and Information Security Update 2025 (Nota: 86)
+- [2025] Annual Data Protection and Information Security Update 2025 (Nota: 86)
+- [2024] Data Protection on Engagements – What You Need to Know
+- [2024] Data Protection on Engagements – What You Need to Know (Multi-language) (Nota: 75)
+- [2024] Data Protection on Engagements – What You Need to Know
+- [2024] Data Protection on Engagements – What You Need to Know (Multi-language) (Nota: 75)
+- [2024] Annual Data Protection and Information Security Update FY24 (Nota: 100)
+- [2024] Annual Data Protection and Information Security Update FY24 (Nota: 100)
+- [2023] Lei Geral de proteção de Dados - LGPD (Nota: 80)
+- [2023] Annual Data Protection and Information Security Update FY23 (Nota: 83)
+- [2023] Annual Data Protection and Information Security Update FY23 (Nota: 100)
+- [2022] Data Protection Fundamentals (Nota: 100)
+- [2022] Cybersecurity - Data Protection and Privacy (Nota: 80)
+- [2022] Lei Geral de proteção de Dados - LGPD (Nota: 90)
+- [2022] Handling Information Safely
+- [2022] Handling Information Safely (HIS) (Nota: 83)
+- [2022] Handling Information Safely
+- [2022] General Data Protection Regulation (GDPR) Training Course - Multi-language 2021 (Nota: 100)
+- [2022] Data Oversharing – Global
+
+--------------------------------------------------------------------------------
+
+## Setoriais (Banking · Insurance · Payments)
+**Total: 18 treinamentos**
+
+- [2025] Módulo de RO - Banking e Insurance
+- [2025] Módulo do RSAC - Banking
+- [2025] EY Core Consulting - FSO - Brazil - V3
+- [2025] Assurance Who We Are for New Hires - Americas 2020
+- [2025] Who We Are- Assurance
+- [2024] Módulo de ESG de Riscos - Insurance
+- [2024] Módulo de Gestão de Riscos, Controles Internos, Compliance e Auditoria Interna - Insurance
+- [2024] Módulo de Gestão de Riscos, Controles Internos, Compliance e Auditoria Interna - Insurance
+- [2023] Módulo de ESG de Riscos (BrasilSeg) - Insurance
+- [2023] Payments – Visão Geral
+- [2023] Módulo de Ferramentas – SAS/SQL - Banking
+- [2023] Módulo do RSAC - Banking
+- [2022] Liderança FSO+ Talent Overview
+- [2022] Preparatório - Auditoria para instituições regulamentadas pela Superintendência de Seguros Privados
+- [2022] Enterprise Cost Reduction - FSO - Brasil
+- [2022] P&C (Process & Control)
+- [2022] EY Core Consulting - FSO - Brazil - V2
+- [2022] Liderança FSO+ Talent Overview
+
+--------------------------------------------------------------------------------
+
+## Técnico & Dados
+**Total: 16 treinamentos**
+
+- [2025] Programa Counseling Excellence - Setting the Foundation - Brasil
+- [2025] Counseling Excellence - Setting the Foundation - Brasil
+- [2025] Counseling Excellence: Setting the foundation - Virtual Classroom
+- [2025] Power Bi - Básico
+- [2025] Power Bi - Básico
+- [2025] Counseling Excellence: Setting the foundation - eLearning (Nota: 100)
+- [2025] Complete Introduction to Microsoft Power BI
+- [2023] Let’s achieve Account Excellence (Nota: 80)
+- [2023] Alteryx
+- [2023] Excel Bootcamp Session 2 - Data cleaning and functions
+- [2022] Aproveitando o máximo do Excel - Português (Nota: 95)
+- [2022] Analysis of Microsoft data and tools - Basic - Brazil - V2
+- [2022] Introdução ao Excel - Português (Nota: 100)
+- [2022] EY VIA Workflow (Lesson 2) (Nota: 83)
+- [2022] Creating Data Visualization
+- [2022] Creating Data Visualizations (Nota: 70)
+
+--------------------------------------------------------------------------------
+
+## Governança de IA
+**Total: 14 treinamentos**
+
+- [2026] Responsible Use of Copilot for Microsoft 365 (M365) - French Version
+- [2026] Utilisation responsable de Microsoft 365 (M365) Copilot - French version
+- [2026] Responsible Use of Microsoft 365 (M365) Copilot eLearning (Nota: 100)
+- [2026] Responsible Use of Copilot for Microsoft 365 (M365)
+- [2026] Low Code 101 series - Copilot studio
+- [2026] Implementation of GenAI Agents (Nota: 1)
+- [2025] AI Now 2.0 - Use GenAI as your Thought Partner – Module 1
+- [2025] AI Now 2.0 - Use GenAI as your Thought Partner - Module 2 ***Only CE awarding***
+- [2025] AI Now 2.0 - Use GenAI as your Thought Partner – Module 1
+- [2025] AI Now 2.0 - Use GenAI as your Thought Partner - Module 2 ***Only CE awarding***
+- [2024] Automatización Inteligente potenciada por GENAI con Automation Anywhere
+- [2024] AI Now (Nota: 75)
+- [2023] AI Now (Nota: 75)
+- [2022] Introduction to Artificial Intelligence
+
+--------------------------------------------------------------------------------
+
+## Compliance Geral
+**Total: 7 treinamentos**
+
+- [2025] Ergonomia
+- [2025] Ergonomia
+- [2024] Segurança no Trabalho - Online
+- [2024] Segurança no Trabalho - Online
+- [2024] Segurança no Trabalho - Online
+- [2022] Controle de Jornada de Trabalho
+- [2022] Controle de Jornada de Trabalho
+
+--------------------------------------------------------------------------------

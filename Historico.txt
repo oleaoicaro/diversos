@@ -606,4 +606,651 @@ Erro de API
 You've hit your limit · resets 6pm (America/Sao_Paulo)
 
 
+https://github.com/oleaoicaro/diversos antes preciso fazer um curriculo, preciso de um agente de rh para solicitar melhorias e outro para mudar os pdfs
+
+Deixa eu verificar o repo diversos primeiro e organizar o fluxo dos dois agentes.
+
+Executado
+Check diversos repo and list contents
+Repo diversos encontrado — público, com Profile.pdf, Profile.txt, Historico.txt, pasta cv/ e um report.csv.
+
+Proposta de fluxo com 2 agentes
+Dois caminhos possíveis. Escolha qual prefere:
+
+Opção A — Agentes Claude Code persistentes (reutilizáveis em qualquer sessão futura)
+Crio dois subagents como arquivos .md em ~/.claude/agents/:
+
+Agente	Papel	Entrada	Saída
+cv-hr-reviewer	Recruiter sênior BR fintech/seguros — avalia CV com critérios de ATS + impressão humana	CV texto ou PDF	Feedback crítico priorizado (crítico / alto / médio / baixo) + sugestão de reescrita por seção
+cv-pdf-editor	Editor de PDF que aplica mudanças aprovadas preservando layout/tipografia	CV original + instruções de mudança	PDF novo + diff textual
+Vantagem: você invoca com Task em qualquer sessão futura, não precisa redescrever contexto.
+Custo: 5-10 min para criar os 2 agentes bem configurados.
+
+Opção B — Eu atuo como os dois agentes nesta sessão (sem criar arquivos)
+Vantagem: mais rápido agora.
+Custo: tem que redescrever o contexto se quiser repetir em outra sessão.
+
+Opção C (recomendo) — Híbrida
+Crio somente o cv-hr-reviewer como agente persistente (é onde o contexto do seu ICP + vagas-alvo agrega mais valor de reuso).
+Para PDF, uso a skill anthropic-skills:pdf que já existe no Claude Code (manipula PDF de forma genérica — não precisa de agente dedicado para isso).
+Plano de execução (qualquer que seja a opção)
+Leio Profile.txt do repo diversos (já sei que é o conteúdo do CV atual).
+Analiso o CV contra as 7 vagas-alvo da Fase 3 (Nubank, Avenue, ML, Bradesco Seguros, Pismo, XP, Banco BV) — usando o match analysis que já fizemos.
+Entrego feedback priorizado + sugestão de reescrita por seção.
+Gero novo PDF com as mudanças aprovadas (via skill PDF).
+★ Insight ─────────────────────────────────────
+
+Um agente HR reusável te serve para muito além deste CV: revisão de carta de apresentação, preparação para entrevista comportamental, mock de "por que você quer sair da EY". Por isso Opção C pesa mais.
+O Historico.txt (55KB) provavelmente tem muito material bruto — vou pedir para o agente HR priorizar quais histórias/projetos contar, não só como contá-los. Curadoria > reescrita.
+PDF nativo de CV (em vez de texto/Word) é superior no LinkedIn Easy Apply BR porque mantém formatação, mas pior em ATS antigos. Vale ter 2 versões — PDF "bonito" + DOCX "ATS-safe".
+─────────────────────────────────────────────────
+Qual opção? (A / B / C)
+
+Se C (recomendação), eu já começo: crio o agente cv-hr-reviewer + leio o Profile.txt do GitHub + rodo a primeira revisão.
+
+a
+
+
+Executado 2 comandos, criado 2 arquivos
+
+Lembrado uma memória, salvo 7 memórias
+Tarefas atualizadas
+✅ Agentes criados + contexto persistido
+Arquivo	Propósito
+~/.claude/agents/cv-hr-reviewer.md	Recruiter BR sênior — revisa CV contra ATS + impressão humana, output priorizado crítico/alto/médio/baixo
+~/.claude/agents/cv-pdf-editor.md	Editor de PDF/DOCX — aplica mudanças aprovadas com versionamento, fallback de rebuild quando source é ruim
+Ambos pré-calibrados com seu contexto (alvos, strengths, gaps, linhas vermelhas) para que em qualquer sessão futura você invoque direto: "revisa meu CV" → o agente já sabe quem você é.
+
+Também salvei 6 memórias em ~/.claude/projects/.../memory/ cobrindo: perfil, gaps, inventário GitHub, missão 6-fases, fonte do CV, e o feedback de não acessar OneDrive quando o source é GitHub.
+
+★ Insight ─────────────────────────────────────
+
+Prompt do agente HR está calibrado para ser duro: regra explícita "sem suavização, sem 'poderia considerar', use imperativo". Se o feedback vier agressivo demais, me avisa e eu afino.
+PDF editor tem fallback de rebuild: se o source (seu Profile.pdf atual) está com encoding corrompido do LinkedIn export, o agente sugere rebuild a partir de template limpo em vez de tentar patch. É mais eficaz.
+Agentes não têm memória própria entre invocações — eles leem o prompt deles e as memórias do projeto, mas cada execução começa fresca. Por isso dei contexto denso nos prompts.
+─────────────────────────────────────────────────
+Próximo passo — escolha seu caminho
+Opção 1 — Rodar agora o cv-hr-reviewer no seu CV atual
+Eu invoco o agente via Task tool, ele lê Profile.pdf do repo diversos e devolve feedback estruturado. Você revisa, aprova mudanças, eu passo para o cv-pdf-editor.
+
+Opção 2 — Você fornece outro source
+Se tem uma versão mais recente/limpa do CV em outro lugar (DOCX, outro PDF), me aponta o path e eu uso ele como source.
+
+Opção 3 — Rebuild do zero
+Dado que o atual tem encoding corrompido + 5 páginas, o agente provavelmente vai recomendar rebuild. Se você já quer pular direto para isso, eu construo versão Markdown estruturada + sugiro 2-3 templates concretos.
+
+Qual?
+
+1
+
+Rodando revisão agora. O agente novo ainda não está indexado nesta sessão (foi criado agora), então executo direto no contexto principal usando o mesmo prompt/estrutura do agente — você terá saída idêntica. Em sessões futuras basta dizer "revisa meu CV".
+
+🔍 Revisão do CV Profile.pdf (5 páginas, LinkedIn-exported)
+📊 Quick Scores
+ATS match estimate: 5.5/10
+Human impression (6s scan): 4/10
+Length appropriateness: 2/10
+Overall readiness: 4/10
+🔴 CRITICAL (corrigir antes de enviar)
+1. Encoding corrompido (Windows-1252)
+
+Issue: O PDF tem artifacts de export LinkedIn (é→Ú, ã→Ò, ç→þ, ò→Ò, "Ícaro Leão" vira "═caro LeÒo", "São Paulo" vira "SÒo Paulo").
+Why: Recruiter que abre esse PDF pensa "CV quebrado" em <2 segundos — descarte imediato.
+Fix: Não tente patch. Rebuild do zero em template limpo (LaTeX Moderncv, Overleaf Jake's Resume, Novoresume, ou DOCX com Calibri/Inter).
+2. 5 páginas vs target 2
+
+Issue: Padrão BR Sênior = 2 páginas, máximo 3. 5 páginas = ATS trunca + recruiter não lê.
+Fix: Corte experiências pré-2022 para linhas únicas ou remova (Lan House 2009-2012, Estágio Santa Edwiges 2015-2016, SENAC Técnico em Logística, Autônomo contador 5m).
+3. Seção "Certifications" mistura itens de pesos muito diferentes
+
+Issue: Lista CRC (registro profissional real), EF SET (teste de idioma, não é certificação), EY Finance Learning (treinamento interno), 2 micro-cursos Coursera — tudo flat como "Certifications". Recruiter experiente lê e conclui "não tem certs reais, está enchendo linguiça".
+Fix: Separe em 3 seções:
+Registros Profissionais: CRC
+Idiomas: Português Nativo, Inglês B1, Espanhol Básico
+Formação Complementar: os 3 cursos
+4. Inconsistência "English (Professional Working)" vs EF SET 47/100 (B1)
+
+Issue: LinkedIn diz "Professional Working" (= B2-C1). EF SET diz B1. Recruiter que vê os dois flags inconsistência → red flag de honestidade.
+Fix: Em todos os lugares: "Inglês — B1 Intermediate (EF SET 47/100)". Honesto > inflado que será desafiado em entrevista.
+🟠 HIGH (deve corrigir)
+5. Zero números quantificados nas experiências EY
+
+Current: "Estruturei TPRM com monitoramento contínuo de terceiros críticos"
+Proposed: "Estruturei programa de TPRM cobrindo X terceiros críticos em Y categorias de risco, com Z% de redução no tempo de resposta a eventos críticos" (preencha X/Y/Z reais)
+Rationale: Recruiter sênior quer ver escala. Sem números, sua experiência soa genérica.
+6. GitHub projects invisíveis no CV
+
+Issue: susep-benchmarking não aparece em lugar nenhum! É seu maior diferencial técnico para as 7 vagas-alvo.
+Fix: Adicionar seção "Projetos Técnicos" depois de Experiência Profissional, antes de Formação. Cita o SUSEP Benchmarking + Antifraudsystem.
+7. Resumo/Sobre longo demais (~1850 chars)
+
+Issue: No LinkedIn ok, mas em CV o Resumo deve ser 3-4 linhas (~500 chars).
+Fix: Versão proposta abaixo.
+8. "Principais competências" lista só 3 itens
+
+Issue: IBM OpenPages + Python + Compliance Regulatório. Deveria ter 6-10 skills pinnadas.
+Fix: Adicione: TPRM, Governança de IA, ISO 37301, FastAPI, Power BI, Auditoria Interna, SUSEP/ANS/PREVIC.
+🟡 MEDIUM (bom corrigir)
+9. "Consultor sênior" duplica cargo
+O bloco EY tem 4 cargos cronológicos (Trainee → Business Consultant I → Risk Consultant I → Consultor Sênior). Cada um com descrição de projeto (Transformação, Auditoria, Revitalização). Está pesado. Simplifique: um header "Ernst & Young (Feb/2022 - atual, 4a3m)" e dentro liste os projetos como sub-blocos, sem repetir "Ernst & Young" 4×.
+
+10. Formação — SENAC Técnico Logística (2013-2014) é fraco
+Remova. UFPI Contábeis + Descomplica Ciência de Dados IA (em andamento) são suficientes.
+
+11. "San Paolo, SP" na experiência Trainee — typo, corrigir para "São Paulo, SP".
+
+🟢 LOW (polimento)
+12. Remover os caracteres á á no cabeçalho de cada página (artifact de export).
+13. Padronizar verbos em passado em todos os bullets.
+14. Adicionar URLs clicáveis: linkedin.com/in/oleaoicaro, github.com/oleaoicaro.
+
+✏️ Section Rewrite Suggestions
+Resumo (substitui bloco atual de 1850 chars por ~500 chars):
+
+Consultor Sênior Risk & Compliance na EY com 4+ anos em seguradoras, saúde e CNseg.
+Especialista em Compliance by Design com IBM OpenPages, Governança de IA, TPRM e
+automação em Python/FastAPI. Implementei plataforma GRC enterprise em programa
+plurianual e desenvolvo paralelamente a SUSEP Benchmarking Platform — SaaS em
+produção (88+ commits, stack Python·FastAPI·PostgreSQL·Docker). Foco em Compliance
+Regulatório, Risco Operacional, Auditoria Interna e Risk Analytics em fintechs,
+bancos e seguradoras.
+Seção "Certifications" (substitui bloco atual):
+
+REGISTROS PROFISSIONAIS
+• Contador registrado no Conselho Regional de Contabilidade (CRC)
+IDIOMAS
+• Português — Nativo
+• Inglês — B1 Intermediate (EF SET 47/100)
+• Espanhol — Básico
+FORMAÇÃO COMPLEMENTAR
+• Transformational governance: Driving responsible business conduct (Coursera)
+• Microsoft Power Automate: Business Process Flows
+• EY Finance Learning Program (2022)
+• [Em andamento] ISO 37301 Lead Implementer — PECB (previsão Jun/2026)
+Nova seção "PROJETOS TÉCNICOS / PORTFOLIO":
+
+SUSEP Benchmarking Platform v3.1  |  github.com/oleaoicaro/susep-benchmarking
+SaaS em produção (Render) para benchmarking do mercado segurador BR com dados
+abertos SUSEP. 10+ dashboards (market share, sinistralidade, solvência, KRIs,
+diagnóstico, processos sancionadores, AUTOSEG, portfólio). Score composto de
+risco v3.0 com 10 pilares. ETL automatizado, auth JWT+Google OAuth, 77 testes.
+Stack: Python · FastAPI · SQLAlchemy 2.0 · PostgreSQL · Alembic · Docker.
+Repositório: 88+ commits, 35+ PRs mergeados.
+Antifraudsystem — Concept Design & Rules Engine
+Sistema antifraude em colaboração. Contribuição: definição das regras de negócio
+(thresholds, padrões, escalonamento) e co-construção do dashboard de monitoramento.
+Stack (time): React · Vite · TypeScript · MUI.
+🔎 Keyword Gap Analysis
+✅ Presentes: IBM OpenPages, Python, FastAPI, TPRM, ISO 37301, SUSEP, ANS, PREVIC, Compliance by Design, Governança de IA, Three Lines Model, Power BI
+
+❌ Ausentes vs JDs alvo: BACEN (só no headline, não no corpo), LGPD, Docker, PostgreSQL, SQLAlchemy, Risk Assessment, KRIs (explícito), Auditoria Interna (como skill), Controles Internos, Open Finance, Data Security, REST APIs, JWT, OAuth2
+
+⚠️ Excessivos/fracos: "Contabilidade" 5+ menções em experiências antigas dilui foco; títulos de empresas antigas ocupam espaço desproporcional.
+
+📐 Length & Structure Report
+Páginas atuais: 5
+Alvo: 2
+O que cortar (~3 páginas):
+
+Lan House Vapt Vupt (2009-2012) — remover completo
+Santa Edwiges Estágio (2015-2016) — remover
+SENAC Técnico Logística — remover
+Autônomo contador 5m — remover ou 1 linha
+Rio Preto Petróleo — 2 cargos viram 1 bloco de 2 linhas
+TCE Piauí Estágio — 1 linha
+Essenza Contabilidade — 1 linha
+O que expandir:
+
+Nova seção Projetos Técnicos (~200 palavras)
+Bullets do Consultor Sênior atual — adicionar 3-5 números quantificados
+🎯 Priority Order — Top 5 para próxima iteração
+Rebuild do zero em template limpo (resolve encoding + length + estrutura de uma vez)
+Cortar experiências pré-2022 para linhas únicas ou remover
+Adicionar seção "Projetos Técnicos" com SUSEP Benchmarking + Antifraudsystem
+Reestruturar "Certifications" em 3 seções honestas (Registros / Idiomas / Formação Complementar)
+Quantificar 5-8 bullets da experiência EY atual com números reais
+★ Insight ─────────────────────────────────────
+
+Seu CV atual não está mal escrito — o conteúdo é sólido. Os problemas são 95% de formato (encoding + tamanho + seções mal organizadas). Um rebuild de 2-3h resolve quase tudo.
+O SUSEP Benchmarking não estar no CV é perda quase criminosa — esse projeto sozinho explica por que você merece R$15-20k em vaga de Risk Analytics. Priority 3 é o maior retorno por hora investida.
+Certifications honestas > infladas. Listar "EF SET como cert" é pequeno, mas recruiter sênior detecta. Reorganizar em 3 sub-seções mostra maturidade e segurança — não tem cert ainda, mas não esconde.
+─────────────────────────────────────────────────
+Próximos passos
+Sugiro este fluxo:
+
+Você decide: aplicar todos os 5 Priority items? Ou seleciona subset?
+Eu rodo o rebuild com as mudanças aprovadas — entrega em Markdown estruturado pronto para colar em template + sugestão de 2-3 templates concretos (LaTeX, DOCX).
+Quando aprovado, o cv-pdf-editor (ou eu diretamente nesta sessão) gera o PDF final.
+Me diz: aplica todos 5 ou escolhe alguns? E quer o rebuild em LaTeX (Overleaf), DOCX (Word/Canva) ou Markdown puro (você decide template depois)?
+
+todos
+
+★ Insight ─────────────────────────────────────
+Markdown-first é a escolha ideal como "source of truth" do CV: funciona como fonte universal que compila para LaTeX (via pandoc), DOCX (via pandoc/Typora), PDF (via múltiplos caminhos) e até HTML. Isso desacopla a decisão de template da decisão de conteúdo — você pode trocar de visual sem reescrever bullets.
+Também respeita seu princípio do repo diversos: o Markdown pode versionar no GitHub com diff limpo, algo impossível com .pdf binário.
+─────────────────────────────────────────────────
+
+CV Rebuild — Markdown (source of truth)
+Aplicando os 5 itens da revisão. Salve como cv/Icaro_Leao_CV.md no repo diversos.
+
+# Ícaro Leão
+**Consultor Sênior Risk & Compliance** · Compliance by Design · IBM OpenPages · Python
+São Paulo–SP · remoto/híbrido | [email] · [telefone]
+linkedin.com/in/oleaoicaro · github.com/oleaoicaro
+
+---
+
+## Resumo
+
+Consultor Sênior Risk & Compliance na EY há ~4 anos, atuando em ciclos de Compliance
+by Design para bancos, seguradoras, previdência e saúde suplementar. Implementei
+IBM OpenPages (Policy Management) em seguradora cliente e conduzi auditoria SUSEP
+Benchmarking em múltiplas seguradoras. Desenvolvi AIRNC — ferramenta proprietária
+de autoavaliação regulatória entregue em projeto plurianual de Transformação de
+Compliance. Stack técnica Python/FastAPI/PostgreSQL aplicada a automação de
+controles, ETL regulatório e dashboards de risco. Inglês B1.
+
+---
+
+## Experiência Profissional
+
+### EY Brasil — Consultor Sênior · Risk & Compliance
+*Mar/2022 – Presente · São Paulo–SP*
+
+- Liderei implementação do **IBM OpenPages (Policy Management)** em seguradora
+  cliente: cobertura de **[X] políticas**, **[X] controles** e ciclo completo
+  de NCs em **[X] meses**
+- Conduzi **Auditoria SUSEP Benchmarking em [X] seguradoras**, mapeando gaps
+  frente a Circular SUSEP 648/21 e Resolução CNSP 416/21
+- Desenvolvi e entreguei **AIRNC** (Autoavaliação de Identificação Regulatória
+  de Não Conformidade) — ferramenta client-side offline, parte de projeto
+  plurianual de Compliance by Design
+- Atuei em ciclos **Three Lines Model** com clientes regulados por SUSEP, ANS,
+  PREVIC, BACEN e CVM
+- Desenhei **[X] matrizes de risco regulatório** e planos de ação frente a
+  Lei 15.040/2024 e novas resoluções SUSEP
+- Conduzi **[X] treinamentos de compliance** e sessões de calibração com áreas
+  de 1ª e 2ª linha
+
+---
+
+## Projetos Técnicos
+
+### SUSEP Benchmarking Platform — Desenvolvedor Solo
+`Python` · `FastAPI` · `SQLAlchemy 2.0` · `PostgreSQL` · `Docker` · `Alembic` · `Pytest`
+
+SaaS em produção (Render) para benchmarking do mercado segurador BR usando dados
+públicos SUSEP. **10+ dashboards**, score de risco v3.0 com **10 pilares**, ETL
+automatizado, auth JWT + OAuth, **77 testes pytest**. **88+ commits · 35+ PRs**.
+Repositório privado — disponível sob NDA.
+
+### AIRNC — Autoavaliação Regulatória (entregável EY)
+`HTML` · `JavaScript (xlsx.js)` · `Windows Installer`
+
+Ferramenta client-side offline para autoavaliação de não conformidades regulatórias,
+desenvolvida como parte de projeto plurianual de Transformação de Compliance para
+cliente EY. Versão sanitizada pública em roadmap.
+
+### Antifraud System — Rules Engine & Dashboard (colaboração)
+`React` · `TypeScript` · `MUI` · `Radix UI`
+
+Colaboração em MVP de sistema antifraude: responsável por **regras de negócio**
+e **especificação do painel de monitoramento**. Scaffold inicial gerado via
+Figma Make.
+
+---
+
+## Formação Acadêmica
+
+**[Graduação]** — [Instituição] · conclusão [ano]
+*[MBA/Pós-graduação, se houver]*
+
+---
+
+## Certificações & Desenvolvimento Contínuo
+
+### Registros Profissionais
+- **CRC** — Conselho Regional de Contabilidade, [UF] [número]
+
+### Idiomas
+- **Inglês — B1** (EF SET 47/100)
+- **Português — Nativo**
+
+### Formação Complementar
+- EY Learning — [cursos relevantes de Risk/Compliance]
+- Coursera — [cursos relevantes]
+- *Em curso:* ISO 37301 Lead Implementer (PECB) — previsto 2026
+
+---
+
+## Stack Técnica
+
+**Compliance & GRC** · IBM OpenPages · Three Lines Model · Compliance by Design
+· TPRM · Policy Management · ISO 37301 (em estudo)
+
+**Regulamentações BR** · SUSEP · ANS · PREVIC · BACEN · CVM · Lei 15.040/2024
+
+**Desenvolvimento** · Python (avançado) · FastAPI · SQLAlchemy · PostgreSQL
+· Docker · Alembic · Pytest · Git/GitHub
+
+**Análise de Dados** · Pandas · SQL · Excel avançado · Power BI
+O que você precisa preencher (não posso inventar)
+★ Insight ─────────────────────────────────────
+Números honestos > bullets genéricos. Um recrutador bate o olho num bullet sem número e assume "não foi relevante". Um número específico (mesmo modesto) converte a percepção.
+─────────────────────────────────────────────────
+
+Me manda os valores reais destes pontos — são 5-8 números e 2 dados pessoais:
+
+#	Bullet	Dado que preciso
+1	OpenPages: políticas mapeadas	número (ex: 47)
+2	OpenPages: controles desenhados	número (ex: 180)
+3	OpenPages: duração do projeto	meses (ex: 8)
+4	SUSEP Benchmarking: seguradoras auditadas	número (ex: 12)
+5	Matrizes de risco desenhadas	número (ex: 6)
+6	Treinamentos conduzidos	número e público total (ex: 8 treinamentos / ~200 pessoas)
+7	Graduação	curso + instituição + ano conclusão
+8	E-mail e telefone	strings
+9	UF e nº do CRC	strings
+Se algum desses você não tem número exato, diz "não lembro" e eu substituo por um bullet qualitativo (sem número inventado).
+
+Template — 3 recomendações concretas
+Opção	Formato	Prós	Contras	Tempo para ter PDF
+A. Overleaf (LaTeX) — template Moderncv ou Jake's Resume	.tex → PDF	ATS-friendly, visual sério de banking/big4, controle tipográfico, versionável	curva LaTeX (mas você edita pouco)	30 min após eu gerar o .tex
+B. Canva/DOCX — template "Minimalista Executivo"	.docx → PDF	edição visual rápida, fácil para futuros ajustes	alguns templates Canva quebram ATS (ícones em imagem); precisa escolher com cuidado	15 min + seu ajuste
+C. Novoresume / Flowcv — online builder	PDF direto	zero-fricção, templates já otimizados para ATS	subscription p/ export premium, menos controle fino	20 min
+Minha recomendação para o ICP (Nubank, Avenue, Pismo, XP, Banco BV): Opção A (LaTeX/Overleaf). O perfil deles é tech-first e recrutador sênior de fintech reconhece o caprichar LaTeX como sinal positivo (não pedante). E resolve definitivamente o problema do encoding Windows-1252.
+
+Próximo passo
+Responde com:
+
+Os 9 dados da tabela acima (ou "não lembro" onde aplicável)
+Escolha do template: A / B / C
+Com isso eu aciono o subagent cv-pdf-editor para gerar a versão final.
+
+Treinamentos conduzidos 1 de power bi e outros varios para explicar as plataformas e mudancas que temos apos imimplantar sistemas e processos. email icaro.vl@outlook.com. telefone 17 9 81917954 crc sp 1SP336304 ou outros SUSEP Benchmarking é uma projeto independente, seguradoras auditadas é outra coisa ao longo da ey foram 13
+
+Entendi as correções — vou separar SUSEP Benchmarking da experiência EY (projeto independente), registrar 13 seguradoras auditadas na EY, e atualizar contato. Deixa eu ler sua memória para atualizar o perfil.
+
+
+Lembrado uma memória
+★ Insight ─────────────────────────────────────
+Sua correção é crítica: misturar SUSEP Benchmarking (seu SaaS solo) com auditorias SUSEP na EY (13 seguradoras) cria uma ambiguidade que recrutador sênior lê como "embelezamento". Separar projeto pessoal × atividade profissional fortalece credibilidade dos dois lados — você mostra audit work profundo E entrega de produto independente.
+─────────────────────────────────────────────────
+
+Vou atualizar memória e entregar o CV corrigido em paralelo.
+
+
+Lembrado uma memória, salvo 4 memórias
+Memória atualizada. Aqui está o CV corrigido com SUSEP Benchmarking separado da EY:
+
+CV rebuild — v2 (correções aplicadas)
+# Ícaro Leão
+**Consultor Sênior Risk & Compliance** · Compliance by Design · IBM OpenPages · Python
+São Paulo–SP · remoto/híbrido
+icaro.vl@outlook.com · (17) 9 8191-7954
+linkedin.com/in/oleaoicaro · github.com/oleaoicaro
+
+---
+
+## Resumo
+
+Consultor Sênior Risk & Compliance na EY há 4+ anos, atuando em ciclos de
+Compliance by Design para bancos, seguradoras, previdência e saúde suplementar.
+Implementei **IBM OpenPages (Policy Management)** em seguradora cliente e
+conduzi **auditorias regulatórias SUSEP em 13 seguradoras**. Desenvolvi
+**AIRNC** — ferramenta proprietária de autoavaliação regulatória entregue em
+projeto plurianual de Compliance by Design na EY. Fora do trabalho, mantenho
+o **SUSEP Benchmarking**, SaaS pessoal em produção para benchmarking do
+mercado segurador (Python/FastAPI/PostgreSQL). Inglês B1.
+
+---
+
+## Experiência Profissional
+
+### EY Brasil · Risk Advisory
+**Consultor Sênior Risk & Compliance** · Ago/2025 – Presente
+*Progressão interna (Mar/2022 → atual):* Trainee FSO · Business Consultant I
+· Risk Consultant I · Consultor Sênior
+São Paulo–SP
+
+- Liderei implementação do **IBM OpenPages (Policy Management)** em seguradora
+  cliente: **[X] políticas**, **[X] controles** e ciclo completo de NCs em
+  **[X] meses**
+- Conduzi **auditorias regulatórias SUSEP em 13 seguradoras**, mapeando gaps
+  frente a Circular SUSEP 648/21 e Resolução CNSP 416/21
+- Desenvolvi e entreguei **AIRNC** (Autoavaliação de Identificação Regulatória
+  de Não Conformidade) — ferramenta client-side offline, parte de projeto
+  plurianual de Transformação de Compliance
+- Atuei em ciclos **Three Lines Model** com clientes regulados por SUSEP,
+  ANS, PREVIC, BACEN e CVM
+- Desenhei **[X] matrizes de risco regulatório** e planos de ação frente a
+  Lei 15.040/2024 e novas resoluções SUSEP
+- Conduzi **treinamento técnico de Power BI** e **sessões de enablement**
+  para áreas impactadas por implantações de sistemas e mudanças de processo
+
+---
+
+## Projetos Técnicos (pessoais e colaborações)
+
+### SUSEP Benchmarking Platform — Projeto Pessoal (solo)
+`Python` · `FastAPI` · `SQLAlchemy 2.0` · `PostgreSQL` · `Docker` · `Alembic` · `Pytest`
+
+SaaS pessoal em produção (Render) para benchmarking do mercado segurador BR
+com dados públicos SUSEP. **10+ dashboards**, score de risco v3.0 com
+**10 pilares**, ETL automatizado, auth JWT + OAuth, **77 testes pytest**.
+**88+ commits · 35+ PRs**. Repositório privado — disponível sob NDA.
+*Projeto mantido fora do escopo profissional.*
+
+### Antifraud System — Rules Engine & Dashboard (colaboração)
+`React` · `TypeScript` · `MUI` · `Radix UI`
+
+Colaboração em MVP de sistema antifraude: responsável por **regras de negócio**
+e **especificação do painel de monitoramento**. Scaffold inicial gerado via
+Figma Make.
+
+---
+
+## Formação Acadêmica
+
+- **Descomplica** — Pós em Ciência de Dados com ênfase em IA · em curso · término
+  previsto Jan/2027
+- **UFPI** — Bacharelado em Ciências Contábeis · 2013–2019
+
+---
+
+## Certificações & Desenvolvimento Contínuo
+
+### Registros Profissionais
+- **CRC-SP** nº **1SP336304**
+
+### Idiomas
+- **Inglês** — B1 (EF SET 47/100)
+- **Português** — Nativo
+
+### Formação Complementar
+- EY Learning — [cursos relevantes de Risk/Compliance a listar]
+- Coursera — [cursos relevantes a listar]
+- *Em planejamento:* ISO 37301 Lead Implementer (PECB) · 2026
+
+---
+
+## Stack Técnica
+
+**Compliance & GRC** · IBM OpenPages · Three Lines Model · Compliance by Design
+· TPRM · Policy Management · ISO 37301 (em estudo)
+
+**Regulamentações BR** · SUSEP · ANS · PREVIC · BACEN · CVM · Lei 15.040/2024
+
+**Desenvolvimento** · Python (avançado) · FastAPI · SQLAlchemy · PostgreSQL
+· Docker · Alembic · Pytest · Git/GitHub
+
+**Análise de Dados** · Pandas · SQL · Excel avançado · Power BI
+2 dados ainda faltam (só esses)
+#	Bullet	Preciso
+1	OpenPages	# políticas / # controles / duração em meses
+2	Matrizes de risco	número aproximado desenhadas no período EY
+Se você não tem números exatos para o OpenPages (ex: não lembra ou não pode divulgar por NDA), eu reescrevo qualitativamente — algo como "Liderei implementação do IBM OpenPages (Policy Management) em seguradora cliente, cobrindo módulos de Policy Management, ciclo de NCs e integração com 2ª linha".
+
+Template — ainda falta escolher
+A = Overleaf/LaTeX (recomendado para ICP tech-first) · B = Canva/DOCX · C = Novoresume online
+
+Me manda: os 2 números (ou "qualitativo") + letra A/B/C.
+
+matrix de risco foi so uma open pages durou 1 e meio e eu desenhei a especificacao core, porque depois tiveram outras de funcionalidades complementar e depois que tive que fazer o manual do sistema para os analistas e para os pontos focais e depois ajustar a manual de procedimentos interno e norma interna
+
+★ Insight ─────────────────────────────────────
+O que você descreveu sobre o OpenPages é mais valioso do que números: você entregou especificação core → funcionalidades complementares → manual de sistema → manual de procedimentos → norma interna. Isso é o ciclo técnico → operacional → normativo fechado — recrutador sênior de Compliance lê isso e vê alguém que pensou em adoção e governança pós-implantação, não só deploy. Vou enquadrar assim no CV.
+Também: "1 matriz" é mais honesto e mais forte que "várias matrizes" inventadas. Profundidade > volume para Compliance.
+─────────────────────────────────────────────────
+
+Atualizando memória e entregando V3.
+
+
+Salvo uma memória
+CV rebuild — v3 (final de conteúdo)
+# Ícaro Leão
+**Consultor Sênior Risk & Compliance** · Compliance by Design · IBM OpenPages · Python
+São Paulo–SP · remoto/híbrido
+icaro.vl@outlook.com · (17) 9 8191-7954
+linkedin.com/in/oleaoicaro · github.com/oleaoicaro
+
+---
+
+## Resumo
+
+Consultor Sênior Risk & Compliance na EY há 4+ anos, atuando em ciclos de
+Compliance by Design para bancos, seguradoras, previdência e saúde suplementar.
+Liderei implementação de **IBM OpenPages (Policy Management)** em seguradora
+cliente ao longo de 1,5 anos, fechando o ciclo técnico → operacional → normativo.
+Conduzi **auditorias regulatórias SUSEP em 13 seguradoras** e desenvolvi
+**AIRNC**, ferramenta proprietária de autoavaliação regulatória entregue em
+projeto plurianual de Transformação de Compliance na EY. Fora do trabalho,
+mantenho o **SUSEP Benchmarking**, SaaS pessoal em produção para benchmarking
+do mercado segurador (Python/FastAPI/PostgreSQL). Inglês B1.
+
+---
+
+## Experiência Profissional
+
+### EY Brasil · Risk Advisory
+**Consultor Sênior Risk & Compliance** · Ago/2025 – Presente
+*Progressão interna (Mar/2022 → atual):* Trainee FSO · Business Consultant I
+· Risk Consultant I · Consultor Sênior
+São Paulo–SP
+
+- Liderei implementação do **IBM OpenPages (Policy Management)** em seguradora
+  cliente ao longo de **1,5 anos**, desenhando a **especificação core da
+  matriz de risco** e conduzindo iterações de funcionalidades complementares
+- Elaborei **manual do sistema** para analistas e pontos focais, e atualizei
+  **manual de procedimentos interno** e **norma interna** — fechando o ciclo
+  técnico → operacional → normativo
+- Conduzi **auditorias regulatórias SUSEP em 13 seguradoras**, mapeando gaps
+  frente a Circular SUSEP 648/21, Resolução CNSP 416/21 e impactos da
+  **Lei 15.040/2024**
+- Desenvolvi e entreguei **AIRNC** (Autoavaliação de Identificação Regulatória
+  de Não Conformidade) — ferramenta client-side offline, parte de projeto
+  plurianual de Transformação de Compliance
+- Atuei em ciclos **Three Lines Model** com clientes regulados por SUSEP,
+  ANS, PREVIC, BACEN e CVM
+- Conduzi **treinamento técnico de Power BI** e **sessões de enablement**
+  para áreas impactadas por implantações de sistemas e mudanças de processo
+
+---
+
+## Projetos Técnicos (pessoais e colaborações)
+
+### SUSEP Benchmarking Platform — Projeto Pessoal (solo)
+`Python` · `FastAPI` · `SQLAlchemy 2.0` · `PostgreSQL` · `Docker` · `Alembic` · `Pytest`
+
+SaaS pessoal em produção (Render) para benchmarking do mercado segurador BR
+com dados públicos SUSEP. **10+ dashboards**, score de risco v3.0 com
+**10 pilares**, ETL automatizado, auth JWT + OAuth, **77 testes pytest**.
+**88+ commits · 35+ PRs**. Repositório privado — disponível sob NDA.
+*Projeto mantido fora do escopo profissional EY.*
+
+### Antifraud System — Rules Engine & Dashboard (colaboração)
+`React` · `TypeScript` · `MUI` · `Radix UI`
+
+Colaboração em MVP de sistema antifraude: responsável por **regras de negócio**
+e **especificação do painel de monitoramento**. Scaffold inicial gerado via
+Figma Make.
+
+---
+
+## Formação Acadêmica
+
+- **Descomplica** — Pós em Ciência de Dados com ênfase em IA · em curso ·
+  término previsto Jan/2027
+- **UFPI** — Bacharelado em Ciências Contábeis · 2013–2019
+
+---
+
+## Certificações & Desenvolvimento Contínuo
+
+### Registros Profissionais
+- **CRC-SP** nº **1SP336304**
+
+### Idiomas
+- **Inglês** — B1 (EF SET 47/100)
+- **Português** — Nativo
+
+### Formação Complementar
+- EY Learning — [cursos relevantes de Risk/Compliance a listar]
+- Coursera — [cursos relevantes a listar]
+- *Em planejamento:* ISO 37301 Lead Implementer (PECB) · 2026
+
+---
+
+## Stack Técnica
+
+**Compliance & GRC** · IBM OpenPages · Three Lines Model · Compliance by Design
+· TPRM · Policy Management · ISO 37301 (em estudo)
+
+**Regulamentações BR** · SUSEP · ANS · PREVIC · BACEN · CVM · Lei 15.040/2024
+
+**Desenvolvimento** · Python (avançado) · FastAPI · SQLAlchemy · PostgreSQL
+· Docker · Alembic · Pytest · Git/GitHub
+
+**Análise de Dados** · Pandas · SQL · Excel avançado · Power BI
+Conteúdo fechado. Falta 1 decisão.
+Template — escolhe A, B ou C?
+
+Stack	Tempo até PDF	Melhor para
+A	Overleaf / LaTeX Moderncv	~30 min	ICP tech-first (Nubank, Pismo, XP) — recomendado
+B	Canva/DOCX minimalista	~15 min	Edição visual fácil, Glassdoor/Seguros
+C	Novoresume online	~20 min	Zero-fricção, mas menos controle fino
+Só responde A / B / C e eu aciono o cv-pdf-editor para gerar a versão final.
+
+Observação menor: os 2 campos [cursos relevantes a listar] em Formação Complementar — se você tem 2-3 títulos de EY Learning e Coursera alinhados a Risk/Compliance (ex: "AI Ethics", "Third-Party Risk", "Python for Data Science"), me manda junto com a letra do template. Se não tiver nada alinhado, eu removo a seção inteira (melhor ausente que genérica).
+
+@C:\Users\icaro\OneDrive\report.csv os cursos que tenho sao esse, usa o template A
+
+Lendo o CSV para pegar a lista de cursos.
+
+Ler
+report.csv
+CSV grande (46k tokens). Lendo em chunks para entender a estrutura.
+
+Ler
+report.csv
+46k tokens é muito pra ler inteiro. Vou filtrar por palavras-chave relevantes a Risk/Compliance/Data.
+
+Pesquisado
+(?i)(compliance|risk|risco|fraud|fraude|lavagem|anticorrup|anti.corrup|privacidade|privacy|cybersec|cyber.sec|lgpd|gdpr|governance|governan|ethics|etic|aml|kyc|openpages|grc|audit|auditor|iso.?37|iso.?27|iso.?31|sox|sarbane|basel|basileia|bacen|susep|cvm|regulat|data.?visualiz|power.?bi|python|sql|gen.?ai|ai.?governance|responsible.?ai|copilot|fabric|tableau|alteryx|process.?mining|analytics|data.?science|machine.?learning|ml)
+★ Insight ─────────────────────────────────────
+Encontrei no CSV um dado forte que não estava explícito: você foi instrutor formal da turma interna de Power BI (EY Calculo 2025) — status "Instructed Virtual Other", não "Learner". Isso é credencial de nível sênior (EY só escala alguém pra ensinar quando tem profundidade reconhecida). Vou elevar isso no bullet Power BI.
+Também curei ~20 cursos relevantes do seu histórico e agrupei em 6 categorias temáticas (não vou listar os 200+ eventuais — recrutador só lê se for legível em 3 segundos).
+─────────────────────────────────────────────────
+
+Gerando o .tex + atualizando memória + marcando todo.
+
+Criado
+Icaro_Leao_CV.tex
++172
+-0
+Erro de API
+You've hit your limit · resets 11pm (America/Sao_Paulo)
+
+Turno falhou
+Tente enviar novamente
 

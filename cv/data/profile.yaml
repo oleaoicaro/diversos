@@ -74,6 +74,23 @@ pt:
     - "Transformational Governance — Driving Responsible Business Conduct"
     - "ISO 37301 Lead Implementer (PECB) — em andamento"
 
+  ey_learning:
+    title: "Formação Complementar — EY Learning"
+    subtitle: "2022–2026 · 100+ horas certificadas"
+    groups:
+      - group: "AML & Financial Crime"
+        items: "Annual Financial Crime Update FY24 / 2024.1 · AML/KYC · Lei Anticorrupção · Lavagem de Dinheiro · Interação com Agentes Públicos e Licitações"
+      - group: "Data Protection & InfoSec"
+        items: "Annual Data Protection Update FY24 / 2025 · LGPD · GDPR · Cybersecurity – Data Protection and Privacy · Handling Information Safely · Security Risks: Key Risk Terms & Concepts"
+      - group: "Governança de IA"
+        items: "Responsible Use of M365 Copilot · AI Now 2.0 (GenAI Módulos 1–2) · AI for Consulting · IA e Validação de Modelos na Gestão de Riscos"
+      - group: "Ética & Independência"
+        items: "Independence Update 2023 / 2024 / 2025 · Global Code of Conduct · Annual Code of Conduct Update 2024 · Conflicts of Interest"
+      - group: "Setoriais (Banking · Insurance · Payments)"
+        items: "Módulo RSAC – Banking · ESG de Riscos (BrasilSeg) – Insurance · Payments – Visão Geral · Fundamentos da Gestão Bancária · P&C (Process & Control) · EY Core Consulting FSO · Encontro Anual Risk Consulting 2025 · New Senior Brasil"
+      - group: "Técnico & Dados"
+        items: "Alteryx · Excel Avançado (Introdução + Aproveitando o máximo) · Creating Data Visualizations · RPA Overview · Analysis of Microsoft data and tools"
+
   experience:
     - company: "Ernst & Young (EY)"
       roles:
@@ -220,6 +237,23 @@ en:
     - "Microsoft Power Automate — Business Process Flows"
     - "Transformational Governance — Driving Responsible Business Conduct"
     - "ISO 37301 Lead Implementer (PECB) — in progress"
+
+  ey_learning:
+    title: "Continuing Education — EY Learning"
+    subtitle: "2022–2026 · 100+ certified hours"
+    groups:
+      - group: "AML & Financial Crime"
+        items: "Annual Financial Crime Update FY24 / 2024.1 · AML/KYC · Brazilian Anticorruption Law · Money Laundering Prevention · Interaction with Public Officials and Procurement"
+      - group: "Data Protection & InfoSec"
+        items: "Annual Data Protection Update FY24 / 2025 · LGPD · GDPR · Cybersecurity – Data Protection and Privacy · Handling Information Safely · Security Risks: Key Risk Terms & Concepts"
+      - group: "AI Governance"
+        items: "Responsible Use of M365 Copilot · AI Now 2.0 (GenAI Modules 1–2) · AI for Consulting · AI and Model Validation in Risk Management"
+      - group: "Ethics & Independence"
+        items: "Independence Update 2023 / 2024 / 2025 · Global Code of Conduct · Annual Code of Conduct Update 2024 · Conflicts of Interest"
+      - group: "Industry (Banking · Insurance · Payments)"
+        items: "RSAC Module – Banking · ESG Risks (BrasilSeg) – Insurance · Payments Overview · Banking Management Fundamentals · P&C (Process & Control) · EY Core Consulting FSO · Annual Risk Consulting Summit 2025 · New Senior Brazil"
+      - group: "Technical & Data"
+        items: "Alteryx · Advanced Excel (Intro + Getting the Most out of Excel) · Creating Data Visualizations · RPA Overview · Analysis of Microsoft data and tools"
 
   experience:
     - company: "Ernst & Young (EY)"

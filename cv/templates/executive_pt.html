@@ -76,6 +76,17 @@
     </div>
 
     <div class="sidebar-block">
+      <h3>{{ cv.ey_learning.title }}</h3>
+      <p class="edu-period" style="margin-bottom:6px;">{{ cv.ey_learning.subtitle }}</p>
+      {% for g in cv.ey_learning.groups %}
+      <div class="competency-group">
+        <span class="group-name">{{ g.group }}</span>
+        <span class="group-items">{{ g['items'] }}</span>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="sidebar-block">
       <h3>Formação</h3>
       {% for edu in cv.education %}
       <div class="edu-item">

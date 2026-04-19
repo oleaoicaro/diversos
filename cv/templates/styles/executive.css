@@ -20,6 +20,49 @@
   }
 }
 
+/* ── Footer with QR Code ────────────────────────────────── */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5mm;
+  padding: 5mm 0 2mm 0;
+  margin-top: 8mm;
+  font-size: 7.5pt;
+  color: var(--graphite);
+  border-top: 0.5px solid var(--rule);
+}
+
+.footer-qr {
+  width: 15mm;
+  height: 15mm;
+  border: 0.5px solid var(--rule);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.footer-qr img {
+  width: 14mm;
+  height: 14mm;
+  display: block;
+}
+
+.footer-text {
+  font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+  font-size: 7pt;
+  color: var(--graphite);
+  letter-spacing: 0.04em;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.footer-text .linkedin-link {
+  color: var(--accent);
+  font-weight: 500;
+}
+
 /* ── Reset & Base ───────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -113,7 +156,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .sidebar-block {
-  margin-bottom: 6mm;
+  margin-bottom: 5mm;
 }
 
 .sidebar-block h3 {
@@ -129,7 +172,7 @@ a { color: inherit; text-decoration: none; }
 
 .sidebar-block p,
 .sidebar-block li {
-  font-size: 8.8pt;
+  font-size: 8.6pt;
   line-height: 1.45;
   color: var(--ink);
 }
@@ -158,14 +201,14 @@ a { color: inherit; text-decoration: none; }
 }
 
 .contact-value {
-  font-size: 8.8pt;
+  font-size: 8.6pt;
   color: var(--ink);
   word-break: break-all;
 }
 
 /* Competencies */
 .competency-group {
-  margin-bottom: 3mm;
+  margin-bottom: 2.5mm;
 }
 
 .group-name {
@@ -178,7 +221,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .group-items {
-  font-size: 8.5pt;
+  font-size: 8.6pt;
   color: var(--ink);
   line-height: 1.5;
 }
@@ -187,7 +230,7 @@ a { color: inherit; text-decoration: none; }
 .lang-item {
   display: flex;
   justify-content: space-between;
-  font-size: 8.8pt;
+  font-size: 8.6pt;
   padding: 0.5mm 0;
 }
 
@@ -400,9 +443,9 @@ h2.section:first-child {
 
 .earlier-list li:last-child { border-bottom: none; }
 
-/* ── Education (sidebar) ─────────────────────────────────── */
+/* Education (sidebar) */
 .edu-item {
-  margin-bottom: 3mm;
+  margin-bottom: 2.5mm;
 }
 
 .edu-degree {

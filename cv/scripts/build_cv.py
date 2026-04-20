@@ -117,3 +117,12 @@ if __name__ == "__main__":
     log_fonts()
     for lg in ("pt", "en"):
         build(lg)
+    print("\n✅ Build complete — files generated:")
+    for lg in ("pt", "en"):
+        html_path = OUTPUT / f"Icaro_Leao_CV_{lg.upper()}.html"
+        pdf_path = OUTPUT / f"Icaro_Leao_CV_{lg.upper()}.pdf"
+        html_size = html_path.stat().st_size if html_path.exists() else 0
+        pdf_size = pdf_path.stat().st_size if pdf_path.exists() else 0
+        status_html = "✓" if html_size > 0 else "✗ MISSING"
+        status_pdf = "✓" if pdf_size > 0 else "✗ MISSING"
+        print(f"  [{lg.upper()}] HTML {status_html} ({html_size // 1024} KB)  |  PDF {status_pdf} ({pdf_size // 1024} KB)")

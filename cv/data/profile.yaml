@@ -1,6 +1,6 @@
 pt:
   identity:
-    name: "ÍCARO LEÃO"
+    name: "ÍCARO VIEIRA LEÃO"
     monogram: "IL"
     location: "São Paulo, SP"
     phone: "+55 (17) 98191-7954"
@@ -8,22 +8,19 @@ pt:
     linkedin: "linkedin.com/in/oleaoicaro"
     github: "github.com/oleaoicaro"
 
-  headline: "Líder GRC | 15+ anos (Auditoria Gov + Big4 + Full-Stack) | IBM OpenPages · AI Governance · TPRM | Treinamentos Internacionais Microsoft | Python/FastAPI · SUSEP/ANS/BACEN"
+  headline: "Líder GRC | 15+ anos (Auditoria Gov + Big4 + Full-Stack) | IBM OpenPages · AI Governance · TPRM | Treinamentos Internacionais Microsoft | Python/FastAPI · SUSEP/ANS/BACEN · CRC 1SP336304"
 
   executive_summary: >
-    Líder de GRC com 15+ anos de experiência consolidada: auditoria governamental
-    (TCE-PI 2017-2019), compliance fiscal e contábil (CRC ativo desde 2019),
-    consultoria Big4 (EY 2022-presente, 4+ anos) e desenvolvimento full-stack
-    (FastAPI/PostgreSQL/Docker). Track record na EY: 13 auditorias regulatórias
-    SUSEP, implementação IBM OpenPages 1.5 anos (85 riscos, 120 políticas, 350 usuários),
-    automação Python ROI 99% (16h→8min), AIRNC adotada por 13 seguradoras.
-
-    Diferencial global: Ministro treinamentos internacionais em inglês para times
-    Microsoft (multi-fuso) e resolvo chamados técnicos com equipes EY/Microsoft USA.
-    Capacitei 200+ profissionais EY América do Sul em Power BI com aplicação em 15+
-    projetos ativos. Perfil híbrido: visão regulatória (SUSEP/ANS/PREVIC/BACEN) +
-    execução técnica avançada + governança de IA. Mentor formal de 2 consultores
-    (ambos promovidos em 12 meses vs média 18).
+    Profissional com 15+ anos de experiência consolidada, incluindo auditoria
+    governamental, conformidade fiscal e contábil, consultoria Big4 e desenvolvimento
+    full-stack (FastAPI/PostgreSQL/Docker). Atuação em auditorias regulatórias,
+    implementação ERP e GRC para seguradoras, automação em Python e HTML adotada por
+    diversas seguradoras, operadoras de planos de saúde e previdência fechada.
+    Diferencial global: Participação de treinamentos internacionais em inglês com times
+    da Microsoft (multi-fuso) e resolução de chamados técnicos com equipes
+    EY/Microsoft USA. Capacitei 200+ profissionais EY América do Sul em Power BI.
+    Perfil híbrido: visão regulatória (SUSEP/ANS/PREVIC/BACEN) + execução técnica
+    avançada em TI + governança de IA. Mentor formal de 2 consultores.
 
   competencies:
     - group: "GRC & Plataformas"
@@ -54,10 +51,10 @@ pt:
     - name: "Português"
       level: "Nativo"
     - name: "Inglês"
-      level: "Business Working Proficiency — Conduzo treinamentos internacionais com times Microsoft (multi-fuso) e resolvo chamados técnicos com equipes EY/Microsoft USA. Capacitei 200+ profissionais EY América do Sul. (EF SET B1 - certificado formal em evolução)"
+      level: "Business Working Proficiency — Participo de treinamentos internacionais com times Microsoft (multi-fuso) e resolvo chamados técnicos com equipes EY/Microsoft USA."
 
   certifications:
-    - "Registro no CRC"
+    - "Registro no CRC 1SP336304"
     - "EY Finance Learning (2022)"
     - "Microsoft Power Automate | Business Process Flows"
     - "Transformational Governance | Driving Responsible Business Conduct"
@@ -88,17 +85,16 @@ pt:
           period: "ago/2025 – presente"
           client: "Seguradora de Ramos Elementares | Programa Plurianual de Transformação de Compliance"
           bullets:
-            - "Dirigiu programa plurianual de transformação de Compliance em seguradora de ramos elementares, liderando equipe multifuncional de consultores e coordenando com stakeholders C-Level"
-            - "Estruturou framework de GRC end-to-end via <strong>IBM OpenPages</strong>: <strong>85 riscos</strong> corporativos mapeados em 4 pilares, <strong>120 políticas</strong> e <strong>200 procedimentos</strong> implementados, <strong>350+ usuários</strong> capacitados"
-            - "Reduziu ciclo de revisão de políticas em <strong>60% (45→18 dias)</strong>, acelerando time-to-market de novos produtos e melhorando agilidade regulatória"
+            - "Dirigiu programa plurianual de transformação de Compliance em seguradora de ramos elementares, liderando equipe multifuncional de consultores e analistas, coordenando com stakeholders C-Level"
+            - "Estruturou framework de GRC end-to-end via <strong>IBM OpenPages</strong>: <strong>+200 normas</strong> mapeadas em 5 pilares, <strong>2 normas internas</strong> e <strong>3 manuais de procedimentos</strong> implementados, <strong>350+ usuários</strong> capacitados"
+            - "Reduziu ciclo de avaliação de normas em <strong>60% (45→18 dias)</strong>, acelerando time-to-market de novos produtos e melhorando agilidade regulatória"
             - "Eliminou <strong>99% do esforço manual</strong> na geração de reportes de risco (<strong>16h→8min</strong>), liberando equipe executiva para análise estratégica e tomada de decisão"
-            - "Preparou organização para auditorias regulatórias SUSEP sem achados críticos, mitigando exposição a multas e sanções regulatórias"
-            - "Estruturou inteligência de risco corporativo com <strong>7 dashboards executivos</strong> (<strong>45 KRIs, 30 KPIs</strong>), reduzindo tempo de preparação para reuniões de Comitê em <strong>95% (6h→20min)</strong>"
-            - "Concebeu e entregou solução standalone de <strong>autoavaliação regulatória (AIRNC)</strong> para SUSEP, ANS e PREVIC, adotada como referência em auditorias de <strong>13 seguradoras</strong>"
-            - "Estruturou programa <strong>TPRM (Third-Party Risk Management)</strong> com monitoramento contínuo de fornecedores críticos, alinhado a melhores práticas internacionais"
+            - "Apoio no atendimento das auditorias internas sobre temas regulatórios da <strong>SUSEP</strong>, mitigando exposição a multas e sanções regulatórias"
+            - "Estruturou inteligência de compliance corporativo com <strong>4 dashboards executivos</strong> (<strong>22 KRIs</strong>), objetivando reduzir tempo de preparação para reuniões de Comitê em <strong>95% (6h→20min)</strong>"
+            - "Concebeu e entregou solução standalone de <strong>autoavaliação regulatória</strong> para SUSEP, ANS, PREVIC e outros, adotada como referência para <strong>13 seguradoras</strong>"
+            - "Estruturou programa <strong>TPRM (Third-Party Risk Management)</strong> com monitoramento contínuo de fornecedores críticos e relevantes, alinhado a melhores práticas"
             - "Desenhou workflows de <strong>Compliance by Design</strong> e estruturou governança de dados inter-áreas"
             - "Liderou alinhamento organizacional a <strong>ISO 37301</strong> e <strong>Three Lines Model</strong>, fortalecendo cultura de conformidade"
-            - "Atuou como <strong>conselheiro formal de 2 consultores júniores</strong> da EY, desenvolvendo capacidades técnicas e comportamentais"
         - title: "Risk Consultant"
           period: "out/2023 – jul/2025"
           client: "Operadora de Plano Odontológico (ANS) | Auditoria Interna"
@@ -112,9 +108,9 @@ pt:
           period: "fev/2022 – set/2023"
           client: "Seguradora Tradicional | Programa de Revitalização (8 meses)"
           bullets:
-            - "Atuou no <strong>PMO estratégico</strong> de programa de revitalização: orquestrou portfólio de iniciativas, estabeleceu governança executiva, gerenciou marcos e dependências"
+            - "Atuou como <strong>PO estratégico</strong> de programa de revitalização: orquestrou portfólio de iniciativas, estabeleceu governança executiva, gerenciou marcos e dependências"
             - "Redesenhou jornadas do cliente e ciclo de vida de produtos, integrando sistemas de cotação, venda e ERP"
-            - "Contribuiu para ajuste estratégico de portfólio (mix de produtos, proposta de valor, precificação, canais de distribuição)"
+            - "Contribuiu para ajuste estratégico de portfólio (mix de produtos, proposta de valor, precificação, canais)"
             - "Estruturou roadmap em ondas com quick wins e habilitadores de longo prazo para transformação sustentável"
 
   projects:
@@ -137,7 +133,7 @@ pt:
         - "Revisão UX sob ótica de compliance"
       stack: "React, TypeScript, MUI"
       metrics: ""
-    - name: "AIRNC — Autoavaliação Regulatória de Não Conformidade"
+    - name: "Avaliação Regulatória de Eventos de Não Conformidade"
       status: "Entregue (EY)"
       description: ""
       highlights:
@@ -149,9 +145,16 @@ pt:
       status: "Entregue (EY)"
       description: ""
       highlights:
-        - "<strong>85+ riscos</strong> mapeados | integração de 4 fontes de dados"
+        - "<strong>200+ normas</strong> mapeadas | integração de 3 fontes de dados"
         - "Geração trimestral: <strong>16h → 8 min (−99%)</strong>"
       stack: "Python, IBM OpenPages, Power BI"
+      metrics: ""
+    - name: "Mentoria Formal"
+      status: "EY"
+      description: ""
+      highlights:
+        - "Atuou como <strong>conselheiro formal de 2 consultores júniores</strong> da EY, desenvolvendo capacidades técnicas e comportamentais"
+      stack: ""
       metrics: ""
     - name: "Programa de Capacitação — Power BI para Risk Consulting"
       status: "Projeto Interno EY"
@@ -159,8 +162,7 @@ pt:
       highlights:
         - "Desenvolveu e ministrou programa de capacitação em Power BI para <strong>200+ profissionais</strong> da EY América do Sul"
         - "Conteúdo autoral: DAX, modelagem dimensional, RLS (Row-Level Security)"
-        - "<strong>12h de treinamento hands-on</strong> com aplicação direta em projetos de clientes"
-        - "Impacto mensurável: profissionais treinados aplicaram conhecimentos em 15+ projetos ativos"
+        - "<strong>12h de treinamento hands-on</strong> com aplicação direta"
         - "Reconhecimento interno por excelência em desenvolvimento de talentos"
       stack: "Power BI, DAX, RLS"
       metrics: ""
@@ -175,7 +177,7 @@ pt:
 
 en:
   identity:
-    name: "ÍCARO LEÃO"
+    name: "ÍCARO VIEIRA LEÃO"
     monogram: "IL"
     location: "São Paulo, SP"
     phone: "+55 (17) 98191-7954"
@@ -183,22 +185,19 @@ en:
     linkedin: "linkedin.com/in/oleaoicaro"
     github: "github.com/oleaoicaro"
 
-  headline: "GRC Leader | 15+ yrs (Gov Audit + Big4 + Full-Stack) | IBM OpenPages · AI Governance · TPRM | International Microsoft Training | Python/FastAPI · SUSEP/ANS/BACEN"
+  headline: "GRC Leader | 15+ yrs (Gov Audit + Big4 + Full-Stack) | IBM OpenPages · AI Governance · TPRM | International Microsoft Training | Python/FastAPI · SUSEP/ANS/BACEN · CRC 1SP336304"
 
   executive_summary: >
-    GRC leader with 15+ years consolidated experience: government audit (TCE-PI
-    2017-2019), fiscal and accounting compliance (active CRC since 2019), Big4
-    consulting (EY 2022-present, 4+ years), and full-stack development (FastAPI/
-    PostgreSQL/Docker). EY track record: 13 SUSEP regulatory audits, IBM OpenPages
-    implementation 1.5 years (85 risks, 120 policies, 350 users), Python automation
-    99% ROI (16h→8min), AIRNC adopted by 13 insurance companies.
-
-    Global differentiator: Deliver international training in English to Microsoft
-    teams (multi-timezone) and resolve technical tickets with EY/Microsoft USA teams.
-    Trained 200+ EY South America professionals in Power BI with application across
-    15+ active projects. Hybrid profile: regulatory vision (SUSEP/ANS/PREVIC/BACEN) +
-    advanced technical execution + AI governance. Formal mentor to 2 consultants
-    (both promoted in 12 months vs 18-month average).
+    Professional with 15+ years of consolidated experience, including government audit,
+    fiscal and accounting compliance, Big4 consulting, and full-stack development
+    (FastAPI/PostgreSQL/Docker). Track record in regulatory audits, ERP and GRC
+    implementation for insurance companies, Python and HTML automation adopted by
+    multiple insurers, health plan operators, and closed pension funds. Global
+    differentiator: Participation in international training in English with Microsoft
+    teams (multi-timezone) and resolution of technical tickets with EY/Microsoft USA
+    teams. Trained 200+ EY South America professionals in Power BI. Hybrid profile:
+    regulatory vision (SUSEP/ANS/PREVIC/BACEN) + advanced technical execution in IT +
+    AI governance. Formal mentor to 2 consultants.
 
   competencies:
     - group: "GRC & Platforms"
@@ -229,10 +228,10 @@ en:
     - name: "Portuguese"
       level: "Native"
     - name: "English"
-      level: "Business Working Proficiency — Deliver international training to Microsoft teams (multi-timezone) and resolve technical tickets with EY/Microsoft USA teams. Trained 200+ EY South America professionals. (EF SET B1 - formal certificate in progress)"
+      level: "Business Working Proficiency — Participate in international training with Microsoft teams (multi-timezone) and resolve technical tickets with EY/Microsoft USA teams."
 
   certifications:
-    - "CRC Accountant Registration"
+    - "CRC Accountant Registration 1SP336304"
     - "EY Finance Learning (2022)"
     - "Microsoft Power Automate | Business Process Flows"
     - "Transformational Governance | Driving Responsible Business Conduct"
@@ -263,17 +262,16 @@ en:
           period: "Aug/2025 – Present"
           client: "Property & Casualty Insurance Company | Multi-Year Compliance Transformation Programme"
           bullets:
-            - "Led multi-year Compliance transformation programme at property & casualty insurer, managing cross-functional consulting team and coordinating with C-Level stakeholders"
-            - "Structured end-to-end GRC framework via <strong>IBM OpenPages</strong>: <strong>85 corporate risks</strong> mapped across 4 pillars, <strong>120 policies</strong> and <strong>200 procedures</strong> implemented, <strong>350+ users</strong> trained"
-            - "Reduced policy review cycle by <strong>60% (45→18 days)</strong>, accelerating time-to-market for new products and improving regulatory agility"
+            - "Led multi-year Compliance transformation programme at property & casualty insurer, managing cross-functional team of consultants and analysts, coordinating with C-Level stakeholders"
+            - "Structured end-to-end GRC framework via <strong>IBM OpenPages</strong>: <strong>200+ regulations</strong> mapped across 5 pillars, <strong>2 internal norms</strong> and <strong>3 procedure manuals</strong> implemented, <strong>350+ users</strong> trained"
+            - "Reduced regulatory norm assessment cycle by <strong>60% (45→18 days)</strong>, accelerating time-to-market for new products and improving regulatory agility"
             - "Eliminated <strong>99% of manual effort</strong> in risk reporting generation (<strong>16h→8min</strong>), freeing executive team for strategic analysis and decision-making"
-            - "Prepared organisation for SUSEP regulatory audits with zero critical findings, mitigating exposure to fines and regulatory sanctions"
-            - "Structured corporate risk intelligence with <strong>7 executive dashboards</strong> (<strong>45 KRIs, 30 KPIs</strong>), reducing Committee meeting preparation time by <strong>95% (6h→20min)</strong>"
-            - "Conceived and delivered standalone <strong>regulatory self-assessment solution (AIRNC)</strong> for SUSEP, ANS and PREVIC, adopted as reference in audits of <strong>13 insurance companies</strong>"
-            - "Structured <strong>TPRM (Third-Party Risk Management)</strong> programme with continuous monitoring of critical suppliers, aligned to international best practices"
+            - "Supported internal audits on <strong>SUSEP</strong> regulatory topics, mitigating exposure to fines and regulatory sanctions"
+            - "Structured corporate compliance intelligence with <strong>4 executive dashboards</strong> (<strong>22 KRIs</strong>), targeting a <strong>95% reduction (6h→20min)</strong> in Committee meeting preparation time"
+            - "Conceived and delivered standalone <strong>regulatory self-assessment solution</strong> for SUSEP, ANS, PREVIC and others, adopted as reference by <strong>13 insurance companies</strong>"
+            - "Structured <strong>TPRM (Third-Party Risk Management)</strong> programme with continuous monitoring of critical and relevant suppliers, aligned to best practices"
             - "Designed <strong>Compliance by Design</strong> workflows and structured cross-functional data governance"
             - "Led organisational alignment to <strong>ISO 37301</strong> and <strong>Three Lines Model</strong>, strengthening compliance culture"
-            - "Served as <strong>formal counsellor to 2 junior EY consultants</strong>, developing technical and behavioural capabilities"
         - title: "Risk Consultant"
           period: "Oct/2023 – Jul/2025"
           client: "Dental Health Plan Operator (ANS) | Internal Audit"
@@ -287,9 +285,9 @@ en:
           period: "Feb/2022 – Sep/2023"
           client: "Traditional Insurance Company | Revitalisation Programme (8 mos)"
           bullets:
-            - "Served in <strong>Strategic PMO</strong> for revitalisation programme: orchestrated portfolio of initiatives, established executive governance, managed milestones and dependencies"
+            - "Served in <strong>Strategic PMO</strong> role for revitalisation programme: orchestrated portfolio of initiatives, established executive governance, managed milestones and dependencies"
             - "Redesigned customer journeys and product lifecycle, integrating quoting, sales and ERP systems"
-            - "Contributed to strategic portfolio adjustment (product mix, value proposition, pricing, distribution channels)"
+            - "Contributed to strategic portfolio adjustment (product mix, value proposition, pricing, channels)"
             - "Structured wave-based roadmap with quick wins and long-term enablers for sustainable transformation"
 
   projects:
@@ -312,7 +310,7 @@ en:
         - "UX review from a compliance perspective"
       stack: "React, TypeScript, MUI"
       metrics: ""
-    - name: "AIRNC — Regulatory Non-Compliance Self-Assessment"
+    - name: "Regulatory Non-Compliance Self-Assessment"
       status: "Delivered (EY)"
       description: ""
       highlights:
@@ -324,9 +322,16 @@ en:
       status: "Delivered (EY)"
       description: ""
       highlights:
-        - "<strong>85+ risks</strong> mapped | integration of 4 data sources"
+        - "<strong>200+ regulations</strong> mapped | integration of 3 data sources"
         - "Quarterly generation: <strong>16h → 8 min (−99%)</strong>"
       stack: "Python, IBM OpenPages, Power BI"
+      metrics: ""
+    - name: "Formal Mentoring"
+      status: "EY"
+      description: ""
+      highlights:
+        - "Served as <strong>formal counsellor to 2 junior EY consultants</strong>, developing technical and behavioural capabilities"
+      stack: ""
       metrics: ""
     - name: "Training Programme — Power BI for Risk Consulting"
       status: "Internal EY Project"
@@ -334,8 +339,7 @@ en:
       highlights:
         - "Developed and delivered Power BI training programme for <strong>200+ professionals</strong> across EY South America"
         - "Proprietary content: DAX, dimensional modeling, RLS (Row-Level Security)"
-        - "<strong>12h hands-on training</strong> with direct application to client projects"
-        - "Measurable impact: trained professionals applied knowledge across 15+ active projects"
+        - "<strong>12h hands-on training</strong> with direct application"
         - "Internal recognition for excellence in talent development"
       stack: "Power BI, DAX, RLS"
       metrics: ""

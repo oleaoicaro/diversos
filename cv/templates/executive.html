@@ -20,18 +20,23 @@
 <div class="doc">
 
   <header class="cv-header">
-    <h1 class="cv-name">{{ cv.identity.name }}</h1>
-    <div class="cv-headline">{{ cv.headline }}</div>
-    <div class="cv-contact">
-      <span class="ci">{{ cv.identity.location }}</span>
-      <span class="sep">|</span>
-      <span class="ci">{{ cv.identity.phone }}</span>
-      <span class="sep">|</span>
-      <a class="ci" href="mailto:{{ cv.identity.email }}">{{ cv.identity.email }}</a>
-      <span class="sep">|</span>
-      <a class="ci" href="https://{{ cv.identity.linkedin }}">{{ cv.identity.linkedin }}</a>
-      <span class="sep">|</span>
-      <a class="ci" href="https://{{ cv.identity.github }}">{{ cv.identity.github }}</a>
+    <div class="cv-header-inner">
+      <img class="cv-photo" src="assets/photo.jpg" alt="{{ cv.identity.name }}">
+      <div class="cv-header-text">
+        <h1 class="cv-name">{{ cv.identity.name }}</h1>
+        <div class="cv-headline">{{ cv.headline }}</div>
+        <div class="cv-contact">
+          <span class="ci">{{ cv.identity.location }}</span>
+          <span class="sep">|</span>
+          <span class="ci">{{ cv.identity.phone }}</span>
+          <span class="sep">|</span>
+          <a class="ci" href="mailto:{{ cv.identity.email }}">{{ cv.identity.email }}</a>
+          <span class="sep">|</span>
+          <a class="ci" href="https://{{ cv.identity.linkedin }}">{{ cv.identity.linkedin }}</a>
+          <span class="sep">|</span>
+          <a class="ci" href="https://{{ cv.identity.github }}">{{ cv.identity.github }}</a>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -80,7 +85,9 @@
       <li>{{ hl | safe }}</li>
       {% endfor %}
     </ul>
+    {% if project.stack %}
     <div class="proj-stack">{{ t.stack_label }}: {{ project.stack }}</div>
+    {% endif %}
     {% if project.metrics %}
     <div class="proj-metrics">{{ project.metrics | safe }}</div>
     {% endif %}

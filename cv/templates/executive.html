@@ -72,7 +72,9 @@
       <span class="proj-name">{{ project.name }}</span>
       <span class="proj-status">{{ project.status }}</span>
     </div>
+    {% if project.description %}
     <p class="proj-desc">{{ project.description }}</p>
+    {% endif %}
     <ul class="exp-bullets">
       {% for hl in project.highlights %}
       <li>{{ hl | safe }}</li>
@@ -116,7 +118,11 @@
 
   {% if cv.previous_experience %}
   <h2 class="section">{{ t.earlier }}</h2>
-  <p class="earlier-inline">{{ cv.previous_experience | join(' &nbsp;·&nbsp; ') | safe }}</p>
+  <ul class="exp-bullets earlier-bullets">
+    {% for item in cv.previous_experience %}
+    <li>{{ item | safe }}</li>
+    {% endfor %}
+  </ul>
   {% endif %}
 
 </div>

@@ -5,133 +5,149 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ cv.identity.name }} — Currículo</title>
   <link rel="stylesheet" href="styles/executive.css">
-  <style>
-    @page {
-      @bottom-right {
-        content: "página " counter(page) " de " counter(pages);
-        font-size: 7.5pt;
-        color: #888888;
-        font-family: 'Inter', 'Liberation Sans', sans-serif;
-        margin-right: 14mm;
-      }
-    }
-  </style>
 </head>
 <body>
-<div class="page-wrap">
+<div class="layout">
 
-  <!-- ── Sidebar (navy full-bleed) ──────────────────────────── -->
+  <!-- ── Sidebar (navy full-bleed) ──────────────────────── -->
   <aside class="sidebar">
 
-    <div class="sb-title">Contato</div>
-    <div class="contact-row">
-      <span class="cl">E ·</span>
-      <span class="cv">{{ cv.identity.email }}</span>
-    </div>
-    <div class="contact-row">
-      <span class="cl">T ·</span>
-      <span class="cv">{{ cv.identity.phone }}</span>
-    </div>
-    <div class="contact-row">
-      <span class="cl">in ·</span>
-      <span class="cv">{{ cv.identity.linkedin }}</span>
-    </div>
-    <div class="contact-row">
-      <span class="cl">gh ·</span>
-      <span class="cv">{{ cv.identity.github }}</span>
-    </div>
-    <div class="contact-row">
-      <span class="cl">loc ·</span>
-      <span class="cv">{{ cv.identity.location }}</span>
+    <!-- Foto profissional -->
+    <div class="photo-wrap">
+      <img src="assets/photo.jpg" class="photo-circle" alt="{{ cv.identity.name }}">
     </div>
 
-    <div class="sb-title">Idiomas</div>
-    {% for lang in cv.languages %}
-    <div class="lang-row">
-      <span class="ln">{{ lang.name }}</span>
-      <span class="ll">{{ lang.level }}</span>
-    </div>
-    {% endfor %}
-
-    <div class="sb-title">Competências</div>
-    {% for group in cv.competencies %}
-    <div class="skill-group-name">{{ group.group }}</div>
-    {% for skill in group.skills %}
-    <div class="skill-item">{{ skill }}</div>
-    {% endfor %}
-    {% endfor %}
-
-    <div class="sb-title">Formação</div>
-    {% for edu in cv.education %}
-    <div class="edu-item">
-      <div class="edu-degree">{{ edu.degree }}</div>
-      <div class="edu-institution">{{ edu.institution }}</div>
-      <div class="edu-period">{{ edu.period }}</div>
-    </div>
-    {% endfor %}
-
-    <div class="sb-title">Certificações</div>
-    {% for cert in cv.certifications %}
-    <div class="cert-item">{{ cert }}</div>
-    {% endfor %}
-
-  </aside>
-
-  <!-- ── Main Column ─────────────────────────────────────────── -->
-  <main class="main-col">
-
-    <!-- Header -->
-    <div class="main-header">
-      <div class="cv-name">{{ cv.identity.name }}</div>
-      <div class="cv-headline">{{ cv.headline }}</div>
-      <div class="header-rule"></div>
-      <p class="cv-summary">{{ cv.executive_summary }}</p>
-    </div>
-
-    <!-- Experiência Profissional -->
-    <h2 class="section">Experiência Profissional</h2>
-    {% for company in cv.experience %}
-    {% for role in company.roles %}
-    <div class="exp-entry">
-      <div class="exp-header-row">
-        <span class="exp-company">{{ company.company }}</span>
-        <span class="exp-period">{{ role.period }}</span>
+    <div class="sidebar-block">
+      <h3>Contato</h3>
+      <div class="contact-item">
+        <span class="contact-label">E-mail</span>
+        <span class="contact-value">{{ cv.identity.email }}</span>
       </div>
-      <div class="exp-role-line">
-        <span class="exp-role">{{ role.title }}</span>
+      <div class="contact-item">
+        <span class="contact-label">Telefone</span>
+        <span class="contact-value">{{ cv.identity.phone }}</span>
       </div>
-      <div class="exp-client">{{ role.client }}</div>
-      <ul class="exp-bullets">
-        {% for bullet in role.bullets %}
-        <li>{{ bullet | safe }}</li>
+      <div class="contact-item">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">{{ cv.identity.linkedin }}</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">{{ cv.identity.github }}</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">Localização</span>
+        <span class="contact-value">{{ cv.identity.location }}</span>
+      </div>
+    </div>
+
+    <div class="sidebar-block">
+      <h3>Idiomas</h3>
+      {% for lang in cv.languages %}
+      <div class="lang-item">
+        <span class="lang-name">{{ lang.name }}</span>
+        <span class="lang-level">{{ lang.level }}</span>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="sidebar-block">
+      <h3>Competências</h3>
+      {% for group in cv.competencies %}
+      <div class="competency-group">
+        <span class="group-name">{{ group.group }}</span>
+        <ul class="skill-list">
+          {% for skill in group.skills %}<li>{{ skill }}</li>{% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="sidebar-block">
+      <h3>Formação</h3>
+      {% for edu in cv.education %}
+      <div class="edu-item">
+        <div class="edu-degree">{{ edu.degree }}</div>
+        <div class="edu-institution">{{ edu.institution }}</div>
+        <div class="edu-period">{{ edu.period }}</div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="sidebar-block">
+      <h3>Certificações</h3>
+      <ul>
+        {% for cert in cv.certifications %}
+        <li>{{ cert }}</li>
         {% endfor %}
       </ul>
     </div>
-    {% endfor %}
+
+    <div class="sidebar-block">
+      <h3>{{ cv.ey_learning.title }}</h3>
+      <p class="edu-period" style="margin-bottom:4px;">{{ cv.ey_learning.subtitle }}</p>
+      {% for g in cv.ey_learning.groups %}
+      <div class="competency-group">
+        <span class="group-name">{{ g.group }}</span>
+        <div class="group-items">{{ g['items'] }}</div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </aside>
+
+  <!-- ── Main Column (white) ────────────────────────────── -->
+  <main class="main">
+
+    <!-- Nome + Headline 3 linhas -->
+    <div class="main-name">{{ cv.identity.name }}</div>
+    <div class="headline-line1">SENIOR RISK &amp; COMPLIANCE @ EY · PYTHON/FASTAPI · IBM OPENPAGES</div>
+    <div class="headline-line2">Governança de IA · TPRM · Compliance by Design em Seguros e Finanças</div>
+    <div class="headline-line3">ISO 37301 · SUSEP · ANS · PREVIC · BACEN</div>
+    <hr class="name-rule">
+
+    <h2 class="section">Resumo Executivo</h2>
+    <p class="summary-text">{{ cv.executive_summary }}</p>
+
+    <h2 class="section">Experiência Profissional</h2>
+    {% for company in cv.experience %}
+    <div class="company-block">
+      <div class="company-name">{{ company.company }}</div>
+      {% for role in company.roles %}
+      <div class="role">
+        <div class="role-title">{{ role.title }}</div>
+        <div class="role-period">{{ role.period }}</div>
+        {% if role.client %}<div class="role-client">{{ role.client }}</div>{% endif %}
+        <ul class="role-bullets">
+          {% for bullet in role.bullets %}
+          <li>{{ bullet | safe }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
     {% endfor %}
 
-    <!-- Projetos Autorais -->
     <h2 class="section">Projetos Autorais</h2>
     {% for project in cv.projects %}
-    <div class="project-entry">
-      <div class="proj-header-row">
-        <span class="proj-name">{{ project.name }}</span>
-        <span class="proj-status">{{ project.status }}</span>
+    <div class="project">
+      <div class="project-header">
+        <span class="project-name">{{ project.name }}</span>
+        <span class="project-status">{{ project.status }}</span>
       </div>
-      <p class="proj-desc">{{ project.description }}</p>
-      <ul class="exp-bullets">
+      <div class="project-description">{{ project.description }}</div>
+      <ul class="project-highlights">
         {% for hl in project.highlights %}
         <li>{{ hl | safe }}</li>
         {% endfor %}
       </ul>
-      <div class="proj-stack">Stack: {{ project.stack }}</div>
+      <div class="project-stack">Stack: {{ project.stack }}</div>
       {% if project.metrics %}
-      <div class="proj-metrics">{{ project.metrics | safe }}</div>
+      <div class="project-metrics">{{ project.metrics | safe }}</div>
       {% endif %}
     </div>
     {% endfor %}
 
-    <!-- Experiência Anterior -->
     <h2 class="section">Experiência Anterior</h2>
     <ul class="earlier-list">
       {% for item in cv.previous_experience %}
@@ -140,6 +156,7 @@
     </ul>
 
   </main>
+
 </div>
 </body>
 </html>

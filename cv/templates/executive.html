@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="{{ t.html_lang }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ cv.identity.name }} — Currículo</title>
+  <title>{{ cv.identity.name }} — {{ t.doc_title }}</title>
   <link rel="stylesheet" href="styles/executive.css">
   <style>
     @page {
       @bottom-right {
-        content: "página " counter(page) " de " counter(pages);
+        content: "{{ t.page_word }} " counter(page) " {{ t.of_word }} " counter(pages);
         font-size: 8pt;
         color: #6b7280;
         font-family: 'Inter', 'Liberation Sans', sans-serif;
@@ -19,7 +19,6 @@
 <body>
 <div class="doc">
 
-  <!-- ── Header: nome, headline, contato ─────────────────────── -->
   <header class="cv-header">
     <h1 class="cv-name">{{ cv.identity.name }}</h1>
     <div class="cv-headline">{{ cv.headline }}</div>
@@ -36,11 +35,9 @@
     </div>
   </header>
 
-  <!-- ── Resumo Executivo ────────────────────────────────────── -->
   <p class="cv-summary">{{ cv.executive_summary }}</p>
 
-  <!-- ── Experiência Profissional ────────────────────────────── -->
-  <h2 class="section">Experiência Profissional</h2>
+  <h2 class="section">{{ t.experience }}</h2>
   {% for company in cv.experience %}
   {% for role in company.roles %}
   <div class="exp-entry">
@@ -61,8 +58,7 @@
   {% endfor %}
   {% endfor %}
 
-  <!-- ── Projetos Autorais ───────────────────────────────────── -->
-  <h2 class="section">Projetos Autorais</h2>
+  <h2 class="section">{{ t.projects }}</h2>
   {% for project in cv.projects %}
   <div class="project-entry">
     <div class="proj-header-row">
@@ -75,23 +71,21 @@
       <li>{{ hl | safe }}</li>
       {% endfor %}
     </ul>
-    <div class="proj-stack">Stack: {{ project.stack }}</div>
+    <div class="proj-stack">{{ t.stack_label }}: {{ project.stack }}</div>
     {% if project.metrics %}
     <div class="proj-metrics">{{ project.metrics | safe }}</div>
     {% endif %}
   </div>
   {% endfor %}
 
-  <!-- ── Experiência Anterior ────────────────────────────────── -->
-  <h2 class="section">Experiência Anterior</h2>
+  <h2 class="section">{{ t.earlier }}</h2>
   <ul class="earlier-list">
     {% for item in cv.previous_experience %}
     <li>{{ item }}</li>
     {% endfor %}
   </ul>
 
-  <!-- ── Competências ────────────────────────────────────────── -->
-  <h2 class="section">Competências</h2>
+  <h2 class="section">{{ t.competencies }}</h2>
   {% for group in cv.competencies %}
   <div class="comp-group">
     <span class="comp-group-name">{{ group.group }}:</span>
@@ -99,8 +93,7 @@
   </div>
   {% endfor %}
 
-  <!-- ── Formação ────────────────────────────────────────────── -->
-  <h2 class="section">Formação</h2>
+  <h2 class="section">{{ t.education }}</h2>
   {% for edu in cv.education %}
   <div class="edu-item">
     <span class="edu-degree">{{ edu.degree }}</span> —
@@ -109,16 +102,14 @@
   </div>
   {% endfor %}
 
-  <!-- ── Certificações ───────────────────────────────────────── -->
-  <h2 class="section">Certificações</h2>
+  <h2 class="section">{{ t.certifications }}</h2>
   <ul class="cert-list">
     {% for cert in cv.certifications %}
     <li>{{ cert }}</li>
     {% endfor %}
   </ul>
 
-  <!-- ── Idiomas ─────────────────────────────────────────────── -->
-  <h2 class="section">Idiomas</h2>
+  <h2 class="section">{{ t.languages }}</h2>
   <ul class="lang-list">
     {% for lang in cv.languages %}
     <li><span class="lang-name">{{ lang.name }}</span> — <span class="lang-level">{{ lang.level }}</span></li>

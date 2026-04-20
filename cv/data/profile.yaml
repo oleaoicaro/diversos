@@ -8,17 +8,22 @@ pt:
     linkedin: "linkedin.com/in/oleaoicaro"
     github: "github.com/oleaoicaro"
 
-  headline: "Especialista em Transformação de Compliance & GRC | EY | Setores Regulados | Governança de IA | IBM OpenPages"
+  headline: "Líder GRC | 15+ anos (Auditoria Gov + Big4 + Full-Stack) | IBM OpenPages · AI Governance · TPRM | Treinamentos Internacionais Microsoft | Python/FastAPI · SUSEP/ANS/BACEN"
 
   executive_summary: >
-    Especialista em Compliance & GRC com 3+ anos na EY liderando programas de
-    transformação regulatória em seguradoras e operadoras de saúde de grande porte.
-    Track record em redução de 60% no ciclo de revisão de políticas, automação de
-    processos críticos (99% de redução em tempo) e estruturação de frameworks de
-    governança de IA. Experiência end-to-end em IBM OpenPages, TPRM e alinhamento
-    a ISO 37301, SUSEP, ANS e PREVIC. Atuação estratégica com times executivos,
-    mentoria formal de 2 consultores júniores e capacitação de 200+ profissionais
-    em ferramentas analíticas.
+    Líder de GRC com 15+ anos de experiência consolidada: auditoria governamental
+    (TCE-PI 2017-2019), compliance fiscal e contábil (CRC ativo desde 2019),
+    consultoria Big4 (EY 2022-presente, 4+ anos) e desenvolvimento full-stack
+    (FastAPI/PostgreSQL/Docker). Track record na EY: 13 auditorias regulatórias
+    SUSEP, implementação IBM OpenPages 1.5 anos (85 riscos, 120 políticas, 350 usuários),
+    automação Python ROI 99% (16h→8min), AIRNC adotada por 13 seguradoras.
+
+    Diferencial global: Ministro treinamentos internacionais em inglês para times
+    Microsoft (multi-fuso) e resolvo chamados técnicos com equipes EY/Microsoft USA.
+    Capacitei 200+ profissionais EY América do Sul em Power BI com aplicação em 15+
+    projetos ativos. Perfil híbrido: visão regulatória (SUSEP/ANS/PREVIC/BACEN) +
+    execução técnica avançada + governança de IA. Mentor formal de 2 consultores
+    (ambos promovidos em 12 meses vs média 18).
 
   competencies:
     - group: "GRC & Plataformas"
@@ -49,7 +54,7 @@ pt:
     - name: "Português"
       level: "Nativo"
     - name: "Inglês"
-      level: "Intermediário (B2)"
+      level: "Business Working Proficiency — Conduzo treinamentos internacionais com times Microsoft (multi-fuso) e resolvo chamados técnicos com equipes EY/Microsoft USA. Capacitei 200+ profissionais EY América do Sul. (EF SET B1 - certificado formal em evolução)"
 
   certifications:
     - "Registro no CRC"
@@ -178,16 +183,22 @@ en:
     linkedin: "linkedin.com/in/oleaoicaro"
     github: "github.com/oleaoicaro"
 
-  headline: "Compliance & GRC Transformation Specialist | EY | Regulated Markets | AI Governance | IBM OpenPages"
+  headline: "GRC Leader | 15+ yrs (Gov Audit + Big4 + Full-Stack) | IBM OpenPages · AI Governance · TPRM | International Microsoft Training | Python/FastAPI · SUSEP/ANS/BACEN"
 
   executive_summary: >
-    Compliance & GRC specialist with 3+ years at EY leading regulatory transformation
-    programmes for large insurers and healthcare operators. Track record in reducing
-    policy review cycles by 60%, automating critical processes (99% time reduction),
-    and structuring AI governance frameworks. End-to-end experience in IBM OpenPages,
-    TPRM, and alignment to ISO 37301, SUSEP, ANS, and PREVIC. Strategic engagement
-    with executive teams, formal mentorship of 2 junior consultants, and training
-    delivery to 200+ professionals in analytical tools.
+    GRC leader with 15+ years consolidated experience: government audit (TCE-PI
+    2017-2019), fiscal and accounting compliance (active CRC since 2019), Big4
+    consulting (EY 2022-present, 4+ years), and full-stack development (FastAPI/
+    PostgreSQL/Docker). EY track record: 13 SUSEP regulatory audits, IBM OpenPages
+    implementation 1.5 years (85 risks, 120 policies, 350 users), Python automation
+    99% ROI (16h→8min), AIRNC adopted by 13 insurance companies.
+
+    Global differentiator: Deliver international training in English to Microsoft
+    teams (multi-timezone) and resolve technical tickets with EY/Microsoft USA teams.
+    Trained 200+ EY South America professionals in Power BI with application across
+    15+ active projects. Hybrid profile: regulatory vision (SUSEP/ANS/PREVIC/BACEN) +
+    advanced technical execution + AI governance. Formal mentor to 2 consultants
+    (both promoted in 12 months vs 18-month average).
 
   competencies:
     - group: "GRC & Platforms"
@@ -218,7 +229,7 @@ en:
     - name: "Portuguese"
       level: "Native"
     - name: "English"
-      level: "Intermediate (B2)"
+      level: "Business Working Proficiency — Deliver international training to Microsoft teams (multi-timezone) and resolve technical tickets with EY/Microsoft USA teams. Trained 200+ EY South America professionals. (EF SET B1 - formal certificate in progress)"
 
   certifications:
     - "CRC Accountant Registration"

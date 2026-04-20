@@ -1,14 +1,23 @@
 Font Licenses
 =============
 
-Inter
------
+Inter (Inter-Regular.ttf — variable font, all weights)
+-------------------------------------------------------
 Copyright 2020 The Inter Project Authors (https://github.com/rsms/inter)
+Licensed under the SIL Open Font License, Version 1.1 (OFL-1.1).
+https://scripts.sil.org/OFL
+
+Lato (Inter-Medium.ttf, Inter-SemiBold.ttf, Inter-Bold.ttf)
+------------------------------------------------------------
+These files are Lato font weights (Medium, Semibold, Bold) used as
+static fallbacks for Inter at specific weights 500/600/700.
+Copyright 2010-2014 Łukasz Dziedzic (http://www.latofonts.com)
 Licensed under the SIL Open Font License, Version 1.1 (OFL-1.1).
 https://scripts.sil.org/OFL
 
 Liberation Serif (Regular, Bold, Italic, Bold Italic)
 ------------------------------------------------------
+Used as Source Serif 4 substitute (same OFL license).
 Copyright 2012 Red Hat, Inc.
 Licensed under the SIL Open Font License, Version 1.1 (OFL-1.1).
 https://scripts.sil.org/OFL

@@ -1,66 +1,65 @@
+/* ── Web Fonts ──────────────────────────────────────────── */
+@font-face {
+  font-family: 'CVSerif';
+  src: url('fonts/LiberationSerif-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CVSerif';
+  src: url('fonts/LiberationSerif-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'CVSerif';
+  src: url('fonts/LiberationSerif-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CVSerif';
+  src: url('fonts/LiberationSerif-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* ── Variables ─────────────────────────────────────────── */
 :root {
-  --accent:   #14213D;
-  --ink:      #0A0A0A;
-  --graphite: #3A3A3A;
-  --rule:     #D4D4D4;
-  --bg:       #FFFFFF;
+  --accent: #1f2a44;
+  --ink:    #1a1a1a;
+  --mid:    #555555;
+  --light:  #888888;
+  --rule:   #dddddd;
+  --bg:     #ffffff;
 }
 
 /* ── Page ───────────────────────────────────────────────── */
 @page {
   size: A4;
-  margin: 18mm 20mm 22mm 20mm;
+  margin: 16mm 18mm 18mm 18mm;
+}
+@page :left {
   @bottom-center {
-    content: "Ícaro Leão · Confidencial · Página " counter(page) " de " counter(pages);
-    font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+    content: counter(page) " / " counter(pages);
     font-size: 7.5pt;
-    color: var(--graphite);
-    letter-spacing: 0.04em;
+    color: #888888;
+    font-family: 'Inter', 'Liberation Sans', sans-serif;
   }
 }
-
-/* ── Footer with QR Code ────────────────────────────────── */
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5mm;
-  padding: 5mm 0 2mm 0;
-  margin-top: 8mm;
-  font-size: 7.5pt;
-  color: var(--graphite);
-  border-top: 0.5px solid var(--rule);
-}
-
-.footer-qr {
-  width: 15mm;
-  height: 15mm;
-  border: 0.5px solid var(--rule);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.footer-qr img {
-  width: 14mm;
-  height: 14mm;
-  display: block;
-}
-
-.footer-text {
-  font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
-  font-size: 7pt;
-  color: var(--graphite);
-  letter-spacing: 0.04em;
-  text-align: left;
-  line-height: 1.4;
-}
-
-.footer-text .linkedin-link {
-  color: var(--accent);
-  font-weight: 500;
+@page :right {
+  @bottom-center {
+    content: counter(page) " / " counter(pages);
+    font-size: 7.5pt;
+    color: #888888;
+    font-family: 'Inter', 'Liberation Sans', sans-serif;
+  }
 }
 
 /* ── Reset & Base ───────────────────────────────────────── */
@@ -69,29 +68,20 @@
 html { background: var(--bg); }
 
 body {
-  font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
-  font-size: 9.8pt;
+  font-family: 'Inter', 'Liberation Sans', 'Arial', sans-serif;
+  font-size: 9.5pt;
   line-height: 1.45;
   color: var(--ink);
   background: var(--bg);
-  -webkit-print-color-adjust: exact;
-  print-color-adjust: exact;
 }
 
-strong {
-  color: var(--accent);
-  font-weight: 600;
-}
-
+strong { font-weight: 600; color: var(--accent); }
 a { color: inherit; text-decoration: none; }
 
 /* ── Layout ─────────────────────────────────────────────── */
-.layout {
-  display: block;
-  width: 100%;
-}
+.layout { display: block; width: 100%; }
 
-/* ── Columns (sidebar + main side-by-side) ───────────────── */
+/* ── Columns (sidebar + main, table layout for WeasyPrint) ── */
 .columns {
   display: table;
   width: 100%;
@@ -102,35 +92,43 @@ a { color: inherit; text-decoration: none; }
 
 /* ── Header ─────────────────────────────────────────────── */
 .header {
-  display: flex;
-  align-items: center;
-  gap: 7mm;
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
   padding-bottom: 6mm;
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 0.5pt solid var(--rule);
   margin-bottom: 7mm;
 }
 
-.monogram {
-  flex-shrink: 0;
+.header-left {
+  display: table-cell;
   width: 22mm;
-  height: 22mm;
+  vertical-align: middle;
+}
+
+.monogram {
+  width: 20mm;
+  height: 20mm;
   border: 1.5px solid var(--accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
-  font-size: 20pt;
-  font-weight: 500;
+  text-align: center;
+  line-height: 20mm;
+  font-family: 'CVSerif', 'Liberation Serif', 'Georgia', serif;
+  font-size: 18pt;
+  font-weight: 700;
   color: var(--accent);
   letter-spacing: 0.06em;
 }
 
-.header-text { flex: 1; }
+.header-right {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 7mm;
+}
 
 .header-name {
-  font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
-  font-size: 28pt;
-  font-weight: 600;
+  font-family: 'CVSerif', 'Liberation Serif', 'Georgia', serif;
+  font-size: 26pt;
+  font-weight: 700;
   color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -139,9 +137,9 @@ a { color: inherit; text-decoration: none; }
 }
 
 .header-headline {
-  font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Inter', 'Liberation Sans', sans-serif;
   font-size: 9.5pt;
-  color: var(--graphite);
+  color: var(--mid);
   letter-spacing: 0.04em;
   line-height: 1.4;
 }
@@ -149,9 +147,9 @@ a { color: inherit; text-decoration: none; }
 /* ── Sidebar ─────────────────────────────────────────────── */
 .sidebar {
   display: table-cell;
-  width: 32%;
+  width: 30%;
   vertical-align: top;
-  border-right: 1px solid var(--rule);
+  border-right: 0.5pt solid var(--rule);
   padding-right: 8mm;
 }
 
@@ -160,19 +158,20 @@ a { color: inherit; text-decoration: none; }
 }
 
 .sidebar-block h3 {
-  font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
-  font-size: 9.5pt;
-  font-variant: small-caps;
-  letter-spacing: 0.12em;
+  font-family: 'Inter', 'Liberation Sans', sans-serif;
+  font-size: 7pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
   color: var(--accent);
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 0.5pt solid var(--rule);
   padding-bottom: 1.5mm;
   margin-bottom: 3mm;
 }
 
 .sidebar-block p,
 .sidebar-block li {
-  font-size: 8.6pt;
+  font-size: 8.5pt;
   line-height: 1.45;
   color: var(--ink);
 }
@@ -184,77 +183,119 @@ a { color: inherit; text-decoration: none; }
 
 .sidebar-block ul li {
   padding: 0.8mm 0;
+  font-size: 8.5pt;
+  color: var(--ink);
 }
 
-/* Contact */
+/* Contact items */
 .contact-item {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.5mm;
+  margin-bottom: 2mm;
 }
 
 .contact-label {
-  font-size: 7.5pt;
-  color: var(--graphite);
+  display: block;
+  font-size: 7pt;
+  color: var(--light);
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
 
 .contact-value {
-  font-size: 8.6pt;
+  display: block;
+  font-size: 8.5pt;
   color: var(--ink);
   word-break: break-all;
 }
 
-/* Competencies */
+/* Competency chips */
 .competency-group {
-  margin-bottom: 2.5mm;
+  margin-bottom: 3mm;
 }
 
 .group-name {
-  font-variant: small-caps;
-  font-size: 8.2pt;
-  color: var(--graphite);
-  letter-spacing: 0.06em;
-  margin-bottom: 1mm;
   display: block;
+  font-size: 7.5pt;
+  font-weight: 600;
+  color: var(--mid);
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5mm;
+  text-transform: uppercase;
 }
 
-.group-items {
-  font-size: 8.6pt;
+.skills-chips {
+  line-height: 1.8;
+}
+
+.skill-chip {
+  display: inline-block;
+  font-size: 8pt;
   color: var(--ink);
-  line-height: 1.5;
+  border: 0.75px solid #cccccc;
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin: 1px 2px 1px 0;
+  white-space: nowrap;
 }
 
 /* Languages */
 .lang-item {
-  display: flex;
-  justify-content: space-between;
-  font-size: 8.6pt;
+  display: table;
+  width: 100%;
+  font-size: 8.5pt;
   padding: 0.5mm 0;
 }
 
+.lang-name {
+  display: table-cell;
+}
+
 .lang-level {
-  color: var(--graphite);
+  display: table-cell;
+  text-align: right;
+  color: var(--mid);
+  font-style: italic;
+}
+
+/* Education */
+.edu-item {
+  margin-bottom: 3mm;
+}
+
+.edu-degree {
+  font-size: 8.5pt;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.3;
+}
+
+.edu-institution {
+  font-size: 8pt;
+  color: var(--mid);
+}
+
+.edu-period {
+  font-size: 7.5pt;
+  color: var(--light);
   font-style: italic;
 }
 
 /* ── Main Content ────────────────────────────────────────── */
 .main {
   display: table-cell;
-  width: 68%;
+  width: 70%;
   vertical-align: top;
   padding-left: 10mm;
 }
 
 /* ── Section Headers ─────────────────────────────────────── */
 h2.section {
-  font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
-  font-size: 11pt;
-  font-variant: small-caps;
-  letter-spacing: 0.18em;
+  font-family: 'Inter', 'Liberation Sans', sans-serif;
+  font-size: 7.5pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
   color: var(--accent);
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 0.5pt solid var(--rule);
   padding-bottom: 1.5mm;
   margin-bottom: 4mm;
   margin-top: 6mm;
@@ -266,59 +307,63 @@ h2.section:first-child {
 
 /* ── Executive Summary ───────────────────────────────────── */
 .summary-text {
-  font-size: 9.8pt;
+  font-size: 9.5pt;
   line-height: 1.5;
   color: var(--ink);
 }
 
 /* ── Experience ──────────────────────────────────────────── */
+.company-block {
+  margin-bottom: 4mm;
+}
+
 .company-name {
-  font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
+  font-family: 'CVSerif', 'Liberation Serif', 'Georgia', serif;
   font-size: 10.5pt;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--accent);
-  margin-bottom: 3mm;
+  margin-bottom: 2mm;
 }
 
 .timeline {
   position: relative;
-  padding-left: 6mm;
-  margin-bottom: 4mm;
+  padding-left: 5mm;
+  margin-bottom: 3mm;
 }
 
 .timeline::before {
   content: '';
   position: absolute;
-  left: 1.25mm;
+  left: 1mm;
   top: 3mm;
   bottom: 3mm;
-  width: 1px;
+  width: 0.5pt;
   background: var(--rule);
 }
 
 .role {
   position: relative;
-  margin-bottom: 5mm;
+  margin-bottom: 4mm;
   break-inside: avoid;
 }
 
 .role::before {
   content: '';
   position: absolute;
-  left: -5.25mm;
+  left: -4.5mm;
   top: 2.5mm;
-  width: 2.5mm;
-  height: 2.5mm;
+  width: 2mm;
+  height: 2mm;
   border-radius: 50%;
   background: var(--accent);
 }
 
 .role-title {
-  font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
-  font-size: 9.8pt;
+  font-family: 'Inter', 'Liberation Sans', sans-serif;
+  font-size: 9.5pt;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.10em;
   color: var(--ink);
   margin-bottom: 1mm;
 }
@@ -326,13 +371,13 @@ h2.section:first-child {
 .role-period {
   font-size: 8.5pt;
   font-style: italic;
-  color: var(--graphite);
+  color: var(--mid);
   margin-bottom: 1mm;
 }
 
 .role-client {
   font-size: 9pt;
-  color: var(--graphite);
+  color: var(--mid);
   margin-bottom: 2mm;
 }
 
@@ -344,7 +389,7 @@ h2.section:first-child {
 
 .role-bullets li {
   position: relative;
-  padding-left: 4mm;
+  padding-left: 5mm;
   margin-bottom: 1.5mm;
   font-size: 9.5pt;
   line-height: 1.45;
@@ -352,28 +397,29 @@ h2.section:first-child {
 }
 
 .role-bullets li::before {
-  content: '–';
+  content: '—';
   position: absolute;
   left: 0;
-  color: var(--graphite);
+  color: var(--mid);
+  font-size: 9pt;
 }
 
 /* ── Projects ────────────────────────────────────────────── */
 .project {
-  margin-bottom: 5mm;
+  margin-bottom: 4mm;
   break-inside: avoid;
 }
 
 .project-header {
-  display: flex;
-  align-items: baseline;
-  gap: 3mm;
+  display: table;
+  width: 100%;
   margin-bottom: 1mm;
 }
 
 .project-name {
-  font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
-  font-size: 9.8pt;
+  display: table-cell;
+  font-family: 'Inter', 'Liberation Sans', sans-serif;
+  font-size: 9.5pt;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -381,9 +427,11 @@ h2.section:first-child {
 }
 
 .project-status {
+  display: table-cell;
+  text-align: right;
   font-size: 8.5pt;
   font-style: italic;
-  color: var(--graphite);
+  color: var(--mid);
 }
 
 .project-description {
@@ -401,23 +449,23 @@ h2.section:first-child {
 
 .project-highlights li {
   position: relative;
-  padding-left: 4mm;
+  padding-left: 5mm;
   margin-bottom: 1mm;
   font-size: 9pt;
   line-height: 1.4;
 }
 
 .project-highlights li::before {
-  content: '·';
+  content: '—';
   position: absolute;
   left: 0;
-  color: var(--accent);
-  font-weight: 600;
+  color: var(--mid);
+  font-size: 9pt;
 }
 
 .project-stack {
   font-size: 8.5pt;
-  color: var(--graphite);
+  color: var(--mid);
   font-style: italic;
   margin-bottom: 1mm;
 }
@@ -438,37 +486,25 @@ h2.section:first-child {
   padding: 1mm 0;
   font-size: 9pt;
   color: var(--ink);
-  border-bottom: 1px dotted var(--rule);
+  border-bottom: 0.5pt dotted var(--rule);
 }
 
 .earlier-list li:last-child { border-bottom: none; }
 
-/* Education (sidebar) */
-.edu-item {
-  margin-bottom: 2.5mm;
-}
-
-.edu-degree {
-  font-size: 8.8pt;
-  font-weight: 600;
-  color: var(--ink);
-  line-height: 1.3;
-}
-
-.edu-institution {
-  font-size: 8.3pt;
-  color: var(--graphite);
-}
-
-.edu-period {
-  font-size: 7.8pt;
-  color: var(--graphite);
-  font-style: italic;
+/* ── CV Footer ───────────────────────────────────────────── */
+.cv-footer {
+  margin-top: 8mm;
+  padding-top: 3mm;
+  border-top: 0.5pt solid var(--rule);
+  font-size: 7.5pt;
+  color: var(--light);
+  text-align: center;
+  font-family: 'Inter', 'Liberation Sans', sans-serif;
 }
 
 /* ── Print Utilities ─────────────────────────────────────── */
 @media print {
-  body { font-size: 9.8pt; }
+  body { font-size: 9.5pt; }
   .layout { min-height: 0; }
   h2.section { break-after: avoid; }
   .role, .project { break-inside: avoid; }

@@ -7,15 +7,21 @@ Geração automatizada do currículo executivo de Ícaro Leão em português (PT
 ```
 cv/
 ├── data/
-│   └── profile.yaml          # Fonte única de dados PT+EN
+│   └── profile.yaml              # Fonte única de dados PT+EN (não editar estrutura)
 ├── templates/
-│   ├── executive_pt.html     # Template Jinja2 português
-│   ├── executive_en.html     # Template Jinja2 inglês
+│   ├── executive_pt.html         # Template Jinja2 português
+│   ├── executive_en.html         # Template Jinja2 inglês
 │   └── styles/
-│       └── executive.css     # CSS premium A4 (grid 2 colunas)
+│       ├── executive.css         # CSS premium A4 — paleta executiva
+│       └── fonts/                # Fontes locais (bundled)
+│           ├── Inter-Regular.ttf          # Sans-serif (corpo)
+│           ├── LiberationSerif-Regular.ttf
+│           ├── LiberationSerif-Bold.ttf
+│           ├── LiberationSerif-Italic.ttf
+│           └── LiberationSerif-BoldItalic.ttf
 ├── scripts/
-│   ├── build_cv.py           # Script de build
-│   └── requirements.txt      # Dependências Python
+│   ├── build_cv.py               # Script de build (WeasyPrint + Playwright fallback)
+│   └── requirements.txt          # Dependências Python
 ├── output/
 │   ├── Icaro_Leao_CV_PT.html
 │   ├── Icaro_Leao_CV_PT.pdf
@@ -28,13 +34,20 @@ cv/
 
 **Python 3.11+** — https://www.python.org/downloads/
 
+### Linux (Ubuntu/Debian)
+WeasyPrint requer as bibliotecas de renderização de texto do sistema:
+```bash
+sudo apt install libpango-1.0-0 libpangoft2-1.0-0 libpangocairo-1.0-0 \
+                 libharfbuzz0b libfontconfig1 libcairo2
+```
+
 ### Windows
 Instale o GTK3 Runtime (necessário para WeasyPrint):
 - https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer
 
-### Linux (Ubuntu/Debian)
+### macOS
 ```bash
-sudo apt install libpango-1.0-0 libpangoft2-1.0-0 libharfbuzz0b
+brew install pango
 ```
 
 ## Instalação
@@ -49,21 +62,35 @@ pip install -r cv/scripts/requirements.txt
 python cv/scripts/build_cv.py
 ```
 
-Os arquivos gerados serão salvos em `cv/output/`.
+Os arquivos HTML e PDF gerados são salvos em `cv/output/`. O script registra:
+- Versão do WeasyPrint em uso
+- Fontes detectadas no diretório `fonts/`
+- Caminho de cada arquivo gerado
 
 ## Personalização
 
-### Cor de acento
-Edite a variável `--accent` em `cv/templates/styles/executive.css` (padrão: `#14213D`):
+### Paleta de cores
+Edite as variáveis CSS em `cv/templates/styles/executive.css`:
 
 ```css
 :root {
-  --accent: #14213D; /* azul-marinho profundo */
+  --accent: #1f2a44;  /* navy — títulos e destaque */
+  --ink:    #1a1a1a;  /* quase-preto — corpo */
+  --mid:    #555555;  /* cinza médio — metadados */
+  --light:  #888888;  /* cinza claro — labels */
+  --rule:   #dddddd;  /* linha divisória */
 }
 ```
 
+### Tipografia
+Para substituir as fontes, adicione arquivos TTF/WOFF2 em `cv/templates/styles/fonts/`
+e atualize os blocos `@font-face` no início de `executive.css`.
+
+- **Serif** (`CVSerif`): usado no nome, empresa, cabeçalhos principais
+- **Sans-serif** (`Inter`): usado em todo o resto
+
 ### Dados do perfil
-Edite `cv/data/profile.yaml` — as chaves `pt` e `en` controlam cada idioma de forma independente.
+Edite `cv/data/profile.yaml` — as chaves `pt` e `en` controlam cada idioma de forma independente. **Não altere a estrutura das chaves.**
 
 ## Fallback sem WeasyPrint
 
@@ -77,7 +104,9 @@ Se WeasyPrint não estiver disponível, o script tenta automaticamente Playwrigh
 
 ## Design
 
-- **Tipografia:** Playfair Display (serif) nos títulos + Inter (sans-serif) no corpo
-- **Cor de acento única:** `#14213D` (azul-marinho profundo EY-style)
-- **Layout:** Grid 2 colunas A4 — sidebar 32% + conteúdo 68%
-- **Visual:** Estilo executivo premium, zero emojis, zero cores saturadas
+- **Tipografia:** Liberation Serif (serif, semelhante a Times New Roman) nos títulos e nomes de empresas + Inter (sans-serif) no corpo
+- **Paleta:** Navy `#1f2a44` como acento único; escala de cinzas para hierarquia
+- **Layout:** Tabela CSS 2 colunas A4 — sidebar 30% + conteúdo 70%
+- **Competências:** exibidas como chips/tags com borda fina
+- **Marcadores de lista:** traço longo (—) em cinza médio
+- **Paginação:** `X / Y` centralizado no rodapé via CSS `@page`

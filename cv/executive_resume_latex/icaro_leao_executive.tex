@@ -1,0 +1,267 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt, a4paper]{article}
+
+% ══════════════════════════════════════════════════════════════
+% PACKAGES — Tier 1 Executive Resume
+% ══════════════════════════════════════════════════════════════
+\usepackage[margin=1.5cm, top=1.8cm, bottom=1.8cm]{geometry}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{microtype}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{ragged2e}
+
+% ══════════════════════════════════════════════════════════════
+% COLORS — Executive Palette (Deep Navy + Graphite)
+% ══════════════════════════════════════════════════════════════
+\definecolor{ExecutiveNavy}{HTML}{14213D}
+\definecolor{GraphiteGrey}{HTML}{3A3A3A}
+\definecolor{SubtleRule}{HTML}{D4D4D4}
+
+% ══════════════════════════════════════════════════════════════
+% TYPOGRAPHY — Professional Serif + Sans Pairing
+% ══════════════════════════════════════════════════════════════
+\setmainfont[
+  Ligatures=TeX,
+  Numbers=OldStyle,
+  Color=GraphiteGrey
+]{EB Garamond}
+
+\setsansfont[
+  Ligatures=TeX,
+  Scale=0.95,
+  Color=GraphiteGrey
+]{Inter}
+
+% ══════════════════════════════════════════════════════════════
+% SECTION FORMATTING
+% ══════════════════════════════════════════════════════════════
+\titleformat{\section}
+  {\sffamily\fontsize{12pt}{14pt}\selectfont\bfseries\color{ExecutiveNavy}\uppercase}
+  {}{0em}{}[\vspace{-0.5em}\color{SubtleRule}\titlerule]
+
+\titlespacing*{\section}{0pt}{1.2em}{0.6em}
+
+% ══════════════════════════════════════════════════════════════
+% HYPERLINKS
+% ══════════════════════════════════════════════════════════════
+\hypersetup{
+  colorlinks=true,
+  linkcolor=ExecutiveNavy,
+  urlcolor=ExecutiveNavy,
+  pdfauthor={Ícaro Leão},
+  pdftitle={Ícaro Leão — Executive Resume},
+  pdfsubject={Risk, Compliance & Tech Leader}
+}
+
+% ══════════════════════════════════════════════════════════════
+% CUSTOM COMMANDS
+% ══════════════════════════════════════════════════════════════
+\newcommand{\companyname}[1]{%
+  \vspace{0.8em}%
+  {\sffamily\fontsize{11pt}{13pt}\selectfont\bfseries\color{ExecutiveNavy}#1}%
+  \vspace{0.3em}%
+}
+
+\newcommand{\roletitle}[2]{%
+  \vspace{0.4em}%
+  {\sffamily\fontsize{10pt}{12pt}\selectfont\bfseries\color{GraphiteGrey}#1}%
+  \hfill%
+  {\sffamily\fontsize{9pt}{11pt}\selectfont\itshape\color{GraphiteGrey}#2}%
+  \vspace{0.2em}%
+}
+
+\newcommand{\clientcontext}[1]{%
+  {\sffamily\fontsize{9pt}{11pt}\selectfont\itshape\color{GraphiteGrey}#1}%
+  \vspace{0.3em}%
+}
+
+\newcommand{\achievement}[1]{%
+  \item[\textcolor{ExecutiveNavy}{\textbf{•}}] \RaggedRight #1%
+}
+
+\newcommand{\competencygroup}[2]{%
+  \textbf{\sffamily\small\color{ExecutiveNavy}#1:} {\small\color{GraphiteGrey}#2}%
+}
+
+% ══════════════════════════════════════════════════════════════
+% PAGE LAYOUT
+% ══════════════════════════════════════════════════════════════
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% ══════════════════════════════════════════════════════════════
+% DOCUMENT START
+% ══════════════════════════════════════════════════════════════
+\begin{document}
+
+% ──────────────────────────────────────────────────────────────
+% HEADER — Name + Title
+% ──────────────────────────────────────────────────────────────
+\begin{center}
+{\sffamily\fontsize{26pt}{28pt}\selectfont\bfseries\color{ExecutiveNavy}\MakeUppercase{Ícaro Leão}}
+
+\vspace{0.3em}
+{\sffamily\fontsize{10pt}{12pt}\selectfont\color{GraphiteGrey}%
+Senior Risk \& Compliance Consultant · EY · Compliance-Tech Architect · IBM OpenPages · AI Governance}
+
+\vspace{0.5em}
+{\sffamily\fontsize{9pt}{11pt}\selectfont\color{GraphiteGrey}%
+São Paulo, SP · \href{mailto:icaro.vl@outlook.com}{icaro.vl@outlook.com} · +55 (17) 98191-7954 · \href{https://linkedin.com/in/oleaoicaro}{linkedin.com/in/oleaoicaro}}
+\end{center}
+
+\vspace{0.5em}
+\textcolor{SubtleRule}{\hrule height 0.5pt}
+\vspace{1em}
+
+% ──────────────────────────────────────────────────────────────
+% EXECUTIVE SUMMARY
+% ──────────────────────────────────────────────────────────────
+\section*{Executive Summary}
+
+\RaggedRight
+\textbf{Consultor Sênior com 4+ anos na EY} orquestrando transformações de Compliance em instituições altamente reguladas (Seguros, Saúde Suplementar, Previdência). \textbf{Catalisei ROI mensurável através da interseção entre regulação, tecnologia e Governança de IA}, combinando expertise em IBM OpenPages, ISO 37301 e Three Lines Model com capacidade técnica hands-on comprovada — perfil híbrido raro no mercado brasileiro de GRC. \textbf{Reduzi ciclos de revisão em 60\%, eliminei 99\% do tempo de geração de relatórios executivos e habilitei 350+ usuários em plataformas enterprise}, gerando impacto direto em preparação para auditorias externas (redução de 60\% no tempo), autonomia de 4 áreas operacionais e visibilidade de risco para 12 executivos C-level.
+
+\vspace{0.8em}
+
+% ──────────────────────────────────────────────────────────────
+% CORE COMPETENCIES
+% ──────────────────────────────────────────────────────────────
+\section*{Core Competencies}
+
+\begin{multicols}{2}
+\raggedright
+\competencygroup{GRC \& Platforms}{IBM OpenPages · Power Automate · Data Governance}
+
+\competencygroup{Regulatory}{SUSEP · ANS · PREVIC · BACEN · Lei 15.040/2024 · LGPD · AML/CFT · KYC · Open Finance}
+
+\competencygroup{Frameworks}{ISO 37301 · Three Lines Model · Compliance by Design · AI Governance · TPRM · COSO · Risk Appetite Framework}
+
+\competencygroup{Technology}{Python 3.11 · FastAPI · SQLAlchemy 2.0 · PostgreSQL · Docker · Power BI · ETL · REST APIs · JWT/OAuth2}
+
+\competencygroup{Leadership}{Stakeholder Management · C-Level Reporting · Cross-Functional Governance · Training \& Enablement}
+\end{multicols}
+
+\vspace{0.5em}
+
+% ──────────────────────────────────────────────────────────────
+% PROFESSIONAL EXPERIENCE
+% ──────────────────────────────────────────────────────────────
+\section*{Professional Experience}
+
+\companyname{Ernst \& Young (EY)}
+
+\roletitle{Senior Consultant — Risk \& Compliance}{Ago/2025 – Presente}
+\clientcontext{Cliente: Seguradora de Ramos Elementares · Programa Plurianual de Transformação (2 anos 5 meses)}
+
+\begin{itemize}[leftmargin=1.2em, itemsep=0.3em, parsep=0pt, topsep=0.3em]
+
+\achievement{\textbf{Orquestrei a implementação enterprise do IBM OpenPages (Policy Management)} ao longo de 1,5 ano, desenhando arquitetura de matriz de risco corporativa com \textbf{85+ riscos} mapeados em 4 pilares (Estratégico, Operacional, Compliance, Tecnológico). Plataforma gerencia \textbf{120+ políticas corporativas, 200+ procedimentos e 350+ usuários ativos} (45 gestores de políticas, 80 aprovadores, 225 consulta). Estruturei funcionalidades críticas: (1) \textbf{versionamento automático} com trilha de 400+ revisões auditáveis, (2) \textbf{governança de exceções} processando 30+ solicitações/mês com SLA de 5 dias, (3) workflows end-to-end eliminando 12 planilhas manuais. \textbf{Impacto ROI}: reduzi ciclo de revisão de políticas de 45 para 18 dias (\textbf{60\% de ganho}), tempo de preparação para auditoria externa de 15 para 6 dias (\textbf{60\% de eficiência}), abrangência de 8 áreas (Compliance, Jurídico, Auditoria, Operações, TI, RH, Atuária, Controladoria).}
+
+\achievement{\textbf{Automatizei em Python o heatmap corporativo de riscos}, processando \textbf{120+ indicadores de 85 riscos} com integração de 4 fontes de dados (IBM OpenPages, Power BI, Excel templates, incidentes). \textbf{Reduzi geração trimestral de 16 horas para 8 minutos (99\% de ganho)}, eliminei 100\% dos erros de consolidação manual dos 3 ciclos anteriores e habilitei atualização sob demanda para comitês executivos. \textbf{ROI direto}: habilitação de decisões data-driven em tempo real para C-level.}
+
+\achievement{\textbf{Estruturei 7 dashboards executivos em Power BI} rastreando \textbf{45 KRIs} (taxa de não conformidades, tempo médio de remediação, cobertura de controles) e \textbf{30 KPIs} (aderência a políticas, conclusão de treinamentos obrigatórios, SLA regulatório). Consumidos em \textbf{3 reuniões mensais de comitê} (Riscos, Compliance, Auditoria) para audiência de \textbf{12 executivos C-level}. Alertas automáticos para 8 indicadores críticos. \textbf{Impacto}: reduzi preparação de reuniões de 6 horas para 20 minutos (\textbf{95\% de eficiência}).}
+
+\achievement{\textbf{Conduzi auditorias regulatórias SUSEP em 13 seguradoras}, mapeando gaps frente à Circular SUSEP 648/21, Resolução CNSP 416/21 e Lei 15.040/2024. Entreguei roadmaps de remediação priorizados por risco e impacto regulatório.}
+
+\achievement{\textbf{Liderei programa de training \& enablement} como instrutor interno de Power BI — turma EY Cálculo 2025 com \textbf{15 profissionais}. Ministrei \textbf{12 horas} de treinamento prático (4 sessões) cobrindo modelagem dimensional para dados SUSEP/ANS, DAX avançado para KRIs automáticos, Row-Level Security e otimização de queries. Desenvolvi \textbf{material didático autoral} com 8 exercícios baseados em casos reais. \textbf{Resultado}: 100\% de conclusão, 9,2/10 de satisfação, 6 dashboards criados pelos participantes aplicados em projetos cliente, \textbf{habilitando autonomia de 4 áreas} para relatórios regulatórios sem suporte TI.}
+
+\achievement{Desenhei workflows de \textbf{Compliance by Design} conectando mudança regulatória a políticas, controles e treinamentos. Estruturei programa \textbf{TPRM} com monitoramento contínuo de terceiros críticos e relevantes. Governança de dados inter-áreas (taxonomia, qualidade, metadados) sustentando rastreabilidade regulatória.}
+
+\end{itemize}
+
+\vspace{0.5em}
+
+\roletitle{Risk Consultant}{Out/2023 – Jul/2025 · 1 ano 10 meses}
+\clientcontext{Cliente: Operadora de Plano Odontológico (ANS) — Auditoria Interna}
+
+\begin{itemize}[leftmargin=1.2em, itemsep=0.3em, parsep=0pt, topsep=0.3em]
+
+\achievement{\textbf{Planejei e executei engajamentos de auditoria interna risk-based}, com risk assessment dirigindo escopo, teste de controles (desenho e efetividade), classificação de achados e análise de causa-raiz.}
+
+\achievement{\textbf{Implementei pioneiramente IA sob revisão humana} para priorização por risco, sumarização de normativos e padronização de critérios — preservando trilha auditável completa. Negociei planos de ação com alta gestão (responsável, prazo, métrica de eficácia).}
+
+\end{itemize}
+
+\vspace{0.5em}
+
+\roletitle{Business Consultant / Consulting FSO Trainee}{Fev/2022 – Set/2023 · 1 ano 8 meses}
+\clientcontext{Cliente: Seguradora Tradicional · Fase F ALBA (8 meses)}
+
+\begin{itemize}[leftmargin=1.2em, itemsep=0.3em, parsep=0pt, topsep=0.3em]
+
+\achievement{Atuei no \textbf{PMO estratégico} de programa de revitalização — orquestração de portfólio, governança executiva, marcos e dependências. Redesenhei jornadas do cliente e ciclo de vida de produtos, integrando cotação, venda e ERP.}
+
+\achievement{Contribuí para ajuste de portfólio (mix, proposta de valor, precificação, canais) e estruturação de roadmap em ondas com quick wins e habilitadores de longo prazo.}
+
+\end{itemize}
+
+\vspace{0.8em}
+
+% ──────────────────────────────────────────────────────────────
+% PROPRIETARY PROJECTS
+% ──────────────────────────────────────────────────────────────
+\section*{Proprietary Tech Projects}
+
+\textbf{\sffamily\color{ExecutiveNavy}SUSEP Benchmarking Platform v3.1} \hfill {\itshape\small SaaS em produção}
+
+{\small Plataforma autoral de análise e benchmarking do mercado segurador brasileiro (dados abertos SUSEP). \textbf{10+ dashboards analíticos}, score composto de risco v3.0 com 10 pilares, ETL automatizado (httpx + Playwright fallback, APScheduler), auth dual JWT+OAuth, modelo freemium. \textbf{Stack}: Python 3.11 · FastAPI · SQLAlchemy 2.0 · PostgreSQL · Alembic · Pandas · Plotly.js · Pytest (77 testes) · Docker. \textbf{88+ commits, 35+ PRs mergeados}.}
+
+\vspace{0.5em}
+
+\textbf{\sffamily\color{ExecutiveNavy}Antifraudsystem} \hfill {\itshape\small MVP em evolução (colaboração)}
+
+{\small Sistema antifraude colaborativo com motor de regras e dashboard de monitoramento. Definição de regras de negócio (padrões suspeitos, thresholds, gates de revisão humana), co-construção de dashboard (KPIs de detecção, falsos positivos), revisão UX sob ótica de compliance. \textbf{Stack}: React · Vite · TypeScript · MUI · Radix UI.}
+
+\vspace{0.8em}
+
+% ──────────────────────────────────────────────────────────────
+% EDUCATION & CERTIFICATIONS
+% ──────────────────────────────────────────────────────────────
+\section*{Education \& Certifications}
+
+\textbf{Graduação em Ciência de Dados com ênfase em IA} \hfill {\itshape Jul/2024 – Jan/2027 (em andamento)}\\
+{\small Descomplica Faculdade Digital}
+
+\textbf{Bacharelado em Ciências Contábeis} \hfill {\itshape Nov/2013 – Ago/2019}\\
+{\small Universidade Federal do Piauí (UFPI)}
+
+\vspace{0.5em}
+
+\textbf{Certificações:} ISO 37301 Lead Implementer (PECB, em andamento) · Registro CRC · EF SET English B1 (47/100) · EY Finance Learning (2022) · Microsoft Power Automate — Business Process Flows · Transformational Governance
+
+\vspace{0.5em}
+
+\textbf{EY Learning (2022–2026, 100+ horas certificadas):} Annual Financial Crime Update FY24 · AML/KYC · LGPD · GDPR · Cybersecurity · AI Governance (Responsible Use of M365 Copilot · AI Now 2.0 · AI for Consulting) · Independence Updates 2023/2024/2025 · Global Code of Conduct · RSAC Banking · ESG de Riscos (BrasilSeg) · Alteryx · Advanced Excel · Data Visualizations
+
+\vspace{0.8em}
+
+% ──────────────────────────────────────────────────────────────
+% LANGUAGES
+% ──────────────────────────────────────────────────────────────
+\section*{Languages}
+
+\textbf{Português} Nativo · \textbf{Inglês} B1 (EF SET 47/100) · \textbf{Espanhol} Básico
+
+\vspace{1em}
+
+% ──────────────────────────────────────────────────────────────
+% FOOTER
+% ──────────────────────────────────────────────────────────────
+\begin{center}
+\textcolor{SubtleRule}{\hrule height 0.5pt}
+\vspace{0.3em}
+{\sffamily\fontsize{8pt}{10pt}\selectfont\color{GraphiteGrey}%
+Documento confidencial · Preparado para oportunidades de liderança em GRC, Compliance-Tech e Risk Management}
+\end{center}
+
+\end{document}

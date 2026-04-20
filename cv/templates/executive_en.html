@@ -9,34 +9,23 @@
 <body>
 <div class="layout">
 
-  <!-- ── Header ─────────────────────────────────────────── -->
-  <header class="header">
-    <div class="header-left">
-      <div class="monogram">{{ cv.identity.monogram }}</div>
-    </div>
-    <div class="header-right">
-      <div class="header-name">{{ cv.identity.name }}</div>
-      <div class="header-headline">{{ cv.headline }}</div>
-    </div>
-  </header>
-
-  <!-- ── Columns ───────────────────────────────────────── -->
-  <div class="columns">
+  <!-- ── Sidebar (navy full-bleed) ──────────────────────── -->
   <aside class="sidebar">
+
+    <!-- Professional photo -->
+    <div class="photo-wrap">
+      <img src="assets/photo.jpg" class="photo-circle" alt="{{ cv.identity.name }}">
+    </div>
 
     <div class="sidebar-block">
       <h3>Contact</h3>
       <div class="contact-item">
-        <span class="contact-label">Location</span>
-        <span class="contact-value">{{ cv.identity.location }}</span>
+        <span class="contact-label">E-mail</span>
+        <span class="contact-value">{{ cv.identity.email }}</span>
       </div>
       <div class="contact-item">
         <span class="contact-label">Phone</span>
         <span class="contact-value">{{ cv.identity.phone }}</span>
-      </div>
-      <div class="contact-item">
-        <span class="contact-label">E-mail</span>
-        <span class="contact-value">{{ cv.identity.email }}</span>
       </div>
       <div class="contact-item">
         <span class="contact-label">LinkedIn</span>
@@ -46,18 +35,10 @@
         <span class="contact-label">GitHub</span>
         <span class="contact-value">{{ cv.identity.github }}</span>
       </div>
-    </div>
-
-    <div class="sidebar-block">
-      <h3>Core Competencies</h3>
-      {% for group in cv.competencies %}
-      <div class="competency-group">
-        <span class="group-name">{{ group.group }}</span>
-        <span class="skills-chips">
-          {% for skill in group.skills %}<span class="skill-chip">{{ skill }}</span>{% endfor %}
-        </span>
+      <div class="contact-item">
+        <span class="contact-label">Location</span>
+        <span class="contact-value">{{ cv.identity.location }}</span>
       </div>
-      {% endfor %}
     </div>
 
     <div class="sidebar-block">
@@ -66,6 +47,29 @@
       <div class="lang-item">
         <span class="lang-name">{{ lang.name }}</span>
         <span class="lang-level">{{ lang.level }}</span>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="sidebar-block">
+      <h3>Core Competencies</h3>
+      {% for group in cv.competencies %}
+      <div class="competency-group">
+        <span class="group-name">{{ group.group }}</span>
+        <ul class="skill-list">
+          {% for skill in group.skills %}<li>{{ skill }}</li>{% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="sidebar-block">
+      <h3>Education</h3>
+      {% for edu in cv.education %}
+      <div class="edu-item">
+        <div class="edu-degree">{{ edu.degree }}</div>
+        <div class="edu-institution">{{ edu.institution }}</div>
+        <div class="edu-period">{{ edu.period }}</div>
       </div>
       {% endfor %}
     </div>
@@ -90,21 +94,17 @@
       {% endfor %}
     </div>
 
-    <div class="sidebar-block">
-      <h3>Education</h3>
-      {% for edu in cv.education %}
-      <div class="edu-item">
-        <div class="edu-degree">{{ edu.degree }}</div>
-        <div class="edu-institution">{{ edu.institution }}</div>
-        <div class="edu-period">{{ edu.period }}</div>
-      </div>
-      {% endfor %}
-    </div>
-
   </aside>
 
-  <!-- ── Main ───────────────────────────────────────────── -->
+  <!-- ── Main Column (white) ────────────────────────────── -->
   <main class="main">
+
+    <!-- Name + 3-line Headline -->
+    <div class="main-name">{{ cv.identity.name }}</div>
+    <div class="headline-line1">SENIOR RISK &amp; COMPLIANCE @ EY · PYTHON/FASTAPI · IBM OPENPAGES</div>
+    <div class="headline-line2">AI Governance · TPRM · Compliance by Design in Insurance and Finance</div>
+    <div class="headline-line3">ISO 37301 · SUSEP · ANS · PREVIC · BACEN</div>
+    <hr class="name-rule">
 
     <h2 class="section">Executive Summary</h2>
     <p class="summary-text">{{ cv.executive_summary }}</p>
@@ -113,20 +113,18 @@
     {% for company in cv.experience %}
     <div class="company-block">
       <div class="company-name">{{ company.company }}</div>
-      <div class="timeline">
-        {% for role in company.roles %}
-        <div class="role">
-          <div class="role-title">{{ role.title }}</div>
-          <div class="role-period">{{ role.period }}</div>
-          <div class="role-client">{{ role.client }}</div>
-          <ul class="role-bullets">
-            {% for bullet in role.bullets %}
-            <li>{{ bullet | safe }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% endfor %}
+      {% for role in company.roles %}
+      <div class="role">
+        <div class="role-title">{{ role.title }}</div>
+        <div class="role-period">{{ role.period }}</div>
+        {% if role.client %}<div class="role-client">{{ role.client }}</div>{% endif %}
+        <ul class="role-bullets">
+          {% for bullet in role.bullets %}
+          <li>{{ bullet | safe }}</li>
+          {% endfor %}
+        </ul>
       </div>
+      {% endfor %}
     </div>
     {% endfor %}
 
@@ -158,12 +156,6 @@
     </ul>
 
   </main>
-  </div><!-- /.columns -->
-
-  <!-- ── Footer ────────────────────────────────────────── -->
-  <footer class="cv-footer">
-    {{ cv.identity.name }} · {{ cv.identity.linkedin }}
-  </footer>
 
 </div>
 </body>

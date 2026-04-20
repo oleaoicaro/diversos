@@ -14,6 +14,12 @@
 @font-face {
   font-family: 'CVSerif';
   src: url('fonts/LiberationSerif-Bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CVSerif';
+  src: url('fonts/LiberationSerif-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
@@ -25,155 +31,134 @@
 }
 @font-face {
   font-family: 'Inter';
-  src: url('fonts/Inter-Regular.ttf') format('truetype'); /* variable font saved as Inter-Regular.ttf */
+  src: url('fonts/Inter-Regular.ttf') format('truetype');
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: 600;
   font-style: normal;
 }
 
 /* ── Variables ─────────────────────────────────────────── */
 :root {
-  --accent: #1f2a44;
-  --ink:    #1a1a1a;
-  --mid:    #555555;
-  --light:  #888888;
-  --rule:   #dddddd;
-  --bg:     #ffffff;
+  --navy:          #1f2a44;
+  --gold:          #c0a062;
+  --white:         #ffffff;
+  --ink:           #1a1a1a;
+  --mid:           #555555;
+  --light:         #888888;
+  --rule:          #d8dce5;
+  --sb-text:       rgba(255,255,255,0.90);
+  --sb-muted:      rgba(255,255,255,0.55);
+  --sb-rule:       rgba(255,255,255,0.18);
 }
 
 /* ── Page ───────────────────────────────────────────────── */
 @page {
   size: A4;
-  margin: 16mm 18mm 18mm 18mm;
+  margin: 0 0 10mm 0;
 }
 @page :left {
   @bottom-center {
-    content: counter(page) " / " counter(pages);
-    font-size: 7.5pt;
+    content: "página " counter(page) " de " counter(pages);
+    font-size: 7pt;
     color: #888888;
-    font-family: 'Inter', 'Liberation Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 3mm;
   }
 }
 @page :right {
   @bottom-center {
-    content: counter(page) " / " counter(pages);
-    font-size: 7.5pt;
+    content: "página " counter(page) " de " counter(pages);
+    font-size: 7pt;
     color: #888888;
-    font-family: 'Inter', 'Liberation Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 3mm;
   }
 }
 
 /* ── Reset & Base ───────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { background: var(--bg); }
+html, body { height: 100%; }
 
 body {
   font-family: 'Inter', 'Liberation Sans', 'Arial', sans-serif;
   font-size: 9.5pt;
   line-height: 1.45;
   color: var(--ink);
-  background: var(--bg);
+  background: var(--white);
 }
 
-strong { font-weight: 600; color: var(--accent); }
+strong { font-weight: 600; color: var(--navy); }
 a { color: inherit; text-decoration: none; }
 
-/* ── Layout ─────────────────────────────────────────────── */
-.layout { display: block; width: 100%; }
-
-/* ── Columns (sidebar + main, table layout for WeasyPrint) ── */
-.columns {
+/* ── Two-Column Layout (table for WeasyPrint) ─────────────── */
+.layout {
   display: table;
   width: 100%;
+  min-height: 287mm;
   table-layout: fixed;
   border-spacing: 0;
   border-collapse: collapse;
 }
 
-/* ── Header ─────────────────────────────────────────────── */
-.header {
-  display: table;
-  width: 100%;
-  border-collapse: collapse;
-  padding-bottom: 6mm;
-  border-bottom: 0.5pt solid var(--rule);
-  margin-bottom: 7mm;
-}
-
-.header-left {
-  display: table-cell;
-  width: 22mm;
-  vertical-align: middle;
-}
-
-.monogram {
-  width: 20mm;
-  height: 20mm;
-  border: 1.5px solid var(--accent);
-  text-align: center;
-  line-height: 20mm;
-  font-family: 'CVSerif', 'Liberation Serif', 'Georgia', serif;
-  font-size: 18pt;
-  font-weight: 700;
-  color: var(--accent);
-  letter-spacing: 0.06em;
-}
-
-.header-right {
-  display: table-cell;
-  vertical-align: middle;
-  padding-left: 7mm;
-}
-
-.header-name {
-  font-family: 'CVSerif', 'Liberation Serif', 'Georgia', serif;
-  font-size: 26pt;
-  font-weight: 700;
-  color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  line-height: 1.1;
-  margin-bottom: 2mm;
-}
-
-.header-headline {
-  font-family: 'Inter', 'Liberation Sans', sans-serif;
-  font-size: 9.5pt;
-  color: var(--mid);
-  letter-spacing: 0.04em;
-  line-height: 1.4;
-}
-
-/* ── Sidebar ─────────────────────────────────────────────── */
+/* ── Sidebar (navy full-bleed) ──────────────────────────── */
 .sidebar {
   display: table-cell;
-  width: 30%;
+  width: 32%;
+  background: var(--navy);
   vertical-align: top;
-  border-right: 0.5pt solid var(--rule);
-  padding-right: 8mm;
+  padding: 12mm 8mm 16mm 10mm;
 }
 
+/* ── Photo ──────────────────────────────────────────────── */
+.photo-wrap {
+  text-align: center;
+  margin-bottom: 10mm;
+}
+
+.photo-circle {
+  width: 32mm;
+  height: 32mm;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold);
+  display: block;
+  margin: 0 auto;
+}
+
+/* ── Sidebar Typography ─────────────────────────────────── */
 .sidebar-block {
-  margin-bottom: 5mm;
+  margin-bottom: 6mm;
 }
 
 .sidebar-block h3 {
-  font-family: 'Inter', 'Liberation Sans', sans-serif;
-  font-size: 7pt;
+  font-family: 'Inter', sans-serif;
+  font-size: 6.5pt;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: var(--accent);
-  border-bottom: 0.5pt solid var(--rule);
+  color: var(--gold);
+  border-bottom: 0.5pt solid var(--sb-rule);
   padding-bottom: 1.5mm;
   margin-bottom: 3mm;
 }
 
 .sidebar-block p,
 .sidebar-block li {
-  font-size: 8.5pt;
+  font-size: 7.5pt;
   line-height: 1.45;
-  color: var(--ink);
+  color: var(--sb-text);
 }
 
 .sidebar-block ul {
@@ -182,126 +167,192 @@ a { color: inherit; text-decoration: none; }
 }
 
 .sidebar-block ul li {
-  padding: 0.8mm 0;
-  font-size: 8.5pt;
-  color: var(--ink);
+  position: relative;
+  padding: 0.6mm 0 0.6mm 4mm;
+  font-size: 7.5pt;
+  color: var(--sb-text);
 }
 
-/* Contact items */
+.sidebar-block ul li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 7pt;
+  line-height: 1.45;
+}
+
+/* Contact */
 .contact-item {
-  margin-bottom: 2mm;
+  margin-bottom: 2.5mm;
 }
 
 .contact-label {
   display: block;
-  font-size: 7pt;
-  color: var(--light);
+  font-size: 6.5pt;
+  color: var(--sb-muted);
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
 
 .contact-value {
   display: block;
-  font-size: 8.5pt;
-  color: var(--ink);
+  font-size: 7.5pt;
+  color: var(--sb-text);
   word-break: break-all;
 }
 
-/* Competency chips */
+/* Competencies — vertical list, no chips */
 .competency-group {
-  margin-bottom: 3mm;
+  margin-bottom: 2.5mm;
 }
 
 .group-name {
   display: block;
-  font-size: 7.5pt;
+  font-size: 6.5pt;
   font-weight: 600;
-  color: var(--mid);
-  letter-spacing: 0.05em;
-  margin-bottom: 1.5mm;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+  margin-bottom: 1mm;
   text-transform: uppercase;
 }
 
 .group-items {
   display: block;
-  font-size: 8pt;
-  color: var(--mid);
+  font-size: 7.5pt;
+  color: var(--sb-text);
   line-height: 1.5;
 }
 
-.skills-chips {
-  line-height: 1.8;
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.skill-chip {
-  display: inline-block;
-  font-size: 8pt;
-  color: var(--ink);
-  border: 0.75px solid #cccccc;
-  padding: 1px 6px;
-  border-radius: 3px;
-  margin: 1px 2px 1px 0;
-  white-space: nowrap;
+.skill-list li {
+  position: relative;
+  padding: 0.4mm 0 0.4mm 4mm;
+  font-size: 7.5pt;
+  color: var(--sb-text);
+  line-height: 1.4;
+}
+
+.skill-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 7pt;
+  line-height: 1.4;
 }
 
 /* Languages */
 .lang-item {
   display: table;
   width: 100%;
-  font-size: 8.5pt;
+  font-size: 7.5pt;
   padding: 0.5mm 0;
 }
 
 .lang-name {
   display: table-cell;
+  color: var(--sb-text);
 }
 
 .lang-level {
   display: table-cell;
   text-align: right;
-  color: var(--mid);
+  color: var(--sb-muted);
   font-style: italic;
 }
 
-/* Education */
+/* Education (sidebar) */
 .edu-item {
   margin-bottom: 3mm;
 }
 
 .edu-degree {
-  font-size: 8.5pt;
+  font-size: 7.5pt;
   font-weight: 600;
-  color: var(--ink);
+  color: var(--sb-text);
   line-height: 1.3;
 }
 
 .edu-institution {
-  font-size: 8pt;
-  color: var(--mid);
+  font-size: 7pt;
+  color: var(--sb-muted);
 }
 
 .edu-period {
-  font-size: 7.5pt;
-  color: var(--light);
+  font-size: 7pt;
+  color: var(--sb-muted);
   font-style: italic;
 }
 
-/* ── Main Content ────────────────────────────────────────── */
+/* ── Main Column ──────────────────────────────────────────── */
 .main {
   display: table-cell;
-  width: 70%;
+  width: 68%;
+  background: var(--white);
   vertical-align: top;
-  padding-left: 10mm;
+  padding: 12mm 16mm 16mm 14mm;
+}
+
+/* ── Name & Headline Block ──────────────────────────────── */
+.main-name {
+  font-family: 'CVSerif', 'Liberation Serif', 'Georgia', serif;
+  font-size: 32pt;
+  font-weight: 600;
+  color: var(--navy);
+  letter-spacing: 0.03em;
+  line-height: 1.05;
+  margin-bottom: 3.5mm;
+}
+
+.headline-line1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 9.5pt;
+  font-weight: 500;
+  color: var(--mid);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin-bottom: 1.5mm;
+}
+
+.headline-line2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 10pt;
+  font-weight: 400;
+  color: var(--mid);
+  line-height: 1.2;
+  margin-bottom: 1.5mm;
+}
+
+.headline-line3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 9pt;
+  font-weight: 400;
+  color: var(--light);
+  line-height: 1.2;
+  margin-bottom: 4.5mm;
+}
+
+.name-rule {
+  border: none;
+  border-top: 0.5pt solid var(--rule);
+  margin-bottom: 6mm;
 }
 
 /* ── Section Headers ─────────────────────────────────────── */
 h2.section {
-  font-family: 'Inter', 'Liberation Sans', sans-serif;
-  font-size: 7.5pt;
+  font-family: 'CVSerif', 'Liberation Serif', 'Georgia', serif;
+  font-size: 12pt;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--accent);
+  letter-spacing: 3px;
+  color: var(--navy);
   border-bottom: 0.5pt solid var(--rule);
   padding-bottom: 1.5mm;
   margin-bottom: 4mm;
@@ -321,69 +372,42 @@ h2.section:first-child {
 
 /* ── Experience ──────────────────────────────────────────── */
 .company-block {
-  margin-bottom: 4mm;
+  margin-bottom: 5mm;
+  break-inside: avoid;
 }
 
 .company-name {
   font-family: 'CVSerif', 'Liberation Serif', 'Georgia', serif;
   font-size: 10.5pt;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--navy);
   margin-bottom: 2mm;
 }
 
-.timeline {
-  position: relative;
-  padding-left: 5mm;
-  margin-bottom: 3mm;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 1mm;
-  top: 3mm;
-  bottom: 3mm;
-  width: 0.5pt;
-  background: var(--rule);
-}
-
 .role {
-  position: relative;
   margin-bottom: 4mm;
   break-inside: avoid;
-}
-
-.role::before {
-  content: '';
-  position: absolute;
-  left: -4.5mm;
-  top: 2.5mm;
-  width: 2mm;
-  height: 2mm;
-  border-radius: 50%;
-  background: var(--accent);
+  padding-left: 3mm;
+  border-left: 1.5pt solid var(--rule);
 }
 
 .role-title {
-  font-family: 'Inter', 'Liberation Sans', sans-serif;
-  font-size: 9.5pt;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.10em;
+  font-family: 'CVSerif', 'Liberation Serif', 'Georgia', serif;
+  font-size: 10.5pt;
+  font-weight: 400;
+  font-style: italic;
   color: var(--ink);
-  margin-bottom: 1mm;
+  margin-bottom: 0.8mm;
 }
 
 .role-period {
-  font-size: 8.5pt;
-  font-style: italic;
+  font-size: 8pt;
   color: var(--mid);
-  margin-bottom: 1mm;
+  margin-bottom: 0.8mm;
 }
 
 .role-client {
-  font-size: 9pt;
+  font-size: 8.5pt;
   color: var(--mid);
   margin-bottom: 2mm;
 }
@@ -404,11 +428,12 @@ h2.section:first-child {
 }
 
 .role-bullets li::before {
-  content: '—';
+  content: '▸';
   position: absolute;
   left: 0;
-  color: var(--mid);
+  color: var(--gold);
   font-size: 9pt;
+  line-height: 1.45;
 }
 
 /* ── Projects ────────────────────────────────────────────── */
@@ -425,12 +450,12 @@ h2.section:first-child {
 
 .project-name {
   display: table-cell;
-  font-family: 'Inter', 'Liberation Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 9.5pt;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--accent);
+  color: var(--navy);
 }
 
 .project-status {
@@ -463,10 +488,10 @@ h2.section:first-child {
 }
 
 .project-highlights li::before {
-  content: '—';
+  content: '▸';
   position: absolute;
   left: 0;
-  color: var(--mid);
+  color: var(--gold);
   font-size: 9pt;
 }
 
@@ -498,21 +523,9 @@ h2.section:first-child {
 
 .earlier-list li:last-child { border-bottom: none; }
 
-/* ── CV Footer ───────────────────────────────────────────── */
-.cv-footer {
-  margin-top: 8mm;
-  padding-top: 3mm;
-  border-top: 0.5pt solid var(--rule);
-  font-size: 7.5pt;
-  color: var(--light);
-  text-align: center;
-  font-family: 'Inter', 'Liberation Sans', sans-serif;
-}
-
 /* ── Print Utilities ─────────────────────────────────────── */
 @media print {
   body { font-size: 9.5pt; }
-  .layout { min-height: 0; }
   h2.section { break-after: avoid; }
-  .role, .project { break-inside: avoid; }
+  .company-block, .role, .project { break-inside: avoid; }
 }

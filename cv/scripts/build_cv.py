@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Build CV PDFs (HTML→PDF) via WeasyPrint with Playwright fallback."""
 import logging
-import sys
 from pathlib import Path
 
 import yaml
@@ -16,6 +15,37 @@ TEMPLATES = ROOT / "templates"
 FONTS_DIR = TEMPLATES / "styles" / "fonts"
 OUTPUT = ROOT / "output"
 OUTPUT.mkdir(exist_ok=True)
+
+LABELS = {
+    "pt": {
+        "html_lang": "pt-BR",
+        "doc_title": "Currículo",
+        "page_word": "página",
+        "of_word": "de",
+        "experience": "Experiência Profissional",
+        "projects": "Projetos Autorais",
+        "earlier": "Experiência Anterior",
+        "competencies": "Competências",
+        "education": "Formação",
+        "certifications": "Certificações",
+        "languages": "Idiomas",
+        "stack_label": "Stack",
+    },
+    "en": {
+        "html_lang": "en",
+        "doc_title": "Curriculum Vitae",
+        "page_word": "page",
+        "of_word": "of",
+        "experience": "Professional Experience",
+        "projects": "Signature Projects",
+        "earlier": "Earlier Career",
+        "competencies": "Core Competencies",
+        "education": "Education",
+        "certifications": "Certifications",
+        "languages": "Languages",
+        "stack_label": "Stack",
+    },
+}
 
 
 def log_fonts():
@@ -35,8 +65,8 @@ def log_fonts():
 def build(lang: str) -> None:
     data = yaml.safe_load(DATA.read_text(encoding="utf-8"))
     env = Environment(loader=FileSystemLoader(str(TEMPLATES)), autoescape=False)
-    tpl = env.get_template(f"executive_{lang}.html")
-    html = tpl.render(cv=data[lang])
+    tpl = env.get_template("executive.html")
+    html = tpl.render(cv=data[lang], t=LABELS[lang])
 
     html_path = OUTPUT / f"Icaro_Leao_CV_{lang.upper()}.html"
     html_path.write_text(html, encoding="utf-8")
@@ -66,7 +96,7 @@ def build(lang: str) -> None:
             page.pdf(
                 path=str(pdf_path),
                 format="A4",
-                margin={"top": "16mm", "bottom": "18mm", "left": "18mm", "right": "18mm"},
+                margin={"top": "18mm", "bottom": "18mm", "left": "18mm", "right": "18mm"},
                 print_background=True,
             )
             browser.close()

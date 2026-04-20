@@ -39,23 +39,30 @@
 
   <h2 class="section">{{ t.experience }}</h2>
   {% for company in cv.experience %}
-  {% for role in company.roles %}
-  <div class="exp-entry">
+  <div class="exp-company-block">
     <div class="exp-header-row">
       <span class="exp-company">{{ company.company }}</span>
-      <span class="exp-period">{{ role.period }}</span>
+      {% if company.period %}
+      <span class="exp-period">{{ company.period }}</span>
+      {% endif %}
     </div>
-    <div class="exp-role-line">
-      <span class="exp-role">{{ role.title }}</span>
+    {% for role in company.roles %}
+    <div class="exp-subrole">
+      <div class="exp-subrole-header">
+        <span class="exp-role">{{ role.title }}</span>
+        <span class="exp-period-small">{{ role.period }}</span>
+      </div>
+      {% if role.client %}
+      <div class="exp-client">{{ role.client }}</div>
+      {% endif %}
+      <ul class="exp-bullets">
+        {% for bullet in role.bullets %}
+        <li>{{ bullet | safe }}</li>
+        {% endfor %}
+      </ul>
     </div>
-    <div class="exp-client">{{ role.client }}</div>
-    <ul class="exp-bullets">
-      {% for bullet in role.bullets %}
-      <li>{{ bullet | safe }}</li>
-      {% endfor %}
-    </ul>
+    {% endfor %}
   </div>
-  {% endfor %}
   {% endfor %}
 
   <h2 class="section">{{ t.projects }}</h2>
@@ -78,13 +85,6 @@
   </div>
   {% endfor %}
 
-  <h2 class="section">{{ t.earlier }}</h2>
-  <ul class="earlier-list">
-    {% for item in cv.previous_experience %}
-    <li>{{ item }}</li>
-    {% endfor %}
-  </ul>
-
   <h2 class="section">{{ t.competencies }}</h2>
   {% for group in cv.competencies %}
   <div class="comp-group">
@@ -93,28 +93,39 @@
   </div>
   {% endfor %}
 
-  <h2 class="section">{{ t.education }}</h2>
+  <h2 class="section">{{ t.education_languages }}</h2>
   {% for edu in cv.education %}
   <div class="edu-item">
-    <span class="edu-degree">{{ edu.degree }}</span> —
+    <span class="edu-degree">{{ edu.degree }}</span> |
     <span class="edu-institution">{{ edu.institution }}</span>
     <span class="edu-period">· {{ edu.period }}</span>
   </div>
   {% endfor %}
 
-  <h2 class="section">{{ t.certifications }}</h2>
+  <div class="edu-lang-divider"></div>
+
+  <ul class="lang-list">
+    {% for lang in cv.languages %}
+    <li><span class="lang-name">{{ lang.name }}</span> | <span class="lang-level">{{ lang.level }}</span></li>
+    {% endfor %}
+  </ul>
+
+  {% if cv.certifications %}
   <ul class="cert-list">
     {% for cert in cv.certifications %}
     <li>{{ cert }}</li>
     {% endfor %}
   </ul>
+  {% endif %}
 
-  <h2 class="section">{{ t.languages }}</h2>
-  <ul class="lang-list">
-    {% for lang in cv.languages %}
-    <li><span class="lang-name">{{ lang.name }}</span> — <span class="lang-level">{{ lang.level }}</span></li>
+  {% if cv.previous_experience %}
+  <h2 class="section">{{ t.earlier }}</h2>
+  <ul class="earlier-list">
+    {% for item in cv.previous_experience %}
+    <li>{{ item }}</li>
     {% endfor %}
   </ul>
+  {% endif %}
 
 </div>
 </body>

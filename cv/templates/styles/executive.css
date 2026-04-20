@@ -179,6 +179,45 @@ h2.section {
   break-after: avoid;
 }
 
+/* ── Company Block (consolidated multi-role) ─────────────────── */
+.exp-company-block {
+  margin-bottom: 5mm;
+}
+
+.exp-company-block > .exp-header-row {
+  margin-bottom: 2mm;
+}
+
+.exp-subrole {
+  margin-top: 2.5mm;
+  margin-bottom: 1.5mm;
+  padding-left: 2mm;
+  border-left: 1.5pt solid var(--rule);
+}
+
+.exp-subrole-header {
+  display: table;
+  width: 100%;
+  margin-bottom: 0.5mm;
+  break-after: avoid;
+}
+
+.exp-subrole-header .exp-role {
+  display: table-cell;
+}
+
+.exp-period-small {
+  display: table-cell;
+  text-align: right;
+  font-family: 'Inter', sans-serif;
+  font-size: 9.5pt;
+  font-weight: 500;
+  color: var(--mid);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  vertical-align: bottom;
+}
+
 .exp-header-row {
   display: table;
   width: 100%;
@@ -336,6 +375,11 @@ h2.section {
   color: var(--mid);
   font-size: 9.5pt;
   font-style: italic;
+}
+
+.edu-lang-divider {
+  margin: 2.5mm 0;
+  border-top: 0.4pt solid var(--rule);
 }
 
 /* ── Certifications & languages ──────────────────────────────── */

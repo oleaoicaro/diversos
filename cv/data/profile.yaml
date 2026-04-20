@@ -8,14 +8,14 @@ pt:
     linkedin: "linkedin.com/in/oleaoicaro"
     github: "github.com/oleaoicaro"
 
-  headline: "Senior Risk & Compliance Consultant · EY · Arquiteto de Compliance-Tech em Setores Regulados · IBM OpenPages · Governança de IA · Python/FastAPI · TPRM"
+  headline: "Consultor Sênior | Risk & Compliance | EY | Setores Regulados | IBM OpenPages | Governança de IA | Python/FastAPI | TPRM"
 
   executive_summary: >
-    Consultor Sênior com 4+ anos na EY liderando a transformação de áreas de Compliance em instituições altamente
-    reguladas — Seguros (SUSEP, Lei 15.040/2024), Saúde Suplementar (ANS) e Previdência (PREVIC). Opero na
-    interseção entre regulação, tecnologia e Governança de IA, combinando IBM OpenPages, ISO 37301 e Three Lines
-    Model com stack técnica hands-on comprovada por SaaS próprio em produção — combinação rara no mercado
-    brasileiro de GRC.
+    Consultor Sênior em Risk & Compliance na EY com atuação em setores regulados
+    (SUSEP, ANS, PREVIC). Especialista em transformação de Compliance com uso de
+    tecnologia (IBM OpenPages, Python, Power BI) e Governança de IA. Experiência
+    em implementação de frameworks, automação de processos e liderança de projetos
+    com impacto direto em eficiência operacional e auditoria.
 
   competencies:
     - group: "GRC & Plataformas"
@@ -69,17 +69,16 @@ pt:
     - name: "Português"
       level: "Nativo"
     - name: "Inglês"
-      level: "B1 — EF SET 47/100"
+      level: "Intermediário (B2)"
     - name: "Espanhol"
       level: "Básico"
 
   certifications:
     - "Registro no CRC"
-    - "EF SET English — B1 Intermediate (47/100)"
     - "EY Finance Learning (2022)"
-    - "Microsoft Power Automate — Business Process Flows"
-    - "Transformational Governance — Driving Responsible Business Conduct"
-    - "ISO 37301 Lead Implementer (PECB) — em andamento"
+    - "Microsoft Power Automate | Business Process Flows"
+    - "Transformational Governance | Driving Responsible Business Conduct"
+    - "ISO 37301 Lead Implementer (PECB) | em andamento"
 
   ey_learning:
     title: "Formação Complementar — EY Learning"
@@ -100,44 +99,44 @@ pt:
 
   experience:
     - company: "Ernst & Young (EY)"
+      period: "2022 – Presente"
       roles:
-        - title: "Consultor Sênior — Risk & Compliance"
+        - title: "Consultor Sênior | Risk & Compliance"
           period: "ago/2025 – presente"
-          client: "Cliente: Seguradora de Ramos Elementares · Programa Plurianual de Transformação de Compliance (2 anos 5 meses)"
+          client: "Seguradora de Ramos Elementares | Programa Plurianual de Transformação de Compliance"
           bullets:
-            - "Liderança da implementação do <strong>IBM OpenPages (Policy Management)</strong> ao longo de <strong>1,5 ano</strong>, desenhando a <strong>especificação core da matriz de risco corporativa com 85+ riscos</strong> mapeados em 4 pilares (Estratégico, Operacional, Compliance, Tecnológico). Plataforma gerenciando <strong>120+ políticas corporativas e 200+ procedimentos</strong> com <strong>350+ usuários ativos</strong> (45 gestores de políticas, 80 aprovadores, 225 usuários consulta). Conduziu iterações de funcionalidades complementares: (1) <strong>versionamento automático</strong> com histórico completo de 400+ revisões auditáveis, (2) <strong>trilha de auditoria</strong> 100% rastreável atendendo SOX, (3) <strong>governança de exceções</strong> processando 30+ solicitações/mês com SLA de 5 dias e aprovação multicamada, (4) workflows end-to-end eliminando 12 planilhas manuais e <strong>reduzindo ciclo de revisão de 45 dias para 18 dias (60% de ganho)</strong>. <strong>Impacto</strong>: reduziu tempo de preparação para auditoria externa de 15 dias para 6 dias, abrangência de 8 áreas (Compliance, Jurídico, Auditoria, Operações, TI, RH, Atuária, Controladoria)."
-            - "Elaboração do <strong>manual do sistema</strong> (analistas e pontos focais), do <strong>manual de procedimentos interno</strong> e da <strong>norma interna</strong> — fechando o ciclo técnico → operacional → normativo pós-implantação."
-            - "Condução de <strong>auditorias regulatórias SUSEP em 13 seguradoras</strong>, mapeando gaps frente à Circular SUSEP 648/21, Resolução CNSP 416/21 e impactos da Lei 15.040/2024."
-            - "Concepção e entrega do <strong>AIRNC</strong> (Autoavaliação de Identificação Regulatória de Não Conformidade) — ferramenta HTML/JavaScript com xlsx.js, <strong>hardening de segurança</strong> (sanitização de data URLs, scan documentado, pinning de dependências de suporte) e modelo <strong>standalone offline</strong> para uso sem dependência de servidor."
-            - "Automação em Python do <strong>heatmap corporativo de riscos</strong> processando <strong>120+ indicadores</strong> de <strong>85 riscos mapeados</strong> com integração automatizada de 4 fontes (IBM OpenPages, Power BI, Excel templates de áreas, dados de incidentes). <strong>Reduziu tempo de geração trimestral de 16 horas para 8 minutos (99% de ganho)</strong>, eliminou 100% dos erros de consolidação manual identificados nos 3 ciclos anteriores, e habilitou atualização sob demanda para comitês executivos."
-            - "Estruturação de programa <strong>TPRM</strong> com monitoramento contínuo de terceiros críticos e relevantes."
-            - "Construção de <strong>7 dashboards executivos</strong> em Power BI rastreando <strong>45 KRIs</strong> (taxa de não conformidades, tempo médio de remediação, cobertura de controles) e <strong>30 KPIs</strong> (aderência a políticas, conclusão de treinamentos obrigatórios, SLA de resposta regulatória). Consumidos em <strong>3 reuniões mensais de comitê executivo</strong> (Comitê de Riscos, Comitê de Compliance, Comitê de Auditoria) para audiência de 12 C-level. Alertas automáticos para 8 indicadores críticos. <strong>Impacto</strong>: reduziu tempo de preparação de reuniões de 6 horas para 20 minutos."
-            - "Desenho de workflows de <strong>Compliance by Design</strong> conectando mudança regulatória a políticas, controles e treinamentos."
-            - "<strong>Instrutor interno de Power BI</strong> — Turma EY Cálculo 2025 com <strong>15 profissionais</strong> (analistas e consultores júnior/pleno). Ministrou <strong>12 horas</strong> de treinamento em <strong>4 sessões práticas</strong> cobrindo: modelagem dimensional para dados SUSEP/ANS, DAX avançado para KRIs automáticos, Row-Level Security para segregação de acessos regulatórios, otimização de queries para grandes volumes. Desenvolveu <strong>material didático autoral</strong> com 8 exercícios práticos baseados em casos reais de seguradoras. <strong>Resultado</strong>: 100% de conclusão, 9,2/10 de satisfação, 6 dashboards criados pelos participantes aplicados em projetos cliente, habilitando autonomia de 4 áreas para relatórios regulatórios sem suporte TI."
-            - "Governança de dados inter-áreas (taxonomia, qualidade, metadados) sustentando rastreabilidade regulatória."
-            - "Alinhamento a Governança de IA, ISO 37301, Three Lines Model, Lei 15.040/2024, SUSEP, ANS e PREVIC."
+            - "Liderou implementação do <strong>IBM OpenPages (Policy Management)</strong> ao longo de 1,5 ano"
+            - "<strong>85+ riscos</strong> mapeados em 4 pilares (Estratégico, Operacional, Compliance, Tecnológico)"
+            - "<strong>120+ políticas</strong> e <strong>200+ procedimentos</strong> | <strong>350+ usuários ativos</strong>"
+            - "Ciclo de revisão de políticas: <strong>45 → 18 dias (−60%)</strong> | Preparação para auditoria: <strong>15 → 6 dias</strong>"
+            - "Concepção e entrega do <strong>AIRNC</strong> | ferramenta standalone de autoavaliação regulatória (HTML/JavaScript)"
+            - "Automação em Python do <strong>heatmap corporativo de riscos</strong> | geração trimestral: <strong>16h → 8 min (−99%)</strong>"
+            - "Construção de <strong>7 dashboards Power BI</strong> | <strong>45 KRIs</strong> e <strong>30 KPIs</strong> | preparação de reuniões: <strong>6h → 20 min</strong>"
+            - "Auditorias regulatórias SUSEP em <strong>13 seguradoras</strong> | gaps vs. Circular 648/21 e CNSP 416/21"
+            - "Estruturação de programa <strong>TPRM</strong> com monitoramento contínuo de terceiros críticos"
+            - "Desenho de <strong>Compliance by Design</strong>, governança de dados e alinhamento a ISO 37301 | Three Lines Model"
         - title: "Risk Consultant"
-          period: "out/2023 – jul/2025 · 1 ano 10 meses"
-          client: "Cliente: Operadora de Plano Odontológico (ANS) — Auditoria Interna"
+          period: "out/2023 – jul/2025"
+          client: "Operadora de Plano Odontológico (ANS) | Auditoria Interna"
           bullets:
             - "Planejamento e execução de engajamentos de <strong>auditoria interna risk-based</strong>, com risk assessment dirigindo escopo."
-            - "Implementação pioneira de <strong>IA sob revisão humana</strong> para priorização por risco, sumarização de normativos e padronização de critérios — preservando trilha auditável."
+            - "Implementação pioneira de <strong>IA sob revisão humana</strong> para priorização por risco, sumarização de normativos e padronização de critérios."
             - "Testes de desenho e efetividade de controles, classificação de achados e análise de causa-raiz."
-            - "Negociação de planos de ação com a alta gestão (responsável, prazo, métrica de eficácia) e emissão de relatórios finais com peer review."
+            - "Negociação de planos de ação com a alta gestão (responsável, prazo, métrica de eficácia) e emissão de relatórios finais."
         - title: "Business Consultant / Consulting FSO Trainee"
-          period: "fev/2022 – set/2023 · 1 ano 8 meses"
-          client: "Cliente: Seguradora Tradicional · Fase F ALBA (8 meses)"
+          period: "fev/2022 – set/2023"
+          client: "Seguradora Tradicional | Programa de Revitalização (8 meses)"
           bullets:
-            - "Atuação no <strong>PMO estratégico</strong> de programa de revitalização — orquestração de portfólio, governança executiva, marcos e dependências."
+            - "Atuação no <strong>PMO estratégico</strong> de programa de revitalização: orquestração de portfólio, governança executiva, marcos e dependências."
             - "Redesenho de jornadas do cliente e ciclo de vida dos produtos, integrando cotação, venda e ERP."
             - "Ajuste de portfólio (mix, proposta de valor, precificação, canais)."
             - "Estruturação de roadmap em ondas com quick wins e habilitadores de longo prazo."
 
   previous_experience:
-    - "Rio Preto Produtos de Petróleo Ltda. — Aux. Contabilidade / Faturamento · set/2020 – jan/2022"
-    - "Autônomo — Contador registrado no CRC · abr/2020 – ago/2020"
-    - "Essenza Contabilidade — Assistente · jan/2019 – mar/2020"
-    - "Tribunal de Contas do Estado do Piauí — Estagiário · 2017 – 2019"
+    - "Rio Preto Produtos de Petróleo Ltda. | Aux. Contabilidade / Faturamento · set/2020 – jan/2022"
+    - "Autônomo | Contador registrado no CRC · abr/2020 – ago/2020"
+    - "Essenza Contabilidade | Assistente · jan/2019 – mar/2020"
+    - "Tribunal de Contas do Estado do Piauí | Estagiário · 2017 – 2019"
 
   projects:
     - name: "SUSEP Benchmarking Platform v3.1"
@@ -158,6 +157,17 @@ pt:
         - "Co-construção do dashboard de monitoramento (KPIs de detecção, falsos positivos)"
         - "Revisão UX sob ótica de compliance"
       stack: "React · Vite · TypeScript · MUI · Radix UI"
+      metrics: ""
+    - name: "Treinamento Interno EY | Power BI (América do Sul)"
+      status: "Projeto Interno EY"
+      description: "Programa de capacitação interna EY em Power BI aplicado a dados regulatórios."
+      highlights:
+        - "<strong>200+</strong> profissionais impactados na América do Sul"
+        - "12h de treinamento em 4 sessões práticas"
+        - "Conteúdo autoral: modelagem dimensional, DAX avançado, RLS, otimização de queries"
+        - "Sessões práticas com os analistas que usariam as ferramentas no dia a dia"
+        - "Aplicação direta em projetos de clientes"
+      stack: "Power BI · DAX · RLS · Modelagem Dimensional"
       metrics: ""
 
   education:
@@ -181,15 +191,14 @@ en:
     linkedin: "linkedin.com/in/oleaoicaro"
     github: "github.com/oleaoicaro"
 
-  headline: "Senior Risk & Compliance Consultant · EY · Compliance-Tech Architect in Regulated Markets · IBM OpenPages · AI Governance · Python/FastAPI · TPRM"
+  headline: "Senior Risk & Compliance Consultant | EY | Regulated Markets | IBM OpenPages | AI Governance | Python/FastAPI | TPRM"
 
   executive_summary: >
-    Senior Consultant with 4+ years at EY leading the transformation of Compliance functions in highly regulated
-    institutions — Insurance (SUSEP, Brazilian Insurance Regulator; Law 15.040/2024), Supplemental Healthcare
-    (ANS, Brazilian Healthcare Regulator) and Private Pensions (PREVIC, Brazilian Pension Regulator). I operate
-    at the intersection of regulation, technology and AI Governance, combining IBM OpenPages, ISO 37301 and the
-    Three Lines Model with a proven hands-on technical stack — evidenced by a proprietary SaaS in production — a
-    rare combination in the Brazilian GRC market.
+    Senior Risk & Compliance Consultant at EY operating in regulated sectors
+    (SUSEP, ANS, PREVIC). Specialist in Compliance transformation leveraging
+    technology (IBM OpenPages, Python, Power BI) and AI Governance. Experience
+    in framework implementation, process automation and project leadership with
+    direct impact on operational efficiency and audit readiness.
 
   competencies:
     - group: "GRC & Platforms"
@@ -243,17 +252,16 @@ en:
     - name: "Portuguese"
       level: "Native"
     - name: "English"
-      level: "B1 — EF SET 47/100"
+      level: "Intermediate (B2)"
     - name: "Spanish"
       level: "Basic"
 
   certifications:
     - "CRC Accountant Registration"
-    - "EF SET English — B1 Intermediate (47/100)"
     - "EY Finance Learning (2022)"
-    - "Microsoft Power Automate — Business Process Flows"
-    - "Transformational Governance — Driving Responsible Business Conduct"
-    - "ISO 37301 Lead Implementer (PECB) — in progress"
+    - "Microsoft Power Automate | Business Process Flows"
+    - "Transformational Governance | Driving Responsible Business Conduct"
+    - "ISO 37301 Lead Implementer (PECB) | in progress"
 
   ey_learning:
     title: "Continuing Education — EY Learning"
@@ -274,48 +282,48 @@ en:
 
   experience:
     - company: "Ernst & Young (EY)"
+      period: "2022 – Present"
       roles:
-        - title: "Senior Consultant — Risk & Compliance"
+        - title: "Senior Consultant | Risk & Compliance"
           period: "Aug/2025 – Present"
-          client: "Client: Property & Casualty Insurance Company · Multi-Year Compliance Transformation Programme (2 yrs 5 mos)"
+          client: "Property & Casualty Insurance Company | Multi-Year Compliance Transformation Programme"
           bullets:
-            - "Led the <strong>IBM OpenPages (Policy Management)</strong> implementation over <strong>1.5 years</strong>, designing the <strong>core risk-matrix specification with 85+ risks</strong> mapped across 4 pillars (Strategic, Operational, Compliance, Technology). Platform managing <strong>120+ corporate policies and 200+ procedures</strong> with <strong>350+ active users</strong> (45 policy managers, 80 approvers, 225 read-only users). Drove iterations of complementary features: (1) <strong>automatic versioning</strong> with complete history of 400+ auditable revisions, (2) <strong>100% traceable audit trail</strong> meeting SOX requirements, (3) <strong>exception governance</strong> processing 30+ requests/month with 5-day SLA and multi-layer approval, (4) end-to-end workflows eliminating 12 manual spreadsheets and <strong>reducing review cycle from 45 days to 18 days (60% improvement)</strong>. <strong>Impact</strong>: reduced external audit preparation from 15 days to 6 days, coverage across 8 departments (Compliance, Legal, Audit, Operations, IT, HR, Actuarial, Finance)."
-            - "Authored the <strong>system manual</strong> (for analysts and focal points), the <strong>internal procedures manual</strong> and the <strong>internal policy</strong> — closing the technical → operational → normative loop post-go-live."
-            - "Conducted <strong>SUSEP regulatory audits at 13 insurance companies</strong>, mapping gaps against SUSEP Circular 648/21, CNSP Resolution 416/21 and impacts of Law 15.040/2024."
-            - "Conceived and delivered <strong>AIRNC</strong> (Regulatory Non-Compliance Self-Assessment) — an HTML/JavaScript tool using xlsx.js, with <strong>security hardening</strong> (data-URL sanitisation, documented scan, pinning of supporting dependencies) and a <strong>standalone offline</strong> model running without server dependency."
-            - "Automated in Python the <strong>corporate risk heatmap</strong> processing <strong>120+ indicators</strong> from <strong>85 mapped risks</strong> with automated integration of 4 sources (IBM OpenPages, Power BI, area Excel templates, incident data). <strong>Reduced quarterly generation time from 16 hours to 8 minutes (99% improvement)</strong>, eliminated 100% of manual consolidation errors identified in previous 3 cycles, and enabled on-demand updates for executive committees."
-            - "Structured a <strong>TPRM</strong> programme with continuous monitoring of critical and relevant third parties."
-            - "Built <strong>7 executive dashboards</strong> in Power BI tracking <strong>45 KRIs</strong> (non-conformance rate, average remediation time, control coverage) and <strong>30 KPIs</strong> (policy adherence, mandatory training completion, regulatory response SLA). Consumed in <strong>3 monthly executive committee meetings</strong> (Risk Committee, Compliance Committee, Audit Committee) for audience of 12 C-level executives. Automatic alerts for 8 critical indicators. <strong>Impact</strong>: reduced meeting preparation time from 6 hours to 20 minutes."
-            - "Designed <strong>Compliance by Design</strong> workflows connecting regulatory changes to policies, controls and training."
-            - "<strong>Internal Power BI instructor</strong> — EY Cálculo 2025 cohort with <strong>15 professionals</strong> (junior/mid-level analysts and consultants). Delivered <strong>12 hours</strong> of training across <strong>4 practical sessions</strong> covering: dimensional modeling for SUSEP/ANS data, advanced DAX for automated KRIs, Row-Level Security for regulatory access segregation, query optimization for large volumes. Developed <strong>proprietary teaching materials</strong> with 8 practical exercises based on real insurance cases. <strong>Results</strong>: 100% completion, 9.2/10 satisfaction, 6 dashboards created by participants applied to client projects, enabling autonomy for 4 departments to create regulatory reports without IT support."
-            - "Managed cross-functional data governance (taxonomy, quality, metadata) sustaining regulatory traceability."
-            - "Aligned to AI Governance, ISO 37301, Three Lines Model, Law 15.040/2024, SUSEP, ANS and PREVIC."
+            - "Led <strong>IBM OpenPages (Policy Management)</strong> implementation over 1.5 years"
+            - "<strong>85+ risks</strong> mapped across 4 pillars (Strategic, Operational, Compliance, Technology)"
+            - "<strong>120+ corporate policies</strong> and <strong>200+ procedures</strong> | <strong>350+ active users</strong>"
+            - "Policy review cycle: <strong>45 → 18 days (−60%)</strong> | External audit preparation: <strong>15 → 6 days</strong>"
+            - "Conceived and delivered <strong>AIRNC</strong> | standalone tool for regulatory self-assessment (HTML/JavaScript)"
+            - "Python-automated <strong>corporate risk heatmap</strong> | quarterly generation: <strong>16h → 8 min (−99%)</strong>"
+            - "Built <strong>7 Power BI dashboards</strong> | <strong>45 KRIs</strong> and <strong>30 KPIs</strong> | meeting prep: <strong>6h → 20 min</strong>"
+            - "SUSEP regulatory audits at <strong>13 insurance companies</strong> | gap mapping vs. Circular 648/21 and CNSP 416/21"
+            - "Structured <strong>TPRM</strong> programme with continuous monitoring of critical third parties"
+            - "Designed <strong>Compliance by Design</strong> workflows, data governance and alignment to ISO 37301 | Three Lines Model"
         - title: "Risk Consultant"
-          period: "Oct/2023 – Jul/2025 · 1 yr 10 mos"
-          client: "Client: Dental Health Plan Operator (ANS) — Internal Audit"
+          period: "Oct/2023 – Jul/2025"
+          client: "Dental Health Plan Operator (ANS) | Internal Audit"
           bullets:
             - "Planned and executed <strong>risk-based internal audit</strong> engagements, with risk assessment driving scope."
-            - "Pioneered <strong>human-reviewed AI</strong> for risk prioritisation, regulatory summarisation and criteria standardisation — preserving a full audit trail."
+            - "Pioneered <strong>human-reviewed AI</strong> for risk prioritisation, regulatory summarisation and criteria standardisation."
             - "Performed design and operating effectiveness testing, finding classification and root-cause analysis."
-            - "Negotiated action plans with senior management (owner, deadline, effectiveness metric) and issued final reports with peer review."
+            - "Negotiated action plans with senior management (owner, deadline, effectiveness metric) and issued final reports."
         - title: "Business Consultant / Consulting FSO Trainee"
-          period: "Feb/2022 – Sep/2023 · 1 yr 8 mos"
-          client: "Client: Traditional Insurance Company · ALBA Programme Phase F (8 mos)"
+          period: "Feb/2022 – Sep/2023"
+          client: "Traditional Insurance Company | Revitalisation Programme (8 mos)"
           bullets:
-            - "Served as <strong>Strategic PMO</strong> for a revitalisation programme — portfolio orchestration, executive governance, milestones and dependencies."
+            - "Served as <strong>Strategic PMO</strong> for a revitalisation programme: portfolio orchestration, executive governance, milestones and dependencies."
             - "Redesigned customer journeys and product lifecycle, integrating quoting, sales and ERP systems."
             - "Contributed to portfolio adjustment (product mix, value proposition, pricing, channels)."
             - "Structured a wave-based roadmap with quick wins and long-term enablers."
 
   previous_experience:
-    - "Rio Preto Produtos de Petróleo Ltda. — Accounting / Billing Assistant · Sep/2020 – Jan/2022"
-    - "Self-employed — CRC-Registered Accountant · Apr/2020 – Aug/2020"
-    - "Essenza Contabilidade — Accounting Assistant · Jan/2019 – Mar/2020"
-    - "Tribunal de Contas do Estado do Piauí (State Audit Court) — Intern · 2017 – 2019"
+    - "Rio Preto Produtos de Petróleo Ltda. | Accounting / Billing Assistant · Sep/2020 – Jan/2022"
+    - "Self-employed | CRC-Registered Accountant · Apr/2020 – Aug/2020"
+    - "Essenza Contabilidade | Accounting Assistant · Jan/2019 – Mar/2020"
+    - "Tribunal de Contas do Estado do Piauí (State Audit Court) | Intern · 2017 – 2019"
 
   projects:
     - name: "SUSEP Benchmarking Platform v3.1"
-      status: "SaaS — in production"
+      status: "SaaS in production"
       description: "Proprietary platform for analysis and benchmarking of the Brazilian insurance market using SUSEP open data."
       highlights:
         - "<strong>10+</strong> analytical dashboards for the insurance market"
@@ -325,13 +333,24 @@ en:
       stack: "Python 3.11 · FastAPI · SQLAlchemy 2.0 · PostgreSQL · Alembic · Pandas · Plotly.js · Pytest (77 tests) · Docker"
       metrics: "<strong>88+</strong> commits · <strong>35+</strong> merged PRs"
     - name: "Antifraudsystem"
-      status: "MVP — evolving (collaboration)"
+      status: "MVP in progress (collaboration)"
       description: "Collaborative fraud-detection system with a rule engine and monitoring dashboard."
       highlights:
         - "Defined business rules for the detection engine (suspicious patterns, thresholds, human review gates)"
         - "Co-built the monitoring dashboard (detection KPIs, false positives)"
         - "UX review from a compliance perspective"
       stack: "React · Vite · TypeScript · MUI · Radix UI"
+      metrics: ""
+    - name: "EY Internal Training | Power BI (South America)"
+      status: "Internal EY Project"
+      description: "EY internal Power BI training programme applied to regulatory data."
+      highlights:
+        - "<strong>200+</strong> professionals impacted across South America"
+        - "12h of training across 4 practical sessions"
+        - "Proprietary content: dimensional modeling, advanced DAX, RLS, query optimisation"
+        - "Hands-on sessions with analysts who would use the tools day-to-day"
+        - "Direct application to client projects"
+      stack: "Power BI · DAX · RLS · Dimensional Modeling"
       metrics: ""
 
   education:

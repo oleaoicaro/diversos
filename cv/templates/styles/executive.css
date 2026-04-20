@@ -68,14 +68,11 @@
 
 /* ── CSS Variables ──────────────────────────────────────────── */
 :root {
-  --ink:      #111827;
-  --mid:      #475569;
-  --light:    #6b7280;
-  --rule:     #cbd5e1;
-  --bg:       #ffffff;
-  --bg-soft:  #f8fafc;
-  --accent:   #0f3d75;
-  --accent-soft: #b8892d;
+  --ink:    #111827;
+  --mid:    #475569;
+  --rule:   #cbd5e1;
+  --bg:     #ffffff;
+  --accent: #0f3d75;
 }
 
 /* ── @page ──────────────────────────────────────────────────── */
@@ -249,6 +246,11 @@ h2.section {
 /* ── Projects ────────────────────────────────────────────────── */
 .project-entry {
   margin-bottom: 4mm;
+}
+
+.project-entry .proj-header-row,
+.project-entry .proj-desc {
+  break-after: avoid;
 }
 
 .proj-header-row {

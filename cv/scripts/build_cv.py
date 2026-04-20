@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Build CV PDFs (HTML→PDF) via WeasyPrint with Playwright fallback."""
 import logging
-import sys
 from pathlib import Path
 
 import yaml

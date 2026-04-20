@@ -5,13 +5,13 @@
 
 /* ── @font-face ─────────────────────────────────────────────── */
 @font-face {
-  font-family: 'CVSerif';
+  font-family: 'Source Serif 4';
   src: url('fonts/LiberationSerif-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'CVSerif';
+  font-family: 'Source Serif 4';
   src: url('fonts/LiberationSerif-Italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
@@ -47,8 +47,26 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
 
-/* ── Variables ─────────────────────────────────────────── */
+/* ── CSS Variables ──────────────────────────────────────────── */
 :root {
   --ink:    #111827;
   --mid:    #475569;
@@ -73,7 +91,7 @@ html, body {
   font-size: 10.5pt;
   line-height: 1.4;
   color: var(--ink);
-  background: var(--white);
+  background: var(--bg);
 }
 
 a { color: var(--accent); text-decoration: none; }
@@ -101,7 +119,7 @@ strong { font-weight: 600; color: var(--ink); }
   margin-bottom: 1.5mm;
 }
 
-.headline-line1 {
+.cv-headline {
   font-family: 'Inter', sans-serif;
   font-size: 11pt;
   font-weight: 500;
@@ -135,22 +153,7 @@ strong { font-weight: 600; color: var(--ink); }
   margin-top: 4mm;
 }
 
-.headline-line3 {
-  font-family: 'Inter', sans-serif;
-  font-size: 9pt;
-  font-weight: 400;
-  color: var(--light);
-  line-height: 1.2;
-  margin-bottom: 4.5mm;
-}
-
-.name-rule {
-  border: none;
-  border-top: 0.5pt solid var(--rule);
-  margin-bottom: 6mm;
-}
-
-/* ── Section Headers ─────────────────────────────────────── */
+/* ── Section Titles ──────────────────────────────────────────── */
 h2.section {
   font-family: 'Inter', sans-serif;
   font-size: 11.5pt;
@@ -250,13 +253,13 @@ h2.section {
   break-after: avoid;
 }
 
-.project-header {
+.proj-header-row {
   display: table;
   width: 100%;
   margin-bottom: 0.8mm;
 }
 
-.project-name {
+.proj-name {
   display: table-cell;
   font-family: 'Inter', sans-serif;
   font-size: 10.5pt;
@@ -264,12 +267,14 @@ h2.section {
   color: var(--ink);
 }
 
-.project-status {
+.proj-status {
   display: table-cell;
   text-align: right;
   font-size: 9pt;
   font-style: italic;
   color: var(--mid);
+  white-space: nowrap;
+  vertical-align: bottom;
 }
 
 .proj-desc {
@@ -360,7 +365,7 @@ h2.section {
   color: var(--mid);
 }
 
-/* ── Print Utilities ─────────────────────────────────────── */
+/* ── Print rules ─────────────────────────────────────────────── */
 @media print {
   body { font-size: 10.5pt; }
   h2.section { break-after: avoid; }

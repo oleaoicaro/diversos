@@ -5,273 +5,301 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ÍCARO LEÃO — Currículo</title>
   <link rel="stylesheet" href="styles/executive.css">
+  <style>
+    @page {
+      @bottom-right {
+        content: "página " counter(page) " de " counter(pages);
+        font-size: 7.5pt;
+        color: #888888;
+        font-family: 'Inter', 'Liberation Sans', sans-serif;
+        margin-right: 14mm;
+      }
+    }
+  </style>
 </head>
 <body>
-<div class="layout">
+<div class="page-wrap">
 
-  <!-- ── Header ─────────────────────────────────────────── -->
-  <header class="header">
-    <div class="header-left">
-      <div class="monogram">IL</div>
-    </div>
-    <div class="header-right">
-      <div class="header-name">ÍCARO LEÃO</div>
-      <div class="header-headline">Senior Risk & Compliance Consultant · EY · Arquiteto de Compliance-Tech em Setores Regulados · IBM OpenPages · Governança de IA · Python/FastAPI · TPRM</div>
-    </div>
-  </header>
-
-  <!-- ── Columns ───────────────────────────────────────── -->
-  <div class="columns">
+  <!-- ── Sidebar (navy full-bleed) ──────────────────────────── -->
   <aside class="sidebar">
 
-    <div class="sidebar-block">
-      <h3>Contato</h3>
-      <div class="contact-item">
-        <span class="contact-label">Localização</span>
-        <span class="contact-value">São Paulo, SP</span>
-      </div>
-      <div class="contact-item">
-        <span class="contact-label">Telefone</span>
-        <span class="contact-value">+55 (17) 98191-7954</span>
-      </div>
-      <div class="contact-item">
-        <span class="contact-label">E-mail</span>
-        <span class="contact-value">icaro.vl@outlook.com</span>
-      </div>
-      <div class="contact-item">
-        <span class="contact-label">LinkedIn</span>
-        <span class="contact-value">linkedin.com/in/oleaoicaro</span>
-      </div>
-      <div class="contact-item">
-        <span class="contact-label">GitHub</span>
-        <span class="contact-value">github.com/oleaoicaro</span>
-      </div>
+    <div class="sb-title">Contato</div>
+    <div class="contact-row">
+      <span class="cl">E ·</span>
+      <span class="cv">icaro.vl@outlook.com</span>
+    </div>
+    <div class="contact-row">
+      <span class="cl">T ·</span>
+      <span class="cv">+55 (17) 98191-7954</span>
+    </div>
+    <div class="contact-row">
+      <span class="cl">in ·</span>
+      <span class="cv">linkedin.com/in/oleaoicaro</span>
+    </div>
+    <div class="contact-row">
+      <span class="cl">gh ·</span>
+      <span class="cv">github.com/oleaoicaro</span>
+    </div>
+    <div class="contact-row">
+      <span class="cl">loc ·</span>
+      <span class="cv">São Paulo, SP</span>
     </div>
 
-    <div class="sidebar-block">
-      <h3>Competências</h3>
-      
-      <div class="competency-group">
-        <span class="group-name">GRC & Plataformas</span>
-        <span class="skills-chips">
-          <span class="skill-chip">IBM OpenPages</span><span class="skill-chip">Microsoft Power Automate</span><span class="skill-chip">MS Forms</span><span class="skill-chip">Data Governance</span>
-        </span>
-      </div>
-      
-      <div class="competency-group">
-        <span class="group-name">Regulação</span>
-        <span class="skills-chips">
-          <span class="skill-chip">SUSEP</span><span class="skill-chip">ANS</span><span class="skill-chip">PREVIC</span><span class="skill-chip">BACEN</span><span class="skill-chip">Lei 15.040/2024</span><span class="skill-chip">LGPD</span><span class="skill-chip">CVM</span><span class="skill-chip">AML/CFT</span><span class="skill-chip">KYC</span><span class="skill-chip">Open Finance</span>
-        </span>
-      </div>
-      
-      <div class="competency-group">
-        <span class="group-name">Frameworks</span>
-        <span class="skills-chips">
-          <span class="skill-chip">ISO 37301</span><span class="skill-chip">Three Lines Model</span><span class="skill-chip">Compliance by Design</span><span class="skill-chip">Governança de IA</span><span class="skill-chip">TPRM</span><span class="skill-chip">Risk Assessment</span><span class="skill-chip">KRIs/KPIs</span><span class="skill-chip">COSO</span><span class="skill-chip">Operational Risk Management</span><span class="skill-chip">Risk Appetite Framework</span>
-        </span>
-      </div>
-      
-      <div class="competency-group">
-        <span class="group-name">Tecnologia</span>
-        <span class="skills-chips">
-          <span class="skill-chip">Python 3.11</span><span class="skill-chip">FastAPI</span><span class="skill-chip">SQLAlchemy 2.0</span><span class="skill-chip">PostgreSQL</span><span class="skill-chip">Docker</span><span class="skill-chip">Power BI</span><span class="skill-chip">Pandas</span><span class="skill-chip">Pytest</span><span class="skill-chip">ETL</span><span class="skill-chip">REST APIs</span><span class="skill-chip">JWT/OAuth2</span><span class="skill-chip">SQL</span><span class="skill-chip">Alembic</span><span class="skill-chip">Plotly.js</span>
-        </span>
-      </div>
-      
+    <div class="sb-title">Idiomas</div>
+    
+    <div class="lang-row">
+      <span class="ln">Português</span>
+      <span class="ll">Nativo</span>
     </div>
+    
+    <div class="lang-row">
+      <span class="ln">Inglês</span>
+      <span class="ll">B1 — EF SET 47/100</span>
+    </div>
+    
+    <div class="lang-row">
+      <span class="ln">Espanhol</span>
+      <span class="ll">Básico</span>
+    </div>
+    
 
-    <div class="sidebar-block">
-      <h3>Idiomas</h3>
-      
-      <div class="lang-item">
-        <span class="lang-name">Português</span>
-        <span class="lang-level">Nativo</span>
-      </div>
-      
-      <div class="lang-item">
-        <span class="lang-name">Inglês</span>
-        <span class="lang-level">B1 — EF SET 47/100</span>
-      </div>
-      
-      <div class="lang-item">
-        <span class="lang-name">Espanhol</span>
-        <span class="lang-level">Básico</span>
-      </div>
-      
-    </div>
+    <div class="sb-title">Competências</div>
+    
+    <div class="skill-group-name">GRC & Plataformas</div>
+    
+    <div class="skill-item">IBM OpenPages</div>
+    
+    <div class="skill-item">Microsoft Power Automate</div>
+    
+    <div class="skill-item">MS Forms</div>
+    
+    <div class="skill-item">Data Governance</div>
+    
+    
+    <div class="skill-group-name">Regulação</div>
+    
+    <div class="skill-item">SUSEP</div>
+    
+    <div class="skill-item">ANS</div>
+    
+    <div class="skill-item">PREVIC</div>
+    
+    <div class="skill-item">BACEN</div>
+    
+    <div class="skill-item">Lei 15.040/2024</div>
+    
+    <div class="skill-item">LGPD</div>
+    
+    <div class="skill-item">CVM</div>
+    
+    <div class="skill-item">AML/CFT</div>
+    
+    <div class="skill-item">KYC</div>
+    
+    <div class="skill-item">Open Finance</div>
+    
+    
+    <div class="skill-group-name">Frameworks</div>
+    
+    <div class="skill-item">ISO 37301</div>
+    
+    <div class="skill-item">Three Lines Model</div>
+    
+    <div class="skill-item">Compliance by Design</div>
+    
+    <div class="skill-item">Governança de IA</div>
+    
+    <div class="skill-item">TPRM</div>
+    
+    <div class="skill-item">Risk Assessment</div>
+    
+    <div class="skill-item">KRIs/KPIs</div>
+    
+    <div class="skill-item">COSO</div>
+    
+    <div class="skill-item">Operational Risk Management</div>
+    
+    <div class="skill-item">Risk Appetite Framework</div>
+    
+    
+    <div class="skill-group-name">Tecnologia</div>
+    
+    <div class="skill-item">Python 3.11</div>
+    
+    <div class="skill-item">FastAPI</div>
+    
+    <div class="skill-item">SQLAlchemy 2.0</div>
+    
+    <div class="skill-item">PostgreSQL</div>
+    
+    <div class="skill-item">Docker</div>
+    
+    <div class="skill-item">Power BI</div>
+    
+    <div class="skill-item">Pandas</div>
+    
+    <div class="skill-item">Pytest</div>
+    
+    <div class="skill-item">ETL</div>
+    
+    <div class="skill-item">REST APIs</div>
+    
+    <div class="skill-item">JWT/OAuth2</div>
+    
+    <div class="skill-item">SQL</div>
+    
+    <div class="skill-item">Alembic</div>
+    
+    <div class="skill-item">Plotly.js</div>
+    
+    
 
-    <div class="sidebar-block">
-      <h3>Certificações</h3>
-      <ul>
-        
-        <li>Registro no CRC</li>
-        
-        <li>EF SET English — B1 Intermediate (47/100)</li>
-        
-        <li>EY Finance Learning (2022)</li>
-        
-        <li>Microsoft Power Automate — Business Process Flows</li>
-        
-        <li>Transformational Governance — Driving Responsible Business Conduct</li>
-        
-        <li>ISO 37301 Lead Implementer (PECB) — em andamento</li>
-        
-      </ul>
+    <div class="sb-title">Formação</div>
+    
+    <div class="edu-item">
+      <div class="edu-degree">Graduação em Ciência de Dados com ênfase em IA</div>
+      <div class="edu-institution">Descomplica Faculdade Digital</div>
+      <div class="edu-period">jul/2024 – jan/2027 (em andamento)</div>
     </div>
+    
+    <div class="edu-item">
+      <div class="edu-degree">Bacharelado em Ciências Contábeis</div>
+      <div class="edu-institution">Universidade Federal do Piauí (UFPI)</div>
+      <div class="edu-period">nov/2013 – ago/2019</div>
+    </div>
+    
+    <div class="edu-item">
+      <div class="edu-degree">Técnico em Logística</div>
+      <div class="edu-institution">SENAC</div>
+      <div class="edu-period">jan/2013 – jun/2014</div>
+    </div>
+    
 
-    <div class="sidebar-block">
-      <h3>Formação Complementar — EY Learning</h3>
-      <p class="edu-period" style="margin-bottom:4px;">2022–2026 · 100+ horas certificadas</p>
-      
-      <div class="competency-group">
-        <span class="group-name">AML & Financial Crime</span>
-        <div class="group-items">Annual Financial Crime Update FY24 / 2024.1 · AML/KYC · Lei Anticorrupção · Lavagem de Dinheiro · Interação com Agentes Públicos e Licitações</div>
-      </div>
-      
-      <div class="competency-group">
-        <span class="group-name">Data Protection & InfoSec</span>
-        <div class="group-items">Annual Data Protection Update FY24 / 2025 · LGPD · GDPR · Cybersecurity – Data Protection and Privacy · Handling Information Safely · Security Risks: Key Risk Terms & Concepts</div>
-      </div>
-      
-      <div class="competency-group">
-        <span class="group-name">Governança de IA</span>
-        <div class="group-items">Responsible Use of M365 Copilot · AI Now 2.0 (GenAI Módulos 1–2) · AI for Consulting · IA e Validação de Modelos na Gestão de Riscos</div>
-      </div>
-      
-      <div class="competency-group">
-        <span class="group-name">Ética & Independência</span>
-        <div class="group-items">Independence Update 2023 / 2024 / 2025 · Global Code of Conduct · Annual Code of Conduct Update 2024 · Conflicts of Interest</div>
-      </div>
-      
-      <div class="competency-group">
-        <span class="group-name">Setoriais (Banking · Insurance · Payments)</span>
-        <div class="group-items">Módulo RSAC – Banking · ESG de Riscos (BrasilSeg) – Insurance · Payments – Visão Geral · Fundamentos da Gestão Bancária · P&C (Process & Control) · EY Core Consulting FSO · Encontro Anual Risk Consulting 2025 · New Senior Brasil</div>
-      </div>
-      
-      <div class="competency-group">
-        <span class="group-name">Técnico & Dados</span>
-        <div class="group-items">Alteryx · Excel Avançado (Introdução + Aproveitando o máximo) · Creating Data Visualizations · RPA Overview · Analysis of Microsoft data and tools</div>
-      </div>
-      
-    </div>
-
-    <div class="sidebar-block">
-      <h3>Formação</h3>
-      
-      <div class="edu-item">
-        <div class="edu-degree">Graduação em Ciência de Dados com ênfase em IA</div>
-        <div class="edu-institution">Descomplica Faculdade Digital</div>
-        <div class="edu-period">jul/2024 – jan/2027 (em andamento)</div>
-      </div>
-      
-      <div class="edu-item">
-        <div class="edu-degree">Bacharelado em Ciências Contábeis</div>
-        <div class="edu-institution">Universidade Federal do Piauí (UFPI)</div>
-        <div class="edu-period">nov/2013 – ago/2019</div>
-      </div>
-      
-      <div class="edu-item">
-        <div class="edu-degree">Técnico em Logística</div>
-        <div class="edu-institution">SENAC</div>
-        <div class="edu-period">jan/2013 – jun/2014</div>
-      </div>
-      
-    </div>
+    <div class="sb-title">Certificações</div>
+    
+    <div class="cert-item">Registro no CRC</div>
+    
+    <div class="cert-item">EF SET English — B1 Intermediate (47/100)</div>
+    
+    <div class="cert-item">EY Finance Learning (2022)</div>
+    
+    <div class="cert-item">Microsoft Power Automate — Business Process Flows</div>
+    
+    <div class="cert-item">Transformational Governance — Driving Responsible Business Conduct</div>
+    
+    <div class="cert-item">ISO 37301 Lead Implementer (PECB) — em andamento</div>
+    
 
   </aside>
 
-  <!-- ── Main ───────────────────────────────────────────── -->
-  <main class="main">
+  <!-- ── Main Column ─────────────────────────────────────────── -->
+  <main class="main-col">
 
-    <h2 class="section">Resumo Executivo</h2>
-    <p class="summary-text">Consultor Sênior com 4+ anos na EY liderando a transformação de áreas de Compliance em instituições altamente reguladas — Seguros (SUSEP, Lei 15.040/2024), Saúde Suplementar (ANS) e Previdência (PREVIC). Opero na interseção entre regulação, tecnologia e Governança de IA, combinando IBM OpenPages, ISO 37301 e Three Lines Model com stack técnica hands-on comprovada por SaaS próprio em produção — combinação rara no mercado brasileiro de GRC.
+    <!-- Header -->
+    <div class="main-header">
+      <div class="cv-name">ÍCARO LEÃO</div>
+      <div class="cv-headline">Senior Risk & Compliance Consultant · EY · Arquiteto de Compliance-Tech em Setores Regulados · IBM OpenPages · Governança de IA · Python/FastAPI · TPRM</div>
+      <div class="header-rule"></div>
+      <p class="cv-summary">Consultor Sênior com 4+ anos na EY liderando a transformação de áreas de Compliance em instituições altamente reguladas — Seguros (SUSEP, Lei 15.040/2024), Saúde Suplementar (ANS) e Previdência (PREVIC). Opero na interseção entre regulação, tecnologia e Governança de IA, combinando IBM OpenPages, ISO 37301 e Three Lines Model com stack técnica hands-on comprovada por SaaS próprio em produção — combinação rara no mercado brasileiro de GRC.
 </p>
+    </div>
 
+    <!-- Experiência Profissional -->
     <h2 class="section">Experiência Profissional</h2>
     
-    <div class="company-block">
-      <div class="company-name">Ernst & Young (EY)</div>
-      <div class="timeline">
-        
-        <div class="role">
-          <div class="role-title">Consultor Sênior — Risk & Compliance</div>
-          <div class="role-period">ago/2025 – presente</div>
-          <div class="role-client">Cliente: Seguradora de Ramos Elementares · Programa Plurianual de Transformação de Compliance (2 anos 5 meses)</div>
-          <ul class="role-bullets">
-            
-            <li>Liderança da implementação do <strong>IBM OpenPages (Policy Management)</strong> ao longo de <strong>1,5 ano</strong>, desenhando a <strong>especificação core da matriz de risco corporativa com 85+ riscos</strong> mapeados em 4 pilares (Estratégico, Operacional, Compliance, Tecnológico). Plataforma gerenciando <strong>120+ políticas corporativas e 200+ procedimentos</strong> com <strong>350+ usuários ativos</strong> (45 gestores de políticas, 80 aprovadores, 225 usuários consulta). Conduziu iterações de funcionalidades complementares: (1) <strong>versionamento automático</strong> com histórico completo de 400+ revisões auditáveis, (2) <strong>trilha de auditoria</strong> 100% rastreável atendendo SOX, (3) <strong>governança de exceções</strong> processando 30+ solicitações/mês com SLA de 5 dias e aprovação multicamada, (4) workflows end-to-end eliminando 12 planilhas manuais e <strong>reduzindo ciclo de revisão de 45 dias para 18 dias (60% de ganho)</strong>. <strong>Impacto</strong>: reduziu tempo de preparação para auditoria externa de 15 dias para 6 dias, abrangência de 8 áreas (Compliance, Jurídico, Auditoria, Operações, TI, RH, Atuária, Controladoria).</li>
-            
-            <li>Elaboração do <strong>manual do sistema</strong> (analistas e pontos focais), do <strong>manual de procedimentos interno</strong> e da <strong>norma interna</strong> — fechando o ciclo técnico → operacional → normativo pós-implantação.</li>
-            
-            <li>Condução de <strong>auditorias regulatórias SUSEP em 13 seguradoras</strong>, mapeando gaps frente à Circular SUSEP 648/21, Resolução CNSP 416/21 e impactos da Lei 15.040/2024.</li>
-            
-            <li>Concepção e entrega do <strong>AIRNC</strong> (Autoavaliação de Identificação Regulatória de Não Conformidade) — ferramenta HTML/JavaScript com xlsx.js, <strong>hardening de segurança</strong> (sanitização de data URLs, scan documentado, pinning de dependências de suporte) e modelo <strong>standalone offline</strong> para uso sem dependência de servidor.</li>
-            
-            <li>Automação em Python do <strong>heatmap corporativo de riscos</strong> processando <strong>120+ indicadores</strong> de <strong>85 riscos mapeados</strong> com integração automatizada de 4 fontes (IBM OpenPages, Power BI, Excel templates de áreas, dados de incidentes). <strong>Reduziu tempo de geração trimestral de 16 horas para 8 minutos (99% de ganho)</strong>, eliminou 100% dos erros de consolidação manual identificados nos 3 ciclos anteriores, e habilitou atualização sob demanda para comitês executivos.</li>
-            
-            <li>Estruturação de programa <strong>TPRM</strong> com monitoramento contínuo de terceiros críticos e relevantes.</li>
-            
-            <li>Construção de <strong>7 dashboards executivos</strong> em Power BI rastreando <strong>45 KRIs</strong> (taxa de não conformidades, tempo médio de remediação, cobertura de controles) e <strong>30 KPIs</strong> (aderência a políticas, conclusão de treinamentos obrigatórios, SLA de resposta regulatória). Consumidos em <strong>3 reuniões mensais de comitê executivo</strong> (Comitê de Riscos, Comitê de Compliance, Comitê de Auditoria) para audiência de 12 C-level. Alertas automáticos para 8 indicadores críticos. <strong>Impacto</strong>: reduziu tempo de preparação de reuniões de 6 horas para 20 minutos.</li>
-            
-            <li>Desenho de workflows de <strong>Compliance by Design</strong> conectando mudança regulatória a políticas, controles e treinamentos.</li>
-            
-            <li><strong>Instrutor interno de Power BI</strong> — Turma EY Cálculo 2025 com <strong>15 profissionais</strong> (analistas e consultores júnior/pleno). Ministrou <strong>12 horas</strong> de treinamento em <strong>4 sessões práticas</strong> cobrindo: modelagem dimensional para dados SUSEP/ANS, DAX avançado para KRIs automáticos, Row-Level Security para segregação de acessos regulatórios, otimização de queries para grandes volumes. Desenvolveu <strong>material didático autoral</strong> com 8 exercícios práticos baseados em casos reais de seguradoras. <strong>Resultado</strong>: 100% de conclusão, 9,2/10 de satisfação, 6 dashboards criados pelos participantes aplicados em projetos cliente, habilitando autonomia de 4 áreas para relatórios regulatórios sem suporte TI.</li>
-            
-            <li>Governança de dados inter-áreas (taxonomia, qualidade, metadados) sustentando rastreabilidade regulatória.</li>
-            
-            <li>Alinhamento a Governança de IA, ISO 37301, Three Lines Model, Lei 15.040/2024, SUSEP, ANS e PREVIC.</li>
-            
-          </ul>
-        </div>
-        
-        <div class="role">
-          <div class="role-title">Risk Consultant</div>
-          <div class="role-period">out/2023 – jul/2025 · 1 ano 10 meses</div>
-          <div class="role-client">Cliente: Operadora de Plano Odontológico (ANS) — Auditoria Interna</div>
-          <ul class="role-bullets">
-            
-            <li>Planejamento e execução de engajamentos de <strong>auditoria interna risk-based</strong>, com risk assessment dirigindo escopo.</li>
-            
-            <li>Implementação pioneira de <strong>IA sob revisão humana</strong> para priorização por risco, sumarização de normativos e padronização de critérios — preservando trilha auditável.</li>
-            
-            <li>Testes de desenho e efetividade de controles, classificação de achados e análise de causa-raiz.</li>
-            
-            <li>Negociação de planos de ação com a alta gestão (responsável, prazo, métrica de eficácia) e emissão de relatórios finais com peer review.</li>
-            
-          </ul>
-        </div>
-        
-        <div class="role">
-          <div class="role-title">Business Consultant / Consulting FSO Trainee</div>
-          <div class="role-period">fev/2022 – set/2023 · 1 ano 8 meses</div>
-          <div class="role-client">Cliente: Seguradora Tradicional · Fase F ALBA (8 meses)</div>
-          <ul class="role-bullets">
-            
-            <li>Atuação no <strong>PMO estratégico</strong> de programa de revitalização — orquestração de portfólio, governança executiva, marcos e dependências.</li>
-            
-            <li>Redesenho de jornadas do cliente e ciclo de vida dos produtos, integrando cotação, venda e ERP.</li>
-            
-            <li>Ajuste de portfólio (mix, proposta de valor, precificação, canais).</li>
-            
-            <li>Estruturação de roadmap em ondas com quick wins e habilitadores de longo prazo.</li>
-            
-          </ul>
-        </div>
-        
+    
+    <div class="exp-entry">
+      <div class="exp-header-row">
+        <span class="exp-company">Ernst & Young (EY)</span>
+        <span class="exp-period">ago/2025 – presente</span>
       </div>
+      <div class="exp-role-line">
+        <span class="exp-role">Consultor Sênior — Risk & Compliance</span>
+      </div>
+      <div class="exp-client">Cliente: Seguradora de Ramos Elementares · Programa Plurianual de Transformação de Compliance (2 anos 5 meses)</div>
+      <ul class="exp-bullets">
+        
+        <li>Liderança da implementação do <strong>IBM OpenPages (Policy Management)</strong> ao longo de <strong>1,5 ano</strong>, desenhando a <strong>especificação core da matriz de risco corporativa com 85+ riscos</strong> mapeados em 4 pilares (Estratégico, Operacional, Compliance, Tecnológico). Plataforma gerenciando <strong>120+ políticas corporativas e 200+ procedimentos</strong> com <strong>350+ usuários ativos</strong> (45 gestores de políticas, 80 aprovadores, 225 usuários consulta). Conduziu iterações de funcionalidades complementares: (1) <strong>versionamento automático</strong> com histórico completo de 400+ revisões auditáveis, (2) <strong>trilha de auditoria</strong> 100% rastreável atendendo SOX, (3) <strong>governança de exceções</strong> processando 30+ solicitações/mês com SLA de 5 dias e aprovação multicamada, (4) workflows end-to-end eliminando 12 planilhas manuais e <strong>reduzindo ciclo de revisão de 45 dias para 18 dias (60% de ganho)</strong>. <strong>Impacto</strong>: reduziu tempo de preparação para auditoria externa de 15 dias para 6 dias, abrangência de 8 áreas (Compliance, Jurídico, Auditoria, Operações, TI, RH, Atuária, Controladoria).</li>
+        
+        <li>Elaboração do <strong>manual do sistema</strong> (analistas e pontos focais), do <strong>manual de procedimentos interno</strong> e da <strong>norma interna</strong> — fechando o ciclo técnico → operacional → normativo pós-implantação.</li>
+        
+        <li>Condução de <strong>auditorias regulatórias SUSEP em 13 seguradoras</strong>, mapeando gaps frente à Circular SUSEP 648/21, Resolução CNSP 416/21 e impactos da Lei 15.040/2024.</li>
+        
+        <li>Concepção e entrega do <strong>AIRNC</strong> (Autoavaliação de Identificação Regulatória de Não Conformidade) — ferramenta HTML/JavaScript com xlsx.js, <strong>hardening de segurança</strong> (sanitização de data URLs, scan documentado, pinning de dependências de suporte) e modelo <strong>standalone offline</strong> para uso sem dependência de servidor.</li>
+        
+        <li>Automação em Python do <strong>heatmap corporativo de riscos</strong> processando <strong>120+ indicadores</strong> de <strong>85 riscos mapeados</strong> com integração automatizada de 4 fontes (IBM OpenPages, Power BI, Excel templates de áreas, dados de incidentes). <strong>Reduziu tempo de geração trimestral de 16 horas para 8 minutos (99% de ganho)</strong>, eliminou 100% dos erros de consolidação manual identificados nos 3 ciclos anteriores, e habilitou atualização sob demanda para comitês executivos.</li>
+        
+        <li>Estruturação de programa <strong>TPRM</strong> com monitoramento contínuo de terceiros críticos e relevantes.</li>
+        
+        <li>Construção de <strong>7 dashboards executivos</strong> em Power BI rastreando <strong>45 KRIs</strong> (taxa de não conformidades, tempo médio de remediação, cobertura de controles) e <strong>30 KPIs</strong> (aderência a políticas, conclusão de treinamentos obrigatórios, SLA de resposta regulatória). Consumidos em <strong>3 reuniões mensais de comitê executivo</strong> (Comitê de Riscos, Comitê de Compliance, Comitê de Auditoria) para audiência de 12 C-level. Alertas automáticos para 8 indicadores críticos. <strong>Impacto</strong>: reduziu tempo de preparação de reuniões de 6 horas para 20 minutos.</li>
+        
+        <li>Desenho de workflows de <strong>Compliance by Design</strong> conectando mudança regulatória a políticas, controles e treinamentos.</li>
+        
+        <li><strong>Instrutor interno de Power BI</strong> — Turma EY Cálculo 2025 com <strong>15 profissionais</strong> (analistas e consultores júnior/pleno). Ministrou <strong>12 horas</strong> de treinamento em <strong>4 sessões práticas</strong> cobrindo: modelagem dimensional para dados SUSEP/ANS, DAX avançado para KRIs automáticos, Row-Level Security para segregação de acessos regulatórios, otimização de queries para grandes volumes. Desenvolveu <strong>material didático autoral</strong> com 8 exercícios práticos baseados em casos reais de seguradoras. <strong>Resultado</strong>: 100% de conclusão, 9,2/10 de satisfação, 6 dashboards criados pelos participantes aplicados em projetos cliente, habilitando autonomia de 4 áreas para relatórios regulatórios sem suporte TI.</li>
+        
+        <li>Governança de dados inter-áreas (taxonomia, qualidade, metadados) sustentando rastreabilidade regulatória.</li>
+        
+        <li>Alinhamento a Governança de IA, ISO 37301, Three Lines Model, Lei 15.040/2024, SUSEP, ANS e PREVIC.</li>
+        
+      </ul>
     </div>
     
+    <div class="exp-entry">
+      <div class="exp-header-row">
+        <span class="exp-company">Ernst & Young (EY)</span>
+        <span class="exp-period">out/2023 – jul/2025 · 1 ano 10 meses</span>
+      </div>
+      <div class="exp-role-line">
+        <span class="exp-role">Risk Consultant</span>
+      </div>
+      <div class="exp-client">Cliente: Operadora de Plano Odontológico (ANS) — Auditoria Interna</div>
+      <ul class="exp-bullets">
+        
+        <li>Planejamento e execução de engajamentos de <strong>auditoria interna risk-based</strong>, com risk assessment dirigindo escopo.</li>
+        
+        <li>Implementação pioneira de <strong>IA sob revisão humana</strong> para priorização por risco, sumarização de normativos e padronização de critérios — preservando trilha auditável.</li>
+        
+        <li>Testes de desenho e efetividade de controles, classificação de achados e análise de causa-raiz.</li>
+        
+        <li>Negociação de planos de ação com a alta gestão (responsável, prazo, métrica de eficácia) e emissão de relatórios finais com peer review.</li>
+        
+      </ul>
+    </div>
+    
+    <div class="exp-entry">
+      <div class="exp-header-row">
+        <span class="exp-company">Ernst & Young (EY)</span>
+        <span class="exp-period">fev/2022 – set/2023 · 1 ano 8 meses</span>
+      </div>
+      <div class="exp-role-line">
+        <span class="exp-role">Business Consultant / Consulting FSO Trainee</span>
+      </div>
+      <div class="exp-client">Cliente: Seguradora Tradicional · Fase F ALBA (8 meses)</div>
+      <ul class="exp-bullets">
+        
+        <li>Atuação no <strong>PMO estratégico</strong> de programa de revitalização — orquestração de portfólio, governança executiva, marcos e dependências.</li>
+        
+        <li>Redesenho de jornadas do cliente e ciclo de vida dos produtos, integrando cotação, venda e ERP.</li>
+        
+        <li>Ajuste de portfólio (mix, proposta de valor, precificação, canais).</li>
+        
+        <li>Estruturação de roadmap em ondas com quick wins e habilitadores de longo prazo.</li>
+        
+      </ul>
+    </div>
+    
+    
 
+    <!-- Projetos Autorais -->
     <h2 class="section">Projetos Autorais</h2>
     
-    <div class="project">
-      <div class="project-header">
-        <span class="project-name">SUSEP Benchmarking Platform v3.1</span>
-        <span class="project-status">SaaS em produção</span>
+    <div class="project-entry">
+      <div class="proj-header-row">
+        <span class="proj-name">SUSEP Benchmarking Platform v3.1</span>
+        <span class="proj-status">SaaS em produção</span>
       </div>
-      <div class="project-description">Plataforma autoral de análise e benchmarking do mercado segurador brasileiro com dados abertos da SUSEP.</div>
-      <ul class="project-highlights">
+      <p class="proj-desc">Plataforma autoral de análise e benchmarking do mercado segurador brasileiro com dados abertos da SUSEP.</p>
+      <ul class="exp-bullets">
         
         <li><strong>10+</strong> dashboards analíticos do mercado segurador</li>
         
@@ -282,19 +310,19 @@
         <li>Auth dual JWT+OAuth; freemium; deploy Render+Docker</li>
         
       </ul>
-      <div class="project-stack">Stack: Python 3.11 · FastAPI · SQLAlchemy 2.0 · PostgreSQL · Alembic · Pandas · Plotly.js · Pytest (77 testes) · Docker</div>
+      <div class="proj-stack">Stack: Python 3.11 · FastAPI · SQLAlchemy 2.0 · PostgreSQL · Alembic · Pandas · Plotly.js · Pytest (77 testes) · Docker</div>
       
-      <div class="project-metrics"><strong>88+</strong> commits · <strong>35+</strong> PRs mergeados</div>
+      <div class="proj-metrics"><strong>88+</strong> commits · <strong>35+</strong> PRs mergeados</div>
       
     </div>
     
-    <div class="project">
-      <div class="project-header">
-        <span class="project-name">Antifraudsystem</span>
-        <span class="project-status">MVP em evolução (colaboração)</span>
+    <div class="project-entry">
+      <div class="proj-header-row">
+        <span class="proj-name">Antifraudsystem</span>
+        <span class="proj-status">MVP em evolução (colaboração)</span>
       </div>
-      <div class="project-description">Sistema antifraude colaborativo com motor de regras e dashboard de monitoramento.</div>
-      <ul class="project-highlights">
+      <p class="proj-desc">Sistema antifraude colaborativo com motor de regras e dashboard de monitoramento.</p>
+      <ul class="exp-bullets">
         
         <li>Definição das regras de negócio do motor (padrões suspeitos, thresholds, gates de revisão humana)</li>
         
@@ -303,11 +331,12 @@
         <li>Revisão UX sob ótica de compliance</li>
         
       </ul>
-      <div class="project-stack">Stack: React · Vite · TypeScript · MUI · Radix UI</div>
+      <div class="proj-stack">Stack: React · Vite · TypeScript · MUI · Radix UI</div>
       
     </div>
     
 
+    <!-- Experiência Anterior -->
     <h2 class="section">Experiência Anterior</h2>
     <ul class="earlier-list">
       
@@ -322,13 +351,6 @@
     </ul>
 
   </main>
-  </div><!-- /.columns -->
-
-  <!-- ── Footer ────────────────────────────────────────── -->
-  <footer class="cv-footer">
-    ÍCARO LEÃO · linkedin.com/in/oleaoicaro
-  </footer>
-
 </div>
 </body>
 </html>

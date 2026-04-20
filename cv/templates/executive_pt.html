@@ -11,14 +11,16 @@
 
   <!-- ── Header ─────────────────────────────────────────── -->
   <header class="header">
-    <div class="monogram">{{ cv.identity.monogram }}</div>
-    <div class="header-text">
+    <div class="header-left">
+      <div class="monogram">{{ cv.identity.monogram }}</div>
+    </div>
+    <div class="header-right">
       <div class="header-name">{{ cv.identity.name }}</div>
       <div class="header-headline">{{ cv.headline }}</div>
     </div>
   </header>
 
-  <!-- ── Sidebar ────────────────────────────────────────── -->
+  <!-- ── Columns ───────────────────────────────────────── -->
   <div class="columns">
   <aside class="sidebar">
 
@@ -51,7 +53,9 @@
       {% for group in cv.competencies %}
       <div class="competency-group">
         <span class="group-name">{{ group.group }}</span>
-        <span class="group-items">{{ group.skills | join(' · ') }}</span>
+        <span class="skills-chips">
+          {% for skill in group.skills %}<span class="skill-chip">{{ skill }}</span>{% endfor %}
+        </span>
       </div>
       {% endfor %}
     </div>
@@ -77,11 +81,11 @@
 
     <div class="sidebar-block">
       <h3>{{ cv.ey_learning.title }}</h3>
-      <p class="edu-period" style="margin-bottom:6px;">{{ cv.ey_learning.subtitle }}</p>
+      <p class="edu-period" style="margin-bottom:4px;">{{ cv.ey_learning.subtitle }}</p>
       {% for g in cv.ey_learning.groups %}
       <div class="competency-group">
         <span class="group-name">{{ g.group }}</span>
-        <span class="group-items">{{ g['items'] }}</span>
+        <div class="group-items">{{ g['items'] }}</div>
       </div>
       {% endfor %}
     </div>
@@ -107,20 +111,22 @@
 
     <h2 class="section">Experiência Profissional</h2>
     {% for company in cv.experience %}
-    <div class="company-name">{{ company.company }}</div>
-    <div class="timeline">
-      {% for role in company.roles %}
-      <div class="role">
-        <div class="role-title">{{ role.title }}</div>
-        <div class="role-period">{{ role.period }}</div>
-        <div class="role-client">{{ role.client }}</div>
-        <ul class="role-bullets">
-          {% for bullet in role.bullets %}
-          <li>{{ bullet | safe }}</li>
-          {% endfor %}
-        </ul>
+    <div class="company-block">
+      <div class="company-name">{{ company.company }}</div>
+      <div class="timeline">
+        {% for role in company.roles %}
+        <div class="role">
+          <div class="role-title">{{ role.title }}</div>
+          <div class="role-period">{{ role.period }}</div>
+          <div class="role-client">{{ role.client }}</div>
+          <ul class="role-bullets">
+            {% for bullet in role.bullets %}
+            <li>{{ bullet | safe }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
     {% endfor %}
 
@@ -154,15 +160,9 @@
   </main>
   </div><!-- /.columns -->
 
-  <!-- ── Footer com QR Code ─────────────────────────────── -->
-  <footer class="footer">
-    <div class="footer-qr">
-      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyOSAyOSI+PHBhdGggZD0iTTEgMWg3djdIMXptOSAwaDFWMmgxVjFoMXYxaDFWMWgxdjFoMVYxaDFWMGgtMXYxaC0yVjBoLTF2MmgtMVYxaC0xdjFoLTF6bTkgMGg3djdoLTd6TTIgMmg1djVIMnptMTggMGg1djVoLTV6bTItM2gxdjFoLTF6TTEgMTBoN3Y3SDF6bTEgMWg1djVIMnptOCAwaDFWOWgxdjNoMXYtMWgxdjFoMXYtMWgtMXYtMWgtMXY2aC0xdi0xaC0ydi0xaC0xdi0xaC0xem0zLTJoMXYxaC0xem0tMSAxaDJ2MWgtMnptMyAxaDJ2MWgtMnptMSAyaDJ2MWgtMnptLTIgMGgxdjFoLTF6bS0zIDJoMXYxaC0xem0tOCAyaDJ2MWgtMnptMi0xaDJ2MWgtMnptNSAwaDN2MWgtM3ptMCAyaDJ2MWgtMnptMyAwaDF2MWgtMXptLTggMmg0djFoLTR6bTQtMWgxdjFoLTF6bTQgMWgxdjFoLTF6bS0xMCAyaDJ2MWgtMnptMyAwaDJ2MWgtMnptMyAwaDJ2MWgtMnptNS0xaDJ2MWgtMnptLTEzIDJoMXYxaC0xem0yIDBoMXYxaC0xem0zIDBoMXYxaC0xem00IDBoMXYxaC0xem0yIDBoMXYxaC0xem0tMTMgMWgxdjFoLTF6bTMgMGgxdjFoLTF6bTIgMGgxdjFoLTF6bTMgMGgxdjFoLTF6bTQgMGgxdjFoLTF6bS0xNCAxaDJ2MWgtMnptMTAgMGgxdjFoLTF6bTIgMGgydjFoLTJ6bS0xMyAxaDJ2MWgtMnptMyAwaDJ2MWgtMnptMyAwaDJ2MWgtMnptNSAwaDJ2MWgtMnptLTEyIDFoMnYxaC0yem00IDBoMnYxaC0yem0zIDBoMXYxaC0xem0zIDBoMXYxaC0xem0tMTEgMWg3djdIMXptMSAxaDV2NUgyek0xOSAyMGg3djdoLTd6bTEgMWg1djVoLTV6bTIgMmgxdjFoLTF6bS0xIDFoM3YxaC0zem0tMiAxaDJ2MWgtMnptLTYgMGgxdjFoLTF6bS0zIDBoMXYxaC0xem0tMyAwaDJ2MWgtMnptMTUgMGgxdjFoLTF6bS03IDFoMXYxaC0xem0yIDBoMXYxaC0xem0zIDBoMXYxaC0xem0tMTEgMWgxdjFoLTF6bTMgMGgxdjFoLTF6bTYgMGgydjFoLTJ6bS04IDFoMXYxaC0xem0zIDBoMXYxaC0xem0zIDBoMXYxaC0xem0yIDBoMXYxaC0xeiIvPjwvc3ZnPg==" alt="QR Code LinkedIn">
-    </div>
-    <div class="footer-text">
-      Conecte-se comigo no <span class="linkedin-link">LinkedIn</span><br>
-      <small>linkedin.com/in/oleaoicaro</small>
-    </div>
+  <!-- ── Footer ────────────────────────────────────────── -->
+  <footer class="cv-footer">
+    {{ cv.identity.name }} · {{ cv.identity.linkedin }}
   </footer>
 
 </div>

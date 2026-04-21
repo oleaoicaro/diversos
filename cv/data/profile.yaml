@@ -176,7 +176,7 @@ pt:
       period: "nov/2013 – ago/2019"
 
   awards_ey:
-    title: "Reconhecimentos EY"
+    title: "Prêmios"
     subtitle: "Prêmios internos recebidos ao longo da atuação na Ernst & Young"
     awards:
       - count: 3
@@ -367,7 +367,7 @@ en:
       period: "Nov/2013 – Aug/2019"
 
   awards_ey:
-    title: "EY Recognition"
+    title: "Awards"
     subtitle: "Internal awards received throughout tenure at Ernst & Young"
     awards:
       - count: 3

@@ -111,13 +111,15 @@
   </div>
   {% endfor %}
 
-  <h2 class="section">{{ t.competencies }}</h2>
-  {% for group in cv.competencies %}
-  <div class="comp-group">
-    <span class="comp-group-name">{{ group.group }}:</span>
-    <span class="comp-group-list">{{ group.skills | join(' · ') }}</span>
-  </div>
-  {% endfor %}
+  <section class="competencies-block">
+    <h2 class="section">{{ t.competencies }}</h2>
+    {% for group in cv.competencies %}
+    <div class="comp-group">
+      <span class="comp-group-name">{{ group.group }}:</span>
+      <span class="comp-group-list">{{ group.skills | join(' · ') }}</span>
+    </div>
+    {% endfor %}
+  </section>
 
   <h2 class="section">{{ t.education_languages }}</h2>
   {% for edu in cv.education %}

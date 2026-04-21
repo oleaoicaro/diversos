@@ -406,10 +406,16 @@ h2.section {
 }
 
 /* ── Competencies (inline groups) ────────────────────────────── */
+.competencies-block {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
 .comp-group {
   margin-bottom: 1.8mm;
   font-size: 10pt;
   line-height: 1.45;
+  break-inside: avoid;
 }
 
 .comp-group-name {

@@ -51,7 +51,7 @@ pt:
         - "COBIT (fundamentos)"
         - "NIST Cybersecurity Framework (awareness)"
         - "ISO 31000"
-        - "Basileia III (awareness)"
+        - "Basileia III"
     - group: "Regulação Financeira"
       skills:
         - "BACEN (Resoluções 4.557, 4.658, 4.595)"
@@ -102,6 +102,8 @@ pt:
 
   certifications:
     - "ISO 37301 Lead Implementer (PECB) — em andamento (previsão conclusão: 2026)"
+    - "Risk Management Basics — Financial Risk | Risk Management Overview | Non-Financial Risk (EY, 2026)"
+    - "Capital/DLO — Banking Capital Adequacy (EY, 2022)"
     - "CRC 1SP336304 — Conselho Regional de Contabilidade (ativo)"
     - "EY Finance Learning — Ernst & Young (2022)"
     - "Microsoft Power Automate | Business Process Flows (Microsoft)"
@@ -299,7 +301,7 @@ en:
         - "COBIT (fundamentals)"
         - "NIST Cybersecurity Framework (awareness)"
         - "ISO 31000"
-        - "Basel III (awareness)"
+        - "Basel III"
     - group: "Financial Regulation"
       skills:
         - "BACEN (Resolutions 4.557, 4.658, 4.595)"
@@ -350,6 +352,8 @@ en:
 
   certifications:
     - "ISO 37301 Lead Implementer (PECB) — in progress (expected completion: 2026)"
+    - "Risk Management Basics — Financial Risk | Risk Management Overview | Non-Financial Risk (EY, 2026)"
+    - "Capital/DLO — Banking Capital Adequacy (EY, 2022)"
     - "CRC 1SP336304 — Brazilian Accountant Registration (active)"
     - "EY Finance Learning — Ernst & Young (2022)"
     - "Microsoft Power Automate | Business Process Flows (Microsoft)"

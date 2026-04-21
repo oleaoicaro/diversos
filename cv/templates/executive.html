@@ -139,7 +139,12 @@
   </ul>
 
   {% if cv.certifications %}
-  <p class="cert-inline">{{ cv.certifications | join(' &nbsp;·&nbsp; ') | safe }}</p>
+  <h2 class="section">{{ t.certifications }}</h2>
+  <ul class="cert-list">
+    {% for cert in cv.certifications %}
+    <li>{{ cert | safe }}</li>
+    {% endfor %}
+  </ul>
   {% endif %}
 
   {% if cv.previous_experience %}

@@ -460,7 +460,25 @@ h2.section {
 }
 
 /* ── Certifications & languages ──────────────────────────────── */
-.cert-list,
+.cert-list {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 5mm;
+  margin: 0;
+}
+
+.cert-list li {
+  font-size: 10pt;
+  line-height: 1.4;
+  margin-bottom: 0.6mm;
+  color: var(--ink);
+  break-inside: avoid;
+}
+
+.cert-list li::marker {
+  color: var(--accent);
+}
+
 .lang-list,
 .earlier-list {
   list-style: none;
@@ -468,7 +486,6 @@ h2.section {
   margin: 0;
 }
 
-.cert-list li,
 .lang-list li,
 .earlier-list li {
   font-size: 10pt;

@@ -550,3 +550,11 @@ h2.section {
   color: var(--ink);
   margin-top: 0.5mm;
 }
+
+.industry-exp-subtitle {
+  font-size: 9.5pt;
+  color: var(--mid);
+  font-style: italic;
+  margin-bottom: 1.5mm;
+  line-height: 1.35;
+}

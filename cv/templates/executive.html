@@ -138,6 +138,22 @@
     {% endfor %}
   </ul>
 
+  {% if cv.industry_experience %}
+  <h2 class="section">{{ cv.industry_experience.title }}</h2>
+  {% if cv.industry_experience.subtitle %}
+  <p class="awards-subtitle">{{ cv.industry_experience.subtitle }}</p>
+  {% endif %}
+  <div class="industry-exp-block">
+    {% for item in cv.industry_experience.sectors %}
+    <div class="industry-exp-item">
+      <div class="industry-exp-sector">{{ item.sector }}</div>
+      <div class="industry-exp-scope">{{ item.scope }}</div>
+      <div class="industry-exp-expertise">{{ item.expertise }}</div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
   {% if cv.certifications %}
   <h2 class="section">{{ t.certifications }}</h2>
   <ul class="cert-list">

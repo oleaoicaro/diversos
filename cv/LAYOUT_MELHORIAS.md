@@ -1,11 +1,49 @@
 # Melhorias de Layout do CV — Análise e Implementação
 
-**Data:** 2026-04-19
+**Data:** 2026-04-19 (atualizado 2026-04-21)
 **Objetivo:** Implementar melhorias de layout baseadas em análise de boas práticas de RH
 
 ---
 
 ## ✅ Melhorias Implementadas
+
+### 0. **Otimização de Espaços em Branco** — Redução de Whitespace Excessivo (2026-04-21)
+
+Ajustes aplicados em `cv/templates/styles/executive.css` para reduzir espaçamento excessivo e melhorar aproveitamento da página:
+
+| Elemento | Antes | Depois |
+|---|---|---|
+| `@page` margens | `12mm 14mm 12mm 14mm` | `10mm 12mm 10mm 12mm` |
+| `.cv-header` margin-bottom | `3mm` | `2mm` |
+| `.cv-header` padding-bottom | `3mm` | `2mm` |
+| `.cv-name` line-height | `1.1` | `1.05` |
+| `.cv-name` margin-bottom | `1.5mm` | `1mm` |
+| `.cv-headline` line-height | `1.35` | `1.3` |
+| `.cv-headline` margin-bottom | `2.5mm` | `1.5mm` |
+| `.cv-summary` line-height | `1.45` | `1.4` |
+| `.cv-summary` margin-top | `3mm` | `2mm` |
+| `h2.section` margin-top | `3.5mm` | `2.5mm` |
+| `h2.section` margin-bottom | `2mm` | `1.5mm` |
+| `h2.section` padding-bottom | `1mm` | `0.8mm` |
+| `.exp-entry` margin-bottom | `5mm` | `3.5mm` |
+| `.exp-company-block` margin-bottom | `3mm` | `2.5mm` |
+| `.exp-subrole` margin-top | `1.5mm` | `1mm` |
+| `.exp-subrole` margin-bottom | `1mm` | `0.8mm` |
+| `.project-entry` margin-bottom | `3mm` | `2mm` |
+| `.comp-group` margin-bottom | `1.8mm` | `1.2mm` |
+| `.comp-group` line-height | `1.45` | `1.4` |
+| `.edu-item` margin-bottom | `2mm` | `1.5mm` |
+| `.edu-item` line-height | `1.4` | `1.35` |
+| `.edu-lang-divider` margin | `2.5mm 0` | `1.5mm 0` |
+
+**Impacto:**
+- ✅ Conteúdo mais compacto e bem distribuído por página
+- ✅ Margens da página reduzidas de forma segura (mantendo ≥10mm)
+- ✅ Espaçamento entre seções e itens reduzido moderadamente
+- ✅ Tipografia e legibilidade preservadas
+- ✅ PDFs PT e EN regenerados com `build_cv.py`
+
+---
 
 ### 1. **Unificação de Fontes na Sidebar** — Consistência Visual
 

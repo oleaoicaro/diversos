@@ -183,7 +183,7 @@ h2.section {
   color: var(--accent);
   border-bottom: 0.5pt solid var(--rule);
   padding-bottom: 1mm;
-  margin-top: 4mm;
+  margin-top: 3.5mm;
   margin-bottom: 2mm;
   break-after: avoid;
 }
@@ -202,6 +202,8 @@ h2.section {
 /* ── Company Block (consolidated multi-role) ─────────────────── */
 .exp-company-block {
   margin-bottom: 3mm;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 .exp-company-block > .exp-header-row {
@@ -305,6 +307,8 @@ h2.section {
 /* ── Projects ────────────────────────────────────────────────── */
 .project-entry {
   margin-bottom: 3mm;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 .project-entry .proj-header-row,
@@ -407,8 +411,6 @@ h2.section {
 
 /* ── Competencies (inline groups) ────────────────────────────── */
 .competencies-block {
-  break-before: page;
-  page-break-before: always;
   break-inside: avoid;
   page-break-inside: avoid;
 }

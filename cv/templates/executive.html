@@ -70,6 +70,23 @@
   </div>
   {% endfor %}
 
+  {% if cv.awards_ey %}
+  <h2 class="section">{{ cv.awards_ey.title }}</h2>
+  {% if cv.awards_ey.subtitle %}
+  <p class="awards-subtitle">{{ cv.awards_ey.subtitle }}</p>
+  {% endif %}
+  <ul class="awards-list">
+    {% for a in cv.awards_ey.awards %}
+    <li>
+      <span class="award-count">{{ a.count }}×</span>
+      <span class="award-name">{{ a.name }}</span>
+      <span class="award-sep">—</span>
+      <span class="award-desc">{{ a.description }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
   <h2 class="section">{{ t.projects }}</h2>
   {% for project in cv.projects %}
   <div class="project-entry">

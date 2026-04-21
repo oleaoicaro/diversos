@@ -356,6 +356,55 @@ h2.section {
   color: var(--ink);
 }
 
+/* ── EY Awards / Recognition ─────────────────────────────────── */
+.awards-subtitle {
+  font-size: 9.5pt;
+  color: var(--mid);
+  font-style: italic;
+  margin-bottom: 1.5mm;
+  line-height: 1.35;
+}
+
+.awards-list {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 5mm;
+  margin: 0;
+}
+
+.awards-list li {
+  margin-bottom: 0.8mm;
+  font-size: 9.5pt;
+  line-height: 1.4;
+  break-inside: avoid;
+  padding-left: 1mm;
+}
+
+.awards-list li::marker {
+  color: var(--accent);
+}
+
+.award-count {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.award-name {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.award-sep {
+  color: var(--mid);
+  margin: 0 1mm;
+}
+
+.award-desc {
+  color: var(--ink);
+}
+
 /* ── Competencies (inline groups) ────────────────────────────── */
 .comp-group {
   margin-bottom: 1.8mm;

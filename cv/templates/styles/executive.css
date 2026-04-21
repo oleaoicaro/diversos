@@ -202,8 +202,6 @@ h2.section {
 /* ── Company Block (consolidated multi-role) ─────────────────── */
 .exp-company-block {
   margin-bottom: 2.5mm;
-  break-inside: avoid;
-  page-break-inside: avoid;
 }
 
 .exp-company-block > .exp-header-row {

@@ -105,23 +105,6 @@ pt:
     - name: "Inglês"
       level: "Business Working Proficiency — Participo de treinamentos internacionais com times Microsoft (multi-fuso) e resolvo chamados técnicos com equipes EY/Microsoft USA."
 
-  industry_experience:
-    title: "Experiência Setorial — Instituições Financeiras Reguladas"
-    subtitle: "2022–2026 · 4 anos em Banking, Seguros e Saúde Suplementar via EY FSO"
-    sectors:
-      - sector: "Banking — Conglomerados Financeiros Tradicionais"
-        scope: "Top 3 Brasil — banco múltiplo, seguros, previdência, capitalização | R$ 500bi+ ativos"
-        expertise: "SOX, GRC enterprise, Operational Risk, controles internos, Basileia III, gestão de capital"
-      - sector: "Banking — Fintechs & Bancos Digitais"
-        scope: "2 instituições (banco digital 10M+ clientes ativos, fintech crédito empresarial Series B+)"
-        expertise: "Conformidade BACEN (Res. 4.557/4.658/4.595), Open Banking, due diligence regulatória, SOX, TPRM"
-      - sector: "Seguros & Previdência"
-        scope: "3 seguradoras (Top 5 multi-ramo, ramos elementares, seguradora tradicional)"
-        expertise: "SUSEP, ISO 37301, IBM OpenPages, transformação de Compliance, risk reporting, KRIs"
-      - sector: "Saúde Suplementar"
-        scope: "2 operadoras ANS (planos odontológicos, saúde suplementar)"
-        expertise: "Auditoria interna risk-based, ANS, controles internos, PLD-FT, compliance monitoring"
-
   certifications:
     - "ISO 37301 Lead Implementer (PECB) — em andamento (previsão conclusão: 2026)"
     - "Risk Management Basics — Financial Risk | Risk Management Overview | Non-Financial Risk (EY, 2026)"
@@ -156,6 +139,8 @@ pt:
         - title: "Consultor Sênior | Risk & Compliance"
           period: "ago/2025 – presente"
           client: "Seguradora de Ramos Elementares | Programa Plurianual de Transformação de Compliance"
+          sectors:
+            - "Seguros & Previdência: 3 seguradoras (Top 5 multi-ramo, ramos elementares, seguradora tradicional) — SUSEP, ISO 37301, IBM OpenPages, transformação de Compliance, risk reporting, KRIs"
           bullets:
             - "Dirigiu programa plurianual de transformação de Compliance em seguradora Top 5 Brasil (ramos elementares, vida, previdência), liderando equipe multifuncional de 5+ consultores e analistas, coordenando com stakeholders C-Level (CEO, CFO, CRO, CCO)"
             - "Liderou implementação enterprise de framework GRC end-to-end via IBM OpenPages alinhado a SOX, COSO e ISO 37301: mapeou 200+ normas regulatórias (SUSEP, ANS, BACEN) em 5 pilares de risco (Operational Risk, Credit Risk, Market Risk, Liquidity Risk, Compliance Risk), desenvolveu 2 políticas corporativas e 3 manuais de procedimentos (SOPs), capacitou 350+ usuários em controles internos e internal controls testing"
@@ -170,6 +155,8 @@ pt:
         - title: "Risk Consultant"
           period: "out/2023 – jul/2025"
           client: "Operadora de Plano Odontológico (ANS) | Auditoria Interna"
+          sectors:
+            - "Saúde Suplementar: 2 operadoras ANS (planos odontológicos, saúde suplementar) — Auditoria interna risk-based, ANS, controles internos, PLD-FT, compliance monitoring"
           bullets:
             - "Planejou e executou 12 auditorias internas risk-based em operadora ANS (600k+ beneficiários), utilizando risk assessment quantitativo e qualitativo como direcionador primário de escopo (áreas de alto risco: sinistralidade, glosas, PLD-FT, proteção de dados)"
             - "Aplicou IA generativa com revisão humana (GPT-4) para priorização de riscos e sumarização de 150+ normativos regulatórios (ANS, LGPD, BACEN), aumentando eficiência analítica em 45% e reduzindo tempo de leitura de normas de 8h para 4,5h"
@@ -179,6 +166,9 @@ pt:
         - title: "Business Consultant / Consulting FSO Trainee"
           period: "fev/2022 – set/2023"
           client: "Seguradora Tradicional | Programa de Revitalização (8 meses)"
+          sectors:
+            - "Banking — Conglomerados Financeiros Tradicionais: Top 3 Brasil — banco múltiplo, seguros, previdência, capitalização | R$ 500bi+ ativos — SOX, GRC enterprise, Operational Risk, controles internos, Basileia III, gestão de capital"
+            - "Banking — Fintechs & Bancos Digitais: 2 instituições (banco digital 10M+ clientes ativos, fintech crédito empresarial Series B+) — Conformidade BACEN (Res. 4.557/4.658/4.595), Open Banking, due diligence regulatória, SOX, TPRM"
           bullets:
             - "Atuou como PO estratégico de programa de revitalização em seguradora tradicional (R$ 2bi+ prêmios): orquestrou portfólio de 25+ iniciativas, estabeleceu governança executiva com Steering Committee quinzenal (C-Level), gerenciou marcos críticos e dependências inter-áreas"
             - "Redesenhou 8 jornadas do cliente (cotação, venda, sinistro, renovação) e ciclo de vida de 15 produtos (auto, residencial, empresarial), integrando sistemas legados de cotação, CRM, venda digital e ERP (SAP), reduzindo time-to-quote em 50%"
@@ -386,23 +376,6 @@ en:
     - name: "English"
       level: "Business Working Proficiency — Participate in international training with Microsoft teams (multi-timezone) and resolve technical tickets with EY/Microsoft USA teams."
 
-  industry_experience:
-    title: "Industry Experience — Regulated Financial Institutions"
-    subtitle: "2022–2026 · 4 years in Banking, Insurance and Healthcare via EY FSO"
-    sectors:
-      - sector: "Banking — Traditional Financial Conglomerates"
-        scope: "Top 3 Brazil — universal bank, insurance, pension, capitalization | R$ 500bi+ assets"
-        expertise: "SOX, enterprise GRC, Operational Risk, internal controls, Basel III, capital management"
-      - sector: "Banking — Fintechs & Digital Banks"
-        scope: "2 institutions (digital bank 10M+ active customers, business credit fintech Series B+)"
-        expertise: "BACEN compliance (Res. 4.557/4.658/4.595), Open Banking, regulatory due diligence, SOX, TPRM"
-      - sector: "Insurance & Pension"
-        scope: "3 insurers (Top 5 multi-line, property & casualty, traditional insurer)"
-        expertise: "SUSEP, ISO 37301, IBM OpenPages, Compliance transformation, risk reporting, KRIs"
-      - sector: "Healthcare"
-        scope: "2 ANS operators (dental plans, supplementary health)"
-        expertise: "Risk-based internal audit, ANS, internal controls, PLD-FT, compliance monitoring"
-
   certifications:
     - "ISO 37301 Lead Implementer (PECB) — in progress (expected completion: 2026)"
     - "Risk Management Basics — Financial Risk | Risk Management Overview | Non-Financial Risk (EY, 2026)"
@@ -437,6 +410,8 @@ en:
         - title: "Senior Consultant | Risk & Compliance"
           period: "Aug/2025 – Present"
           client: "Property & Casualty Insurance Company | Multi-Year Compliance Transformation Programme"
+          sectors:
+            - "Insurance & Pension: 3 insurers (Top 5 multi-line, property & casualty, traditional insurer) — SUSEP, ISO 37301, IBM OpenPages, Compliance transformation, risk reporting, KRIs"
           bullets:
             - "Led multi-year Compliance transformation programme at property & casualty insurer, managing cross-functional team of consultants and analysts (leadership), coordinating with C-Level stakeholders (stakeholder management)"
             - "Led enterprise implementation of <strong>end-to-end GRC framework</strong> via <strong>IBM OpenPages</strong> aligned with <strong>SOX, COSO and ISO 37301</strong>: mapped <strong>200+ regulations</strong> (SUSEP, ANS, BACEN) across 5 risk pillars (<strong>Operational Risk, Credit Risk, Market Risk, Liquidity Risk, Compliance Risk</strong>), developed <strong>2 corporate policies</strong> and <strong>3 procedure manuals (SOPs)</strong>, trained <strong>350+ users</strong> in internal controls and <strong>internal controls testing</strong>"
@@ -451,6 +426,8 @@ en:
         - title: "Risk Consultant"
           period: "Oct/2023 – Jul/2025"
           client: "Dental Health Plan Operator (ANS) | Internal Audit"
+          sectors:
+            - "Healthcare: 2 ANS operators (dental plans, supplementary health) — Risk-based internal audit, ANS, internal controls, PLD-FT, compliance monitoring"
           bullets:
             - "Planned and executed <strong>risk-based internal audit</strong> engagements, using risk assessment as primary scoping driver"
             - "Applied <strong>human-reviewed AI</strong> for risk prioritisation and regulatory summarisation, increasing analytical efficiency"
@@ -460,6 +437,9 @@ en:
         - title: "Business Consultant / Consulting FSO Trainee"
           period: "Feb/2022 – Sep/2023"
           client: "Traditional Insurance Company | Revitalisation Programme (8 mos)"
+          sectors:
+            - "Banking — Traditional Financial Conglomerates: Top 3 Brazil — universal bank, insurance, pension, capitalization | R$ 500bi+ assets — SOX, enterprise GRC, Operational Risk, internal controls, Basel III, capital management"
+            - "Banking — Fintechs & Digital Banks: 2 institutions (digital bank 10M+ active customers, business credit fintech Series B+) — BACEN compliance (Res. 4.557/4.658/4.595), Open Banking, regulatory due diligence, SOX, TPRM"
           bullets:
             - "Served as <strong>Strategic Product Owner (PO)</strong> of the revitalisation programme: orchestrated portfolio of initiatives, established executive governance, managed milestones and dependencies"
             - "Redesigned customer journeys and product lifecycle, integrating quoting, sales and ERP systems"

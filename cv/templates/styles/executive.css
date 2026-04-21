@@ -517,3 +517,44 @@ h2.section {
   h2.section { break-after: avoid; }
   .exp-bullets li { break-inside: avoid; }
 }
+
+/* ── Industry Experience ─────────────────────────────────────── */
+.industry-exp-block {
+  margin-top: 2mm;
+}
+
+.industry-exp-item {
+  margin-bottom: 2.5mm;
+  padding-bottom: 2.5mm;
+  border-bottom: 0.3pt solid var(--rule);
+}
+
+.industry-exp-item:last-child {
+  border-bottom: none;
+}
+
+.industry-exp-sector {
+  font-weight: 600;
+  font-size: 10.5pt;
+  color: var(--ink);
+}
+
+.industry-exp-scope {
+  font-size: 9.5pt;
+  color: var(--mid);
+  margin-top: 0.5mm;
+}
+
+.industry-exp-expertise {
+  font-size: 9.5pt;
+  color: var(--ink);
+  margin-top: 0.5mm;
+}
+
+.industry-exp-subtitle {
+  font-size: 9.5pt;
+  color: var(--mid);
+  font-style: italic;
+  margin-bottom: 1.5mm;
+  line-height: 1.35;
+}

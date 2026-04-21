@@ -105,32 +105,29 @@ strong { font-weight: 600; color: var(--ink); }
 
 /* ── Header ──────────────────────────────────────────────────── */
 .cv-header {
-  display: table;
-  width: 100%;
   margin-bottom: 3mm;
   padding-bottom: 3mm;
   border-bottom: 0.6pt solid var(--rule);
 }
 
-.cv-header-text {
-  display: table-cell;
-  vertical-align: middle;
-  padding-right: 5mm;
+.cv-header-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 5mm;
 }
 
-.cv-header-photo {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: right;
-  width: 28mm;
-}
-
-.cv-header-photo img {
-  width: 26mm;
-  height: 26mm;
+.cv-photo {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
-  border: 0.6pt solid var(--rule);
+  flex-shrink: 0;
+  border: 1.5pt solid var(--rule);
+}
+
+.cv-header-text {
+  flex: 1;
+  min-width: 0;
 }
 
 .cv-name {

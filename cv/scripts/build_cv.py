@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build CV PDFs (HTML→PDF) via WeasyPrint with Playwright fallback."""
 import logging
+import shutil
 from pathlib import Path
 
 import yaml
@@ -115,6 +116,14 @@ def build(lang: str) -> None:
 
 if __name__ == "__main__":
     log_fonts()
+    # Copy assets to output so HTML files display correctly in a browser
+    assets_src = TEMPLATES / "assets"
+    assets_dst = OUTPUT / "assets"
+    if assets_src.exists():
+        if assets_dst.exists():
+            shutil.rmtree(assets_dst)
+        shutil.copytree(assets_src, assets_dst)
+        log.info("Assets copied to output: %s", assets_dst)
     for lg in ("pt", "en"):
         build(lg)
     print("\n✅ Build complete — files generated:")

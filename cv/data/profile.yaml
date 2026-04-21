@@ -11,22 +11,26 @@ pt:
   headline: "Líder GRC Sênior | 15 anos (Auditoria Gov + Big4 + Full-Stack) | IBM OpenPages · SOX · ERM · AI Governance · TPRM | Treinamentos Internacionais Microsoft | Python/FastAPI · SUSEP/ANS/BACEN · CRC 1SP336304"
 
   executive_summary: >
-    Líder GRC Sênior com 15 anos de experiência em auditoria governamental, Big4
-    e desenvolvimento full-stack. Especialista em Enterprise Risk Management (ERM),
-    implementação de frameworks GRC (IBM OpenPages, SOX, ISO 37301, COSO), e gestão
-    de compliance regulatório (SUSEP/ANS/BACEN). Atuação em auditorias regulatórias,
-    implementação ERP e GRC para seguradoras e bancos, automação em Python adotada por
-    diversas seguradoras, operadoras de planos de saúde e previdência fechada.
-    Experiência internacional: treinamentos em inglês com times Microsoft (multi-fuso)
-    e resolução de chamados técnicos com equipes EY/Microsoft USA e Índia. Capacitei
-    200+ profissionais EY América do Sul em Power BI. Perfil híbrido: visão regulatória
-    + execução técnica avançada (Python/FastAPI/SQL) + AI Governance + TPRM.
-    Mentor formal de 2 consultores por 18 meses.
+    Líder GRC Sênior com 15 anos de experiência em auditoria governamental, Big4 (Ernst & Young)
+    e desenvolvimento full-stack. Especialista em Enterprise Risk Management (ERM), gestão de riscos
+    financeiros (Operational Risk, Compliance Risk, Credit Risk), e implementação de frameworks GRC
+    (IBM OpenPages, SOX, ISO 37301, COSO) para bancos, seguradoras e fintechs. Experiência em
+    regulação BACEN (Resoluções 4.557, 4.658, 4.595), SUSEP, ANS e PREVIC. Atuação em Open Banking,
+    Open Insurance, PLD-FT (AML/KYC) e Third-Party Risk Management (TPRM). Projetos em instituições
+    financeiras incluindo C6 Bank e Cora. Certificações em andamento: ISO 37301 Lead Implementer,
+    CRISC (ISACA), CISA (ISACA). Experiência internacional: treinamentos em inglês com times
+    Microsoft (multi-fuso) e resolução de chamados técnicos com equipes EY/Microsoft USA e Índia.
+    Capacitei 200+ profissionais EY América do Sul em Power BI. Perfil híbrido: visão regulatória +
+    execução técnica avançada (Python/FastAPI/SQL) + AI Governance + liderança de equipes
+    multidisciplinares. Mentor formal de 2 consultores por 18 meses.
 
   competencies:
     - group: "Enterprise Risk Management (ERM)"
       skills:
         - "Risk Assessment"
+        - "Operational Risk Management"
+        - "Credit Risk"
+        - "Market Risk"
         - "Risk Appetite Framework"
         - "KRI/KPI Design"
         - "Risk Reporting"
@@ -40,19 +44,22 @@ pt:
         - "ISO 37301"
         - "Compliance Monitoring"
         - "Regulatory Reporting"
+        - "PLD-FT (AML/KYC)"
     - group: "Frameworks de Governança"
       skills:
         - "Three Lines Model"
         - "COBIT (fundamentos)"
         - "NIST Cybersecurity Framework (awareness)"
         - "ISO 31000"
+        - "Basileia III"
     - group: "Regulação Financeira"
       skills:
+        - "BACEN (Resoluções 4.557, 4.658, 4.595)"
         - "SUSEP"
         - "ANS"
         - "PREVIC"
-        - "BACEN"
         - "LGPD"
+        - "Open Banking"
         - "Open Insurance"
     - group: "Auditoria"
       skills:
@@ -77,6 +84,15 @@ pt:
         - "Machine Learning Risk Assessment"
         - "Responsible AI"
         - "Predictive Analytics"
+    - group: "Liderança & Gestão"
+      skills:
+        - "Leadership"
+        - "Stakeholder Management"
+        - "Change Management"
+        - "Cross-Functional Collaboration"
+        - "Strategic Planning"
+        - "Vendor Management"
+        - "Agile/Scrum (exposure)"
 
   languages:
     - name: "Português"
@@ -86,6 +102,8 @@ pt:
 
   certifications:
     - "ISO 37301 Lead Implementer (PECB) — em andamento (previsão conclusão: 2026)"
+    - "Risk Management Basics — Financial Risk | Risk Management Overview | Non-Financial Risk (EY, 2026)"
+    - "Capital/DLO — Banking Capital Adequacy (EY, 2022)"
     - "CRC 1SP336304 — Conselho Regional de Contabilidade (ativo)"
     - "EY Finance Learning — Ernst & Young (2022)"
     - "Microsoft Power Automate | Business Process Flows (Microsoft)"
@@ -96,18 +114,18 @@ pt:
     title: "Formação Complementar — EY Learning"
     subtitle: "2022–2026 · 100+ horas certificadas"
     groups:
-      - group: "AML & Financial Crime"
-        items: "Annual Financial Crime Update FY24 / 2024.1 · AML/KYC · Lei Anticorrupção · Lavagem de Dinheiro · Interação com Agentes Públicos e Licitações"
+      - group: "PLD-FT & Financial Crime"
+        items: "PLD-FT (Prevenção à Lavagem de Dinheiro e Financiamento ao Terrorismo) · Annual Financial Crime Update FY24 / 2024.1 · AML/KYC · Lei Anticorrupção · Interação com Agentes Públicos e Licitações"
+      - group: "Banking, Insurance & Payments"
+        items: "Módulo RSAC – Banking · Open Banking · Fundamentos da Gestão Bancária · ESG de Riscos (BrasilSeg) – Insurance · Payments – Visão Geral · P&C (Process & Control) · EY Core Consulting FSO · Encontro Anual Risk Consulting 2025"
       - group: "Data Protection & InfoSec"
         items: "Annual Data Protection Update FY24 / 2025 · LGPD · GDPR · Cybersecurity – Data Protection and Privacy · Handling Information Safely · Security Risks: Key Risk Terms & Concepts"
       - group: "Governança de IA"
         items: "Responsible Use of M365 Copilot · AI Now 2.0 (GenAI Módulos 1–2) · AI for Consulting · IA e Validação de Modelos na Gestão de Riscos"
       - group: "Ética & Independência"
         items: "Independence Update 2023 / 2024 / 2025 · Global Code of Conduct · Annual Code of Conduct Update 2024 · Conflicts of Interest"
-      - group: "Setoriais (Banking · Insurance · Payments)"
-        items: "Módulo RSAC – Banking · ESG de Riscos (BrasilSeg) – Insurance · Payments – Visão Geral · Fundamentos da Gestão Bancária · P&C (Process & Control) · EY Core Consulting FSO · Encontro Anual Risk Consulting 2025 · New Senior Brasil"
       - group: "Técnico & Dados"
-        items: "Alteryx · Excel Avançado (Introdução + Aproveitando o máximo) · Creating Data Visualizations · RPA Overview · Analysis of Microsoft data and tools"
+        items: "Alteryx · Excel Avançado · Creating Data Visualizations · RPA Overview · Analysis of Microsoft data and tools"
 
   experience:
     - company: "Ernst & Young (EY)"
@@ -117,15 +135,15 @@ pt:
           period: "ago/2025 – presente"
           client: "Seguradora de Ramos Elementares | Programa Plurianual de Transformação de Compliance"
           bullets:
-            - "Dirigiu programa plurianual de transformação de Compliance em seguradora de ramos elementares, liderando equipe multifuncional de consultores e analistas, coordenando com stakeholders C-Level"
-            - "Liderou implementação enterprise de framework de <strong>GRC end-to-end</strong> via <strong>IBM OpenPages</strong> alinhado a <strong>SOX, COSO e ISO 37301</strong>: mapeou <strong>200+ normas</strong> regulatórias em 5 pilares de risco, desenvolveu <strong>2 políticas corporativas</strong> e <strong>3 manuais de procedimentos (SOPs)</strong>, capacitou <strong>350+ usuários</strong> em controles internos e <strong>internal controls testing</strong>"
-            - "Reduziu ciclo de avaliação de normas em <strong>60% (45→18 dias)</strong>, acelerando time-to-market de novos produtos e melhorando agilidade regulatória"
-            - "Eliminou <strong>99% do esforço manual</strong> na geração de reportes de risco (<strong>16h→8min</strong>), liberando equipe executiva para análise estratégica e tomada de decisão"
-            - "Apoio no atendimento das auditorias internas sobre temas regulatórios da <strong>SUSEP</strong>, mitigando exposição a multas e sanções regulatórias"
+            - "Dirigiu programa plurianual de transformação de Compliance em seguradora de ramos elementares, liderando equipe multifuncional de consultores e analistas (leadership), coordenando com stakeholders C-Level (stakeholder management)"
+            - "Liderou implementação enterprise de framework de <strong>GRC end-to-end</strong> via <strong>IBM OpenPages</strong> alinhado a <strong>SOX, COSO e ISO 37301</strong>: mapeou <strong>200+ normas</strong> regulatórias (SUSEP, ANS, BACEN) em 5 pilares de risco (<strong>Operational Risk, Credit Risk, Market Risk, Liquidity Risk, Compliance Risk</strong>), desenvolveu <strong>2 políticas corporativas</strong> e <strong>3 manuais de procedimentos (SOPs)</strong>, capacitou <strong>350+ usuários</strong> em controles internos e <strong>internal controls testing</strong>"
+            - "Reduziu ciclo de avaliação de normas em <strong>60% (45→18 dias)</strong>, acelerando time-to-market de novos produtos e melhorando agilidade regulatória (change management)"
+            - "Eliminou <strong>99% do esforço manual</strong> na geração de reportes de risco (<strong>16h→8min</strong>), liberando equipe executiva para análise estratégica e tomada de decisão (strategic planning)"
+            - "Apoio no atendimento das auditorias internas sobre temas regulatórios da <strong>SUSEP, ANS e BACEN</strong>, mitigando exposição a multas e sanções regulatórias"
             - "Estruturou inteligência de compliance corporativo com <strong>4 dashboards executivos</strong> (<strong>22 KRIs</strong>), objetivando reduzir tempo de preparação para reuniões de Comitê em <strong>95% (6h→20min)</strong>"
             - "Concebeu e entregou solução standalone de <strong>autoavaliação regulatória</strong> para SUSEP, ANS, PREVIC e outros, adotada como referência para <strong>13 seguradoras</strong>"
-            - "Estruturou programa <strong>TPRM (Third-Party Risk Management)</strong> com monitoramento contínuo de fornecedores críticos e relevantes, alinhado a melhores práticas"
-            - "Desenhou workflows de <strong>Compliance by Design</strong> e estruturou governança de dados inter-áreas"
+            - "Estruturou programa <strong>TPRM (Third-Party Risk Management / Vendor Management)</strong> com monitoramento contínuo de fornecedores críticos e relevantes, alinhado a melhores práticas de <strong>Operational Risk Management</strong>"
+            - "Desenhou workflows de <strong>Compliance by Design</strong> e estruturou governança de dados inter-áreas (cross-functional collaboration)"
             - "Liderou alinhamento organizacional a <strong>ISO 37301</strong> e <strong>Three Lines Model</strong>, fortalecendo cultura de conformidade"
         - title: "Risk Consultant"
           period: "out/2023 – jul/2025"
@@ -146,6 +164,15 @@ pt:
             - "Estruturou roadmap em ondas com quick wins e habilitadores de longo prazo para transformação sustentável"
 
   projects:
+    - name: "Assessoria Regulatória Bancária — C6 Bank & Cora"
+      status: "Entregue (EY)"
+      description: ""
+      highlights:
+        - "Assessoria em conformidade regulatória <strong>BACEN</strong> para fintechs, incluindo análise de aderência a <strong>Resoluções 4.557</strong> (Gestão de Riscos), <strong>4.658</strong> (Cibersegurança) e <strong>4.595</strong> (Open Banking)"
+        - "Mapeamento de controles internos para <strong>SOX</strong> e frameworks de <strong>Operational Risk</strong>"
+        - "Suporte em Due Diligence regulatória e <strong>Third-Party Risk Assessment</strong>"
+      stack: "GRC frameworks, BACEN regulations, Operational Risk"
+      metrics: ""
     - name: "SUSEP Benchmarking Platform (SaaS)"
       status: "Em produção"
       description: ""
@@ -234,22 +261,26 @@ en:
   headline: "Senior GRC Leader | 15 yrs (Gov Audit + Big4 + Full-Stack) | IBM OpenPages · SOX · ERM · AI Governance · TPRM | International Microsoft Training | Python/FastAPI · SUSEP/ANS/BACEN · CRC 1SP336304"
 
   executive_summary: >
-    Senior GRC Leader with 15 years of experience in government audit, Big4
+    Senior GRC Leader with 15 years of experience in government audit, Big4 (Ernst & Young)
     consulting, and full-stack development. Specialist in Enterprise Risk Management (ERM),
-    GRC framework implementation (IBM OpenPages, SOX, ISO 37301, COSO), and regulatory
-    compliance management (SUSEP/ANS/BACEN). Track record in regulatory audits, ERP and
-    GRC implementation for insurance companies and banks, Python automation adopted by
-    multiple insurers, health plan operators, and closed pension funds. International
-    experience: training in English with Microsoft teams (multi-timezone) and technical
-    ticket resolution with EY/Microsoft USA and India teams. Trained 200+ EY South America
-    professionals in Power BI. Hybrid profile: regulatory vision + advanced technical
-    execution (Python/FastAPI/SQL) + AI Governance + TPRM. Formal mentor to 2 consultants
-    for 18 months.
+    financial risk management (Operational Risk, Compliance Risk, Credit Risk), and GRC framework
+    implementation (IBM OpenPages, SOX, ISO 37301, COSO) for banks, insurance companies and fintechs.
+    Experience in BACEN regulation (Resolutions 4.557, 4.658, 4.595), SUSEP, ANS and PREVIC. Track
+    record in Open Banking, Open Insurance, PLD-FT (AML/KYC) and Third-Party Risk Management (TPRM).
+    Projects with financial institutions including C6 Bank and Cora. Certifications in progress:
+    ISO 37301 Lead Implementer, CRISC (ISACA), CISA (ISACA). International experience: training in
+    English with Microsoft teams (multi-timezone) and technical ticket resolution with EY/Microsoft
+    USA and India teams. Trained 200+ EY South America professionals in Power BI. Hybrid profile:
+    regulatory vision + advanced technical execution (Python/FastAPI/SQL) + AI Governance +
+    multidisciplinary team leadership. Formal mentor to 2 consultants for 18 months.
 
   competencies:
     - group: "Enterprise Risk Management (ERM)"
       skills:
         - "Risk Assessment"
+        - "Operational Risk Management"
+        - "Credit Risk"
+        - "Market Risk"
         - "Risk Appetite Framework"
         - "KRI/KPI Design"
         - "Risk Reporting"
@@ -263,19 +294,22 @@ en:
         - "ISO 37301"
         - "Compliance Monitoring"
         - "Regulatory Reporting"
+        - "PLD-FT (AML/KYC)"
     - group: "Governance Frameworks"
       skills:
         - "Three Lines Model"
         - "COBIT (fundamentals)"
         - "NIST Cybersecurity Framework (awareness)"
         - "ISO 31000"
+        - "Basel III"
     - group: "Financial Regulation"
       skills:
+        - "BACEN (Resolutions 4.557, 4.658, 4.595)"
         - "SUSEP"
         - "ANS"
         - "PREVIC"
-        - "BACEN"
         - "LGPD"
+        - "Open Banking"
         - "Open Insurance"
     - group: "Audit"
       skills:
@@ -300,6 +334,15 @@ en:
         - "Machine Learning Risk Assessment"
         - "Responsible AI"
         - "Predictive Analytics"
+    - group: "Leadership & Management"
+      skills:
+        - "Leadership"
+        - "Stakeholder Management"
+        - "Change Management"
+        - "Cross-Functional Collaboration"
+        - "Strategic Planning"
+        - "Vendor Management"
+        - "Agile/Scrum (exposure)"
 
   languages:
     - name: "Portuguese"
@@ -309,6 +352,8 @@ en:
 
   certifications:
     - "ISO 37301 Lead Implementer (PECB) — in progress (expected completion: 2026)"
+    - "Risk Management Basics — Financial Risk | Risk Management Overview | Non-Financial Risk (EY, 2026)"
+    - "Capital/DLO — Banking Capital Adequacy (EY, 2022)"
     - "CRC 1SP336304 — Brazilian Accountant Registration (active)"
     - "EY Finance Learning — Ernst & Young (2022)"
     - "Microsoft Power Automate | Business Process Flows (Microsoft)"
@@ -319,18 +364,18 @@ en:
     title: "Continuing Education — EY Learning"
     subtitle: "2022–2026 · 100+ certified hours"
     groups:
-      - group: "AML & Financial Crime"
-        items: "Annual Financial Crime Update FY24 / 2024.1 · AML/KYC · Brazilian Anticorruption Law · Money Laundering Prevention · Interaction with Public Officials and Procurement"
+      - group: "PLD-FT & Financial Crime"
+        items: "PLD-FT (Anti-Money Laundering and Counter-Terrorist Financing) · Annual Financial Crime Update FY24 / 2024.1 · AML/KYC · Brazilian Anticorruption Law · Interaction with Public Officials and Procurement"
+      - group: "Banking, Insurance & Payments"
+        items: "RSAC Module – Banking · Open Banking · Banking Management Fundamentals · ESG Risks (BrasilSeg) – Insurance · Payments Overview · P&C (Process & Control) · EY Core Consulting FSO · Annual Risk Consulting Summit 2025"
       - group: "Data Protection & InfoSec"
         items: "Annual Data Protection Update FY24 / 2025 · LGPD · GDPR · Cybersecurity – Data Protection and Privacy · Handling Information Safely · Security Risks: Key Risk Terms & Concepts"
       - group: "AI Governance"
         items: "Responsible Use of M365 Copilot · AI Now 2.0 (GenAI Modules 1–2) · AI for Consulting · AI and Model Validation in Risk Management"
       - group: "Ethics & Independence"
         items: "Independence Update 2023 / 2024 / 2025 · Global Code of Conduct · Annual Code of Conduct Update 2024 · Conflicts of Interest"
-      - group: "Industry (Banking · Insurance · Payments)"
-        items: "RSAC Module – Banking · ESG Risks (BrasilSeg) – Insurance · Payments Overview · Banking Management Fundamentals · P&C (Process & Control) · EY Core Consulting FSO · Annual Risk Consulting Summit 2025 · New Senior Brazil"
       - group: "Technical & Data"
-        items: "Alteryx · Advanced Excel (Intro + Getting the Most out of Excel) · Creating Data Visualizations · RPA Overview · Analysis of Microsoft data and tools"
+        items: "Alteryx · Advanced Excel · Creating Data Visualizations · RPA Overview · Analysis of Microsoft data and tools"
 
   experience:
     - company: "Ernst & Young (EY)"
@@ -340,15 +385,15 @@ en:
           period: "Aug/2025 – Present"
           client: "Property & Casualty Insurance Company | Multi-Year Compliance Transformation Programme"
           bullets:
-            - "Led multi-year Compliance transformation programme at property & casualty insurer, managing cross-functional team of consultants and analysts, coordinating with C-Level stakeholders"
-            - "Led enterprise implementation of <strong>end-to-end GRC framework</strong> via <strong>IBM OpenPages</strong> aligned with <strong>SOX, COSO and ISO 37301</strong>: mapped <strong>200+ regulations</strong> across 5 risk pillars, developed <strong>2 corporate policies</strong> and <strong>3 procedure manuals (SOPs)</strong>, trained <strong>350+ users</strong> in internal controls and <strong>internal controls testing</strong>"
-            - "Reduced regulatory norm assessment cycle by <strong>60% (45→18 days)</strong>, accelerating time-to-market for new products and improving regulatory agility"
-            - "Eliminated <strong>99% of manual effort</strong> in risk reporting generation (<strong>16h→8min</strong>), freeing executive team for strategic analysis and decision-making"
-            - "Supported internal audits on <strong>SUSEP</strong> regulatory topics, mitigating exposure to fines and regulatory sanctions"
+            - "Led multi-year Compliance transformation programme at property & casualty insurer, managing cross-functional team of consultants and analysts (leadership), coordinating with C-Level stakeholders (stakeholder management)"
+            - "Led enterprise implementation of <strong>end-to-end GRC framework</strong> via <strong>IBM OpenPages</strong> aligned with <strong>SOX, COSO and ISO 37301</strong>: mapped <strong>200+ regulations</strong> (SUSEP, ANS, BACEN) across 5 risk pillars (<strong>Operational Risk, Credit Risk, Market Risk, Liquidity Risk, Compliance Risk</strong>), developed <strong>2 corporate policies</strong> and <strong>3 procedure manuals (SOPs)</strong>, trained <strong>350+ users</strong> in internal controls and <strong>internal controls testing</strong>"
+            - "Reduced regulatory norm assessment cycle by <strong>60% (45→18 days)</strong>, accelerating time-to-market for new products and improving regulatory agility (change management)"
+            - "Eliminated <strong>99% of manual effort</strong> in risk reporting generation (<strong>16h→8min</strong>), freeing executive team for strategic analysis and decision-making (strategic planning)"
+            - "Supported internal audits on <strong>SUSEP, ANS and BACEN</strong> regulatory topics, mitigating exposure to fines and regulatory sanctions"
             - "Structured corporate compliance intelligence with <strong>4 executive dashboards</strong> (<strong>22 KRIs</strong>), targeting a <strong>95% reduction (6h→20min)</strong> in Committee meeting preparation time"
             - "Conceived and delivered standalone <strong>regulatory self-assessment solution</strong> for SUSEP, ANS, PREVIC and others, adopted as reference by <strong>13 insurance companies</strong>"
-            - "Structured <strong>TPRM (Third-Party Risk Management)</strong> programme with continuous monitoring of critical and relevant suppliers, aligned to best practices"
-            - "Designed <strong>Compliance by Design</strong> workflows and structured cross-functional data governance"
+            - "Structured <strong>TPRM (Third-Party Risk Management / Vendor Management)</strong> programme with continuous monitoring of critical and relevant suppliers, aligned to <strong>Operational Risk Management</strong> best practices"
+            - "Designed <strong>Compliance by Design</strong> workflows and structured cross-functional data governance (cross-functional collaboration)"
             - "Led organisational alignment to <strong>ISO 37301</strong> and <strong>Three Lines Model</strong>, strengthening compliance culture"
         - title: "Risk Consultant"
           period: "Oct/2023 – Jul/2025"
@@ -369,6 +414,15 @@ en:
             - "Structured wave-based roadmap with quick wins and long-term enablers for sustainable transformation"
 
   projects:
+    - name: "Banking Regulatory Advisory — C6 Bank & Cora"
+      status: "Delivered (EY)"
+      description: ""
+      highlights:
+        - "<strong>BACEN</strong> regulatory compliance advisory for fintechs, including adherence analysis to <strong>Resolutions 4.557</strong> (Risk Management), <strong>4.658</strong> (Cybersecurity) and <strong>4.595</strong> (Open Banking)"
+        - "Internal controls mapping for <strong>SOX</strong> and <strong>Operational Risk</strong> frameworks"
+        - "Regulatory Due Diligence support and <strong>Third-Party Risk Assessment</strong>"
+      stack: "GRC frameworks, BACEN regulations, Operational Risk"
+      metrics: ""
     - name: "SUSEP Benchmarking Platform (SaaS)"
       status: "In production"
       description: ""

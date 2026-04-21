@@ -407,6 +407,8 @@ h2.section {
 
 /* ── Competencies (inline groups) ────────────────────────────── */
 .competencies-block {
+  break-before: page;
+  page-break-before: always;
   break-inside: avoid;
   page-break-inside: avoid;
 }

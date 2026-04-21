@@ -197,7 +197,40 @@
 
 ---
 
-## 📌 Resumo Executivo
+## 🔄 Revisão 2026-04-21: Ajustes de Honestidade Narrativa + Keywords Regulatórias Ampliadas
+
+**Data:** 21/04/2026
+**Objetivo:** Reposicionamento ATS para seguradoras, bancos, fintechs e cooperativas financeiras — versão única consolidada (PT+EN), sem variantes setoriais.
+
+### Mudanças implementadas
+
+1. **Headline e Executive Summary reposicionados com honestidade:**
+   - Substituída a expressão "15 anos Banking, Seguros & Fintechs" por narrativa factualmente precisa: ~4 anos em GRC/Compliance no setor financeiro regulado (EY FSO) + 15+ anos de trajetória profissional total.
+   - A narrativa dos 15+ anos agora é validada pela nova seção `early_career` em vez de ser misturada com a experiência técnica regulatória.
+
+2. **Headline ATS recalibrado:** Evita filtros de "sobre-qualificação" para vagas R$ 13–15k. Título alterado para "Especialista GRC & Compliance" (PT) e equivalente em inglês, com keywords SUSEP (Circ. 648 / CNSP 416) e CMN 4.966 inclusas.
+
+3. **Keywords regulatórias adicionadas:**
+   - **Circular SUSEP 648/2021** (governança de riscos de seguradoras) — adicionada à Regulação Financeira
+   - **Resolução CNSP 416/2021** (controles internos em seguradoras) — adicionada à Regulação Financeira
+   - **CMN 4.966/2021** (IFRS 9 / perdas esperadas) incluída em "Conhecimento Regulatório em Desenvolvimento"
+   - **CMN 4.893/2021** (cibersegurança) incluída em "Conhecimento Regulatório em Desenvolvimento"
+   - **COBIT 2019** incluída em "Conhecimento Regulatório em Desenvolvimento"
+
+4. **Nova seção `early_career` (PT + EN):** Valida a trajetória de 15+ anos com honestidade:
+   - TCE-PI (2017–2019) — Auditoria governamental
+   - Auxiliar Contábil / Escritório de Contabilidade — CRC ativo desde 2019
+   - Produtor de Infoprodutos / Social Media — Empreendedorismo digital
+   - Atividades Autônomas (Comércio) — desde os 15 anos (~2010)
+
+5. **Certificações reestruturadas:** Cada certificação agora é um objeto YAML com campos `name`, `issuer`, `status`, `year`/`expected`. Adicionadas como planejadas: CPA-20 (60 dias), Duolingo English Test (30 dias), COBIT 2019 Foundation (90 dias).
+
+6. **Idiomas:** Adicionada nota sobre Duolingo English Test planejado em 30 dias (PT + EN).
+
+7. **HTMLs regenerados** via `cv/scripts/build_cv.py` (WeasyPrint): `Icaro_Leao_CV_PT.html` e `Icaro_Leao_CV_EN.html` em `cv/output/`.
+
+8. **Sem variantes setoriais criadas** — única versão consolidada mantida.
+
 
 **O que mudou:**
 - ❌ Perfil "consultor júnior promovido recentemente" (3 anos)

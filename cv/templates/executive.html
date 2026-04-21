@@ -125,7 +125,12 @@
   <h2 class="section">{{ t.certifications }}</h2>
   <ul class="cert-list">
     {% for cert in cv.certifications %}
-    <li>{{ cert | safe }}</li>
+    <li>
+      <strong>{{ cert.name }}</strong>
+      {%- if cert.issuer %} — {{ cert.issuer }}{% endif %}
+      · <em>{{ cert.status }}</em>
+      {%- if cert.year %} ({{ t.cert_since }} {{ cert.year }}){%- elif cert.expected %} ({{ t.cert_expected }}: {{ cert.expected }}){%- endif %}
+    </li>
     {% endfor %}
   </ul>
   {% endif %}
@@ -146,6 +151,21 @@
     <li>{{ item | safe }}</li>
     {% endfor %}
   </ul>
+  {% endif %}
+
+  {% if cv.early_career %}
+  <h2 class="section">{{ t.early_career }}</h2>
+  <div class="early-career-block">
+    {% for item in cv.early_career %}
+    <div class="earlier-item">
+      <div class="earlier-header">
+        <span class="earlier-role">{{ item.role }}</span>
+        <span class="earlier-period">{{ item.period }}</span>
+      </div>
+      <p class="earlier-desc">{{ item.description }}</p>
+    </div>
+    {% endfor %}
+  </div>
   {% endif %}
 
 </div>

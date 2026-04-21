@@ -600,3 +600,51 @@ h2.section {
   margin-bottom: 1.5mm;
   line-height: 1.35;
 }
+
+/* ── Early Career Section ─────────────────────────────────────── */
+.early-career-block {
+  margin-top: 2mm;
+}
+
+.earlier-item {
+  margin-bottom: 2.5mm;
+  padding-bottom: 2.5mm;
+  border-bottom: 0.3pt solid var(--rule);
+}
+
+.earlier-item:last-child {
+  border-bottom: none;
+}
+
+.earlier-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5mm;
+}
+
+.earlier-role {
+  font-weight: 600;
+  font-size: 10pt;
+  color: var(--ink);
+}
+
+.earlier-period {
+  font-size: 9pt;
+  color: var(--mid);
+  white-space: nowrap;
+  margin-left: 4mm;
+}
+
+.earlier-desc {
+  font-size: 9pt;
+  color: var(--mid);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* ── Certifications structured ───────────────────────────────── */
+.cert-list em {
+  font-size: 8.5pt;
+  color: var(--mid);
+}

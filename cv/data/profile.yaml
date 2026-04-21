@@ -8,15 +8,16 @@ pt:
     linkedin: "linkedin.com/in/oleaoicaro"
     github: "github.com/oleaoicaro"
 
-  headline: "Líder GRC Sênior | 15 anos Banking, Seguros & Fintechs | IBM OpenPages · SOX · ERM · BACEN (Res. 4.557/4.658/4.595) · PLD-FT · TPRM · ISO 37301 | Python/FastAPI/SQL · CRC 1SP336304"
+  headline: "Especialista GRC & Compliance | Seguros · Banking · Fintechs | IBM OpenPages · SOX · BACEN (4.557/4.658/4.966) · SUSEP (Circ. 648 / CNSP 416) · ANS · PLD-FT · TPRM · ISO 37301 | Python · Power BI · CRC 1SP336304"
 
   executive_summary: >
-    Especialista sênior em GRC, Riscos e Compliance com ~15 anos de atuação em Banking, Seguros e
-    Fintechs (EY FSO, operadoras ANS, conglomerados Top 3 BR). Track record em auditoria
-    risk-based, SOX, ERM, conformidade BACEN/SUSEP/ANS, TPRM e implementação de IBM OpenPages.
-    Combina fluência regulatória com automação (Python, Power BI, IA generativa aplicada),
-    entregando redução de até 99% em ciclos de risk reporting e governança de 150+ controles em
-    ambientes de R$ 500bi+ em ativos.
+    ~4 anos em GRC/Compliance no setor financeiro regulado (EY FSO, Top 5 seguradoras,
+    conglomerados Top 3 BR, operadoras ANS) · 15+ anos de trajetória profissional total
+    (auditoria governamental TCE-PI, contabilidade CRC ativa, empreendedorismo digital).
+    Track record em auditoria risk-based, SOX, ERM, conformidade BACEN/SUSEP/ANS, TPRM e
+    implementação de IBM OpenPages. Combina fluência regulatória com automação (Python,
+    Power BI, IA generativa aplicada), entregando redução de até 99% em ciclos de risk
+    reporting e governança de 150+ controles em ambientes de R$ 500bi+ em ativos.
 
   competencies:
     - group: "GRC & Compliance"
@@ -30,12 +31,18 @@ pt:
         - "Controls Testing"
     - group: "Regulação Financeira"
       skills:
-        - "BACEN (Res. 4.557/4.658/4.595/4.606)"
-        - "SUSEP"
+        - "BACEN (Res. 4.557/4.658/4.595/4.606/4.966)"
+        - "SUSEP (Circ. 648/2021)"
+        - "CNSP 416/2021"
         - "ANS"
         - "LGPD"
         - "Open Banking"
         - "Basileia III"
+    - group: "Conhecimento Regulatório em Desenvolvimento"
+      skills:
+        - "CMN 4.893/2021 (Cibersegurança)"
+        - "CMN 4.966/2021 (IFRS 9 / Perdas Esperadas)"
+        - "COBIT 2019"
     - group: "Riscos & Auditoria"
       skills:
         - "ERM"
@@ -64,13 +71,37 @@ pt:
     - name: "Português"
       level: "Nativo"
     - name: "Inglês"
-      level: "Business Working Proficiency — atuação multi-fuso com times Microsoft e EY/Microsoft USA"
+      level: "Business Working Proficiency — atuação multi-fuso com times Microsoft e EY/Microsoft USA · Certificação Duolingo English Test planejada (30 dias)"
 
   certifications:
-    - "ISO 37301 Lead Implementer (PECB) — em andamento (previsão: 2026)"
-    - "CRISC (ISACA) — planejada, 2026"
-    - "CISA (ISACA) — planejada, 2026"
-    - "CRC 1SP336304 — Conselho Regional de Contabilidade (ativo)"
+    - name: "CRC 1SP336304"
+      issuer: "Conselho Regional de Contabilidade"
+      status: "ativo"
+      year: 2019
+    - name: "ISO 37301 Lead Implementer (PECB)"
+      issuer: "PECB"
+      status: "em andamento"
+      expected: "2026"
+    - name: "CRISC"
+      issuer: "ISACA"
+      status: "planejada"
+      expected: "2026"
+    - name: "CISA"
+      issuer: "ISACA"
+      status: "planejada"
+      expected: "2026"
+    - name: "CPA-20"
+      issuer: "ANBIMA"
+      status: "planejada"
+      expected: "60 dias"
+    - name: "Duolingo English Test"
+      issuer: "Duolingo"
+      status: "planejada"
+      expected: "30 dias"
+    - name: "COBIT 2019 Foundation"
+      issuer: "ISACA"
+      status: "planejada"
+      expected: "90 dias"
 
   experience:
     - company: "Ernst & Young (EY)"
@@ -132,6 +163,20 @@ pt:
     - "Mentor formal EY — 2 mentees, <strong>100% promovidos</strong>, avaliação de performance top 20%"
     - "Instrutor interno — programa Power BI para <strong>200+ consultores</strong> EY América do Sul"
 
+  early_career:
+    - role: "Tribunal de Contas do Estado do Piauí (TCE-PI)"
+      period: "2017 – 2019"
+      description: "Auditoria governamental de órgãos públicos estaduais; análise de conformidade, controle interno e fiscalização de contratos. Base sólida em auditoria pública e conformidade regulatória que antecede a atuação no setor financeiro privado."
+    - role: "Auxiliar Contábil / Escritório de Contabilidade"
+      period: "[DATA]"  # Preencher com as datas reais
+      description: "Conciliações bancárias, escrituração contábil, cumprimento de obrigações acessórias (SPED, DCTF, ECF) e apoio fiscal a pequenas e médias empresas. CRC 1SP336304 ativo desde 2019."
+    - role: "Produtor de Infoprodutos / Social Media"
+      period: "[DATA]"  # Preencher com as datas reais
+      description: "Empreendedorismo digital: criação, lançamento e gestão de infoprodutos; estratégia de conteúdo e campanhas em redes sociais; desenvolvimento de audiência e automação de marketing."
+    - role: "Atividades Autônomas (Comércio)"
+      period: "desde os 15 anos (~2010)"
+      description: "Iniciação profissional precoce: comércio e revenda informal, desenvolvimento de espírito empreendedor, gestão de relacionamento com clientes e noções de fluxo de caixa desde a adolescência."
+
 en:
   identity:
     name: "ÍCARO VIEIRA LEÃO"
@@ -142,15 +187,16 @@ en:
     linkedin: "linkedin.com/in/oleaoicaro"
     github: "github.com/oleaoicaro"
 
-  headline: "Senior GRC Leader | 15 yrs Banking, Insurance & Fintechs | IBM OpenPages · SOX · ERM · BACEN (Res. 4.557/4.658/4.595) · AML/KYC · TPRM · ISO 37301 | Python/FastAPI/SQL · CRC 1SP336304"
+  headline: "GRC & Compliance Specialist | Insurance · Banking · Fintechs | IBM OpenPages · SOX · BACEN (4.557/4.658/4.966) · SUSEP (Circ. 648 / CNSP 416) · ANS · AML/KYC · TPRM · ISO 37301 | Python · Power BI · CRC 1SP336304"
 
   executive_summary: >
-    Senior GRC, Risk and Compliance specialist with ~15 years of experience in Banking, Insurance
-    and Fintechs (EY FSO, ANS health operators, Top 3 BR conglomerates). Track record in
-    risk-based audit, SOX, ERM, BACEN/SUSEP/ANS compliance, TPRM and IBM OpenPages implementation.
-    Combines regulatory expertise with automation (Python, Power BI, applied generative AI),
-    delivering up to 99% reduction in risk reporting cycles and governance of 150+ controls in
-    environments with R$ 500bn+ in assets.
+    ~4 years in GRC/Compliance within the regulated financial sector (EY FSO, Top 5 insurers,
+    Top 3 BR conglomerates, ANS health operators) · 15+ years of total professional trajectory
+    (government audit TCE-PI, active CRC accounting registration, digital entrepreneurship).
+    Track record in risk-based audit, SOX, ERM, BACEN/SUSEP/ANS compliance, TPRM and IBM
+    OpenPages implementation. Combines regulatory expertise with automation (Python, Power BI,
+    applied generative AI), delivering up to 99% reduction in risk reporting cycles and
+    governance of 150+ controls in environments with R$ 500bn+ in assets.
 
   competencies:
     - group: "GRC & Compliance"
@@ -164,12 +210,18 @@ en:
         - "Controls Testing"
     - group: "Financial Regulation"
       skills:
-        - "BACEN (Res. 4.557/4.658/4.595/4.606)"
-        - "SUSEP"
+        - "BACEN (Res. 4.557/4.658/4.595/4.606/4.966)"
+        - "SUSEP (Circ. 648/2021)"
+        - "CNSP 416/2021"
         - "ANS"
         - "LGPD"
         - "Open Banking"
         - "Basel III"
+    - group: "Regulatory Knowledge in Progress"
+      skills:
+        - "CMN 4.893/2021 (Cybersecurity Policy)"
+        - "CMN 4.966/2021 (IFRS 9 / Expected Credit Losses)"
+        - "COBIT 2019"
     - group: "Risk & Audit"
       skills:
         - "ERM"
@@ -198,13 +250,37 @@ en:
     - name: "Portuguese"
       level: "Native"
     - name: "English"
-      level: "Business Working Proficiency — multi-timezone engagement with Microsoft and EY/Microsoft USA teams"
+      level: "Business Working Proficiency — multi-timezone engagement with Microsoft and EY/Microsoft USA teams · Duolingo English Test certification planned (30 days)"
 
   certifications:
-    - "ISO 37301 Lead Implementer (PECB) — in progress (expected: 2026)"
-    - "CRISC (ISACA) — planned, 2026"
-    - "CISA (ISACA) — planned, 2026"
-    - "CRC 1SP336304 — Brazilian Accountant Registration (active)"
+    - name: "CRC 1SP336304"
+      issuer: "Brazilian Accounting Council (CRC)"
+      status: "active"
+      year: 2019
+    - name: "ISO 37301 Lead Implementer (PECB)"
+      issuer: "PECB"
+      status: "in progress"
+      expected: "2026"
+    - name: "CRISC"
+      issuer: "ISACA"
+      status: "planned"
+      expected: "2026"
+    - name: "CISA"
+      issuer: "ISACA"
+      status: "planned"
+      expected: "2026"
+    - name: "CPA-20"
+      issuer: "ANBIMA"
+      status: "planned"
+      expected: "60 days"
+    - name: "Duolingo English Test"
+      issuer: "Duolingo"
+      status: "planned"
+      expected: "30 days"
+    - name: "COBIT 2019 Foundation"
+      issuer: "ISACA"
+      status: "planned"
+      expected: "90 days"
 
   experience:
     - company: "Ernst & Young (EY)"
@@ -265,3 +341,17 @@ en:
     - "30+ formal EY awards (Ovation, Shine, Applause) — high-impact achievements and extra effort"
     - "Formal EY Mentor — 2 mentees, <strong>100% promoted</strong>, top 20% performance rating"
     - "Internal instructor — Power BI programme for <strong>200+ EY consultants</strong> across South America"
+
+  early_career:
+    - role: "State Audit Court of Piauí (TCE-PI)"
+      period: "2017 – 2019"
+      description: "Government audit of state public bodies; compliance analysis, internal controls assessment and contract oversight. Solid foundation in public auditing and regulatory compliance preceding the private financial sector career."
+    - role: "Accounting Assistant / Accounting Firm"
+      period: "[DATE]"  # Fill in with actual dates
+      description: "Bank reconciliations, bookkeeping, ancillary obligations (SPED, DCTF, ECF) and fiscal support for SMEs. CRC 1SP336304 registration active since 2019."
+    - role: "Digital Entrepreneur / Social Media Manager"
+      period: "[DATE]"  # Fill in with actual dates
+      description: "Digital entrepreneurship: creation, launch and management of info-products; content strategy and social media campaigns; audience growth and marketing automation."
+    - role: "Autonomous Commerce"
+      period: "since age 15 (~2010)"
+      description: "Early professional initiation: informal trade and resale, entrepreneurial mindset development, customer relationship management and basic cash-flow awareness since adolescence."

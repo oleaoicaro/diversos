@@ -7,6 +7,29 @@
 
 ## ✅ Melhorias Implementadas
 
+### 0.1. **Correção de Whitespace Excessivo na Página 1** — Remoção de break-inside no bloco de empresa (2026-04-21)
+
+**Problema:** A classe `.exp-company-block` tinha `break-inside: avoid; page-break-inside: avoid;`, o que impedia quebras de página dentro do bloco da empresa. O bloco da EY (com 3 cargos e ~19 bullets) é grande demais para caber na página 1 após cabeçalho e resumo, então o WeasyPrint empurrava o bloco inteiro para a página 2, deixando a página 1 com ~70% de espaço em branco.
+
+**Correção:**
+
+| Elemento | Antes | Depois |
+|---|---|---|
+| `.exp-company-block` break-inside | `avoid` | *(removido)* |
+| `.exp-company-block` page-break-inside | `avoid` | *(removido)* |
+
+**Impacto:**
+- ✅ Experiência Profissional começa logo após o resumo na página 1
+- ✅ Total de páginas reduzido de 4 para 2–3
+- ✅ Conteúdo flui naturalmente entre páginas
+- ✅ Cabeçalhos de cargos ainda mantêm `break-after: avoid` (não ficam sozinhos no fim da página)
+- ✅ Bullets individuais mantêm `break-inside: avoid`
+- ✅ PDFs PT e EN regenerados com `build_cv.py`
+
+---
+
+## ✅ Melhorias Implementadas
+
 ### 0. **Otimização de Espaços em Branco** — Redução de Whitespace Excessivo (2026-04-21)
 
 Ajustes aplicados em `cv/templates/styles/executive.css` para reduzir espaçamento excessivo e melhorar aproveitamento da página:

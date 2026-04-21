@@ -105,9 +105,32 @@ strong { font-weight: 600; color: var(--ink); }
 
 /* ── Header ──────────────────────────────────────────────────── */
 .cv-header {
+  display: table;
+  width: 100%;
   margin-bottom: 3mm;
   padding-bottom: 3mm;
   border-bottom: 0.6pt solid var(--rule);
+}
+
+.cv-header-text {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 5mm;
+}
+
+.cv-header-photo {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+  width: 28mm;
+}
+
+.cv-header-photo img {
+  width: 26mm;
+  height: 26mm;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0.6pt solid var(--rule);
 }
 
 .cv-name {
@@ -333,6 +356,55 @@ h2.section {
 
 .proj-metrics {
   font-size: 9pt;
+  color: var(--ink);
+}
+
+/* ── EY Awards / Recognition ─────────────────────────────────── */
+.awards-subtitle {
+  font-size: 9.5pt;
+  color: var(--mid);
+  font-style: italic;
+  margin-bottom: 1.5mm;
+  line-height: 1.35;
+}
+
+.awards-list {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 5mm;
+  margin: 0;
+}
+
+.awards-list li {
+  margin-bottom: 0.8mm;
+  font-size: 9.5pt;
+  line-height: 1.4;
+  break-inside: avoid;
+  padding-left: 1mm;
+}
+
+.awards-list li::marker {
+  color: var(--accent);
+}
+
+.award-count {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.award-name {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.award-sep {
+  color: var(--mid);
+  margin: 0 1mm;
+}
+
+.award-desc {
   color: var(--ink);
 }
 

@@ -173,6 +173,20 @@ pt:
       institution: "Universidade Federal do Piauí (UFPI)"
       period: "nov/2013 – ago/2019"
 
+  awards_ey:
+    title: "Reconhecimentos EY"
+    subtitle: "Prêmios internos recebidos ao longo da atuação na Ernst & Young"
+    awards:
+      - count: 3
+        name: "Ovation"
+        description: "Reconhecimento monetário por realizações relevantes, esforço extra e trabalho bem feito"
+      - count: 4
+        name: "Shine"
+        description: "Programa de reconhecimento EY América do Sul para profissionais que vão além em seu compromisso com a firma e a comunidade, gerando impacto positivo sobre colegas e equipes"
+      - count: 22
+        name: "Applause"
+        description: "Cartão eletrônico não monetário de reconhecimento por realizações, esforço extra e agradecimento pelo trabalho bem feito"
+
 en:
   identity:
     name: "ÍCARO LEÃO"
@@ -347,3 +361,17 @@ en:
     - degree: "B.Sc. in Accounting Sciences"
       institution: "Federal University of Piauí (UFPI)"
       period: "Nov/2013 – Aug/2019"
+
+  awards_ey:
+    title: "EY Recognition"
+    subtitle: "Internal awards received throughout tenure at Ernst & Young"
+    awards:
+      - count: 3
+        name: "Ovation"
+        description: "Monetary recognition for notable achievements, extra effort and a job well done"
+      - count: 4
+        name: "Shine"
+        description: "EY South America recognition programme for professionals going above and beyond in their commitment to the firm and community, generating positive impact on colleagues and teams"
+      - count: 22
+        name: "Applause"
+        description: "Non-monetary electronic card recognising achievements, extra effort and appreciation for a job well done"

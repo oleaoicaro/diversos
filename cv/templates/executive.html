@@ -20,18 +20,23 @@
 <div class="doc">
 
   <header class="cv-header">
-    <h1 class="cv-name">{{ cv.identity.name }}</h1>
-    <div class="cv-headline">{{ cv.headline }}</div>
-    <div class="cv-contact">
-      <span class="ci">{{ cv.identity.location }}</span>
-      <span class="sep">|</span>
-      <span class="ci">{{ cv.identity.phone }}</span>
-      <span class="sep">|</span>
-      <a class="ci" href="mailto:{{ cv.identity.email }}">{{ cv.identity.email }}</a>
-      <span class="sep">|</span>
-      <a class="ci" href="https://{{ cv.identity.linkedin }}">{{ cv.identity.linkedin }}</a>
-      <span class="sep">|</span>
-      <a class="ci" href="https://{{ cv.identity.github }}">{{ cv.identity.github }}</a>
+    <div class="cv-header-text">
+      <h1 class="cv-name">{{ cv.identity.name }}</h1>
+      <div class="cv-headline">{{ cv.headline }}</div>
+      <div class="cv-contact">
+        <span class="ci">{{ cv.identity.location }}</span>
+        <span class="sep">|</span>
+        <span class="ci">{{ cv.identity.phone }}</span>
+        <span class="sep">|</span>
+        <a class="ci" href="mailto:{{ cv.identity.email }}">{{ cv.identity.email }}</a>
+        <span class="sep">|</span>
+        <a class="ci" href="https://{{ cv.identity.linkedin }}">{{ cv.identity.linkedin }}</a>
+        <span class="sep">|</span>
+        <a class="ci" href="https://{{ cv.identity.github }}">{{ cv.identity.github }}</a>
+      </div>
+    </div>
+    <div class="cv-header-photo">
+      <img src="assets/photo.jpg" alt="{{ cv.identity.name }}">
     </div>
   </header>
 
@@ -64,6 +69,23 @@
     {% endfor %}
   </div>
   {% endfor %}
+
+  {% if cv.awards_ey %}
+  <h2 class="section">{{ cv.awards_ey.title }}</h2>
+  {% if cv.awards_ey.subtitle %}
+  <p class="awards-subtitle">{{ cv.awards_ey.subtitle }}</p>
+  {% endif %}
+  <ul class="awards-list">
+    {% for a in cv.awards_ey.awards %}
+    <li>
+      <span class="award-count">{{ a.count }}×</span>
+      <span class="award-name">{{ a.name }}</span>
+      <span class="award-sep">—</span>
+      <span class="award-desc">{{ a.description }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
 
   <h2 class="section">{{ t.projects }}</h2>
   {% for project in cv.projects %}

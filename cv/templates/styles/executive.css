@@ -121,6 +121,7 @@ strong { font-weight: 600; color: var(--ink); }
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center top;
   flex-shrink: 0;
   border: 1.5pt solid var(--rule);
 }

@@ -6,14 +6,7 @@
   <title>{{ cv.identity.name }} — {{ t.doc_title }}</title>
   <link rel="stylesheet" href="styles/executive.css">
   <style>
-    @page {
-      @bottom-right {
-        content: "{{ t.page_word }} " counter(page) " {{ t.of_word }} " counter(pages);
-        font-size: 8pt;
-        color: #6b7280;
-        font-family: 'Inter', 'Liberation Sans', sans-serif;
-      }
-    }
+    @page { margin: 18mm 18mm 14mm 18mm; }
   </style>
 </head>
 <body>
@@ -41,6 +34,16 @@
   </header>
 
   <p class="cv-summary">{{ cv.executive_summary }}</p>
+
+  <section class="competencies-block">
+  <h2 class="section">{{ t.competencies }}</h2>
+  {% for group in cv.competencies %}
+  <div class="comp-group">
+    <span class="comp-group-name">{{ group.group }}:</span>
+    <span class="comp-group-list">{{ group.skills | join(' · ') }}</span>
+  </div>
+  {% endfor %}
+  </section>
 
   <h2 class="section">{{ t.experience }}</h2>
   {% for company in cv.experience %}
@@ -75,23 +78,6 @@
   </div>
   {% endfor %}
 
-  {% if cv.awards_ey %}
-  <h2 class="section">{{ cv.awards_ey.title }}</h2>
-  {% if cv.awards_ey.subtitle %}
-  <p class="awards-subtitle">{{ cv.awards_ey.subtitle }}</p>
-  {% endif %}
-  <ul class="awards-list">
-    {% for a in cv.awards_ey.awards %}
-    <li>
-      <span class="award-count">{{ a.count }}×</span>
-      <span class="award-name">{{ a.name }}</span>
-      <span class="award-sep">—</span>
-      <span class="award-desc">{{ a.description }}</span>
-    </li>
-    {% endfor %}
-  </ul>
-  {% endif %}
-
   <h2 class="section">{{ t.projects }}</h2>
   {% for project in cv.projects %}
   <div class="project-entry">
@@ -102,11 +88,13 @@
     {% if project.description %}
     <p class="proj-desc">{{ project.description }}</p>
     {% endif %}
+    {% if project.highlights %}
     <ul class="exp-bullets">
       {% for hl in project.highlights %}
       <li>{{ hl | safe }}</li>
       {% endfor %}
     </ul>
+    {% endif %}
     {% if project.stack %}
     <div class="proj-stack">{{ t.stack_label }}: {{ project.stack }}</div>
     {% endif %}
@@ -115,16 +103,6 @@
     {% endif %}
   </div>
   {% endfor %}
-
-  <section class="competencies-block">
-  <h2 class="section">{{ t.competencies }}</h2>
-  {% for group in cv.competencies %}
-  <div class="comp-group">
-    <span class="comp-group-name">{{ group.group }}:</span>
-    <span class="comp-group-list">{{ group.skills | join(' · ') }}</span>
-  </div>
-  {% endfor %}
-  </section>
 
   <h2 class="section">{{ t.education_languages }}</h2>
   {% for edu in cv.education %}
@@ -148,6 +126,15 @@
   <ul class="cert-list">
     {% for cert in cv.certifications %}
     <li>{{ cert | safe }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if cv.recognition_leadership %}
+  <h2 class="section">{{ t.recognition }}</h2>
+  <ul class="recog-list">
+    {% for item in cv.recognition_leadership %}
+    <li>{{ item | safe }}</li>
     {% endfor %}
   </ul>
   {% endif %}

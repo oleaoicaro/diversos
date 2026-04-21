@@ -29,9 +29,10 @@ LABELS = {
         "competencies": "Competências",
         "education": "Formação",
         "education_languages": "Formação e Idiomas",
-        "certifications": "Certificações e Cursos",
+        "certifications": "Certificações",
         "languages": "Idiomas",
         "stack_label": "Stack",
+        "recognition": "Reconhecimentos & Liderança",
     },
     "en": {
         "html_lang": "en",
@@ -44,9 +45,10 @@ LABELS = {
         "competencies": "Core Competencies",
         "education": "Education",
         "education_languages": "Education & Languages",
-        "certifications": "Certifications & Courses",
+        "certifications": "Certifications",
         "languages": "Languages",
         "stack_label": "Stack",
+        "recognition": "Recognition & Leadership",
     },
 }
 

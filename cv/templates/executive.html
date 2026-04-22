@@ -133,6 +133,9 @@
     </li>
     {% endfor %}
   </ul>
+  {% if cv.certifications_in_progress %}
+  <p class="cert-inline">{{ cv.certifications_in_progress.label }}: {{ cv.certifications_in_progress.certs | join(' · ') }}</p>
+  {% endif %}
   {% endif %}
 
   {% if cv.recognition_leadership %}

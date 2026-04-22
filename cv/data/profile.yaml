@@ -8,16 +8,16 @@ pt:
     linkedin: "linkedin.com/in/oleaoicaro"
     github: "github.com/oleaoicaro"
 
-  headline: "Especialista GRC & Compliance | Seguros · Banking · Fintechs | IBM OpenPages · SOX · BACEN (4.557/4.658/4.966) · SUSEP (Circ. 648 / CNSP 416) · ANS · PLD-FT · TPRM · ISO 37301 | Python · Power BI · CRC 1SP336304"
+  headline: "Especialista GRC & Compliance | Seguros · Banking · Fintechs | IBM OpenPages · SOX · BACEN (4.557/4.893/4.966) · SUSEP (Circ. 648 / CNSP 416) · ANS · PLD-FT · TPRM · ISO 37301 | Python · Power BI · CRC 1SP336304"
 
   executive_summary: >
-    ~4 anos em GRC/Compliance no setor financeiro regulado (EY FSO, Top 5 seguradoras,
-    conglomerados Top 3 BR, operadoras ANS) · 15+ anos de trajetória profissional total
+    Mais de 7 anos em GRC/Compliance no setor financeiro regulado (EY FSO, Top 5 seguradoras,
+    conglomerados Top 3 BR, operadoras ANS) · 15 anos de trajetória profissional total
     (auditoria governamental TCE-PI, contabilidade CRC ativa, empreendedorismo digital).
     Track record em auditoria risk-based, SOX, ERM, conformidade BACEN/SUSEP/ANS, TPRM e
     implementação de IBM OpenPages. Combina fluência regulatória com automação (Python,
-    Power BI, IA generativa aplicada), entregando redução de até 99% em ciclos de risk
-    reporting e governança de 150+ controles em ambientes de R$ 500bi+ em ativos.
+    Power BI, IA generativa aplicada), entregando redução estimada de até 99% em ciclos de
+    risk reporting e governança de controles em ambientes de R$ 14bi+ em ativos.
 
   competencies:
     - group: "GRC & Compliance"
@@ -71,37 +71,22 @@ pt:
     - name: "Português"
       level: "Nativo"
     - name: "Inglês"
-      level: "Business Working Proficiency — atuação multi-fuso com times Microsoft e EY/Microsoft USA · Certificação Duolingo English Test planejada (30 dias)"
+      level: "Intermediário B2 — Business Working Proficiency — atuação multi-fuso com times Microsoft e EY/Microsoft USA"
 
   certifications:
     - name: "CRC 1SP336304"
       issuer: "Conselho Regional de Contabilidade"
       status: "ativo"
       year: 2019
-    - name: "ISO 37301 Lead Implementer (PECB)"
-      issuer: "PECB"
-      status: "em andamento"
-      expected: "2026"
-    - name: "CRISC"
-      issuer: "ISACA"
-      status: "planejada"
-      expected: "2026"
-    - name: "CISA"
-      issuer: "ISACA"
-      status: "planejada"
-      expected: "2026"
-    - name: "CPA-20"
-      issuer: "ANBIMA"
-      status: "planejada"
-      expected: "60 dias"
-    - name: "Duolingo English Test"
-      issuer: "Duolingo"
-      status: "planejada"
-      expected: "30 dias"
-    - name: "COBIT 2019 Foundation"
-      issuer: "ISACA"
-      status: "planejada"
-      expected: "90 dias"
+
+  certifications_in_progress:
+    label: "Em andamento (2026–2028)"
+    certs:
+      - "ISO 37301 Lead Implementer (PECB)"
+      - "CRISC (ISACA)"
+      - "CISA (ISACA)"
+      - "CPA-20 (ANBIMA)"
+      - "COBIT 2019 Foundation (ISACA)"
 
   experience:
     - company: "Ernst & Young (EY)"
@@ -111,41 +96,41 @@ pt:
           period: "ago/2025 – presente"
           client: "Seguradora de Ramos Elementares | Programa Plurianual de Transformação de Compliance"
           bullets:
-            - "Dirigiu programa plurianual de transformação de Compliance em seguradora <strong>Top 5 Brasil</strong>, liderando equipe de 5+ consultores e coordenando com stakeholders C-Level (CEO, CFO, CRO, CCO)"
-            - "Liderou implementação enterprise de GRC via <strong>IBM OpenPages</strong> alinhado a <strong>SOX, COSO e ISO 37301</strong>: mapeou <strong>200+ normas</strong> (SUSEP, ANS, BACEN) em 5 pilares de risco, capacitou <strong>350+ usuários</strong> em internal controls testing"
-            - "Reduziu ciclo de avaliação de normas em <strong>60% (45→18 dias)</strong> e eliminou <strong>99% do esforço manual</strong> em risk reporting (<strong>16h→8min</strong>), liberando 200h+ mensais da equipe executiva"
-            - "Estruturou compliance intelligence com <strong>22 KRIs</strong> em 4 dashboards, TPRM de <strong>50+ fornecedores críticos</strong> e solução de autoavaliação regulatória adotada por <strong>13 seguradoras</strong>"
+            - "Coordenou programa plurianual de transformação de Compliance em seguradora <strong>Top 5 Brasil</strong>, liderando equipe com mais de 5 participantes entre analistas e consultores e reportando diretamente aos stakeholders C-Level"
+            - "Liderou implementação enterprise de GRC via <strong>IBM OpenPages</strong> alinhado a <strong>SOX, COSO e ISO 37301</strong>, resultando no mapeamento de <strong>mais de 200 normas</strong> (SUSEP, ANS, BACEN, LGPD)"
+            - "Reduziu ciclo de avaliação e monitoramento de normas em <strong>60% (45→18 dias)</strong> e eliminou <strong>99% do esforço manual</strong> em risk reporting (<strong>16h→8min</strong>)"
+            - "Estruturou compliance intelligence com <strong>22 KRIs</strong> em 4 dashboards, TPRM com mais de <strong>50 fornecedores críticos</strong> e solução de identificação de eventos de não conformidade regulatória"
         - title: "Risk Consultant"
           period: "out/2023 – jul/2025"
           client: "Operadora de Plano Odontológico (ANS) | Auditoria Interna"
           bullets:
-            - "Conduziu <strong>12 auditorias internas risk-based</strong> em operadora ANS (<strong>600k+ beneficiários</strong>), cobrindo sinistralidade, glosas, PLD-FT e LGPD"
-            - "Testou <strong>200+ controles internos</strong> (design + efetividade), classificou <strong>35 achados</strong> (15 críticos) e conduziu root cause analysis com planos de ação negociados em C-Level"
-            - "Aplicou <strong>IA generativa (GPT-4)</strong> com revisão humana para triagem de <strong>150+ normativos</strong> (ANS/BACEN/LGPD): <strong>+45% eficiência analítica</strong>, tempo de leitura 8h→4,5h"
+            - "Conduziu <strong>3</strong> e apoiou em <strong>9 auditorias internas risk-based</strong> em operadora ANS (<strong>600k+ beneficiários</strong>), cobrindo sinistralidade, glosas, PLD-FT e LGPD"
+            - "Testou <strong>mais de 60 controles internos</strong> (design + efetividade), classificou <strong>35 achados</strong> (15 críticos) e conduziu root cause analysis com planos de ação negociados"
+            - "Aplicou <strong>IA generativa (GenEY)</strong> com revisão humana para triagem de <strong>mais de 150 normativos</strong> (ANS/BACEN/LGPD), aumentando em <strong>85%</strong> a eficiência analítica"
         - title: "Business Consultant / Consulting FSO Trainee"
           period: "fev/2022 – set/2023"
           client: "Seguradora Tradicional | Programa de Revitalização (8 meses) · Banking & Fintechs"
           bullets:
-            - "Atuou como <strong>PO estratégico</strong> de programa de revitalização em seguradora (R$ 2bi+ prêmios): orquestrou <strong>25+ iniciativas</strong>, Steering Committee quinzenal C-Level, <strong>ROI 300%+</strong>"
-            - "Redesenhou <strong>8 jornadas de cliente</strong> e ciclo de vida de <strong>15 produtos</strong>, integrando sistemas legados (cotação, CRM, ERP SAP): <strong>time-to-quote −50%</strong>"
-            - "Liderou conformidade <strong>BACEN (Res. 4.557/4.658/4.595), SOX e TPRM de 30+ fornecedores</strong> e due diligence regulatória em <strong>M&A de R$ 3bi+</strong> (conglomerado Top 3, banco digital 10M+, fintech Series B)"
+            - "Atuou como <strong>PO estratégico</strong> de programa de revitalização em seguradora (aproximadamente <strong>R$ 200 milhões em prêmios</strong>): orquestrou <strong>25 iniciativas</strong> com Steering Committee quinzenal"
+            - "Desenhou <strong>8 jornadas de cliente</strong> e ciclo de vida de <strong>15 produtos</strong>"
+            - "Liderou conformidade <strong>BACEN (Res. 4.557/4.893/4.595)</strong>, SOX e TPRM com <strong>mais de 30 fornecedores mensais</strong> e due diligence regulatória em <strong>mais de R$ 14bi anual</strong> (conglomerado Top 3 BR)"
 
   projects:
-    - name: "Heatmap Corporativo de Riscos (IBM OpenPages)"
+    - name: "Heatmap Corporativo de Riscos (IBM OpenPages + Python)"
       status: "Entregue (EY)"
-      description: "200+ normas (SUSEP/ANS/BACEN/LGPD) integradas via ETL Python; risk reporting trimestral reduzido de <strong>16h → 8min (−99%)</strong>. Dashboard Power BI para Comitê de Riscos com drill-down por pilar e evolução temporal."
+      description: "200+ normas (SUSEP/ANS/BACEN/LGPD) integradas via ETL Python; risk reporting trimestral reduzido de <strong>16h → 8min (−99%)</strong>. Visualização interativa integrando probabilidade × impacto × criticidade regulatória em Power BI. Adotado pelo cliente como padrão de reporting aos grupos de trabalhos e replicado em mais 3 engagements EY."
       highlights: []
       stack: "Python · IBM OpenPages · Power BI · SQL Server"
       metrics: ""
-    - name: "Assessoria Regulatória BACEN — Banking"
+    - name: "Banking Advisory Program"
       status: "Entregue (EY)"
-      description: "3 instituições (conglomerado Top 3 BR, banco digital 10M+, fintech Series B); <strong>150+ controles</strong> SOX/Operational Risk; due diligence M&A <strong>R$ 3bi+</strong> e IPO readiness; TPRM de 30+ fornecedores críticos."
+      description: "Arquitetou framework de governança integrando <strong>BACEN 4.557 + SOX + COSO ERM</strong> para conglomerado <strong>Top 3 BR</strong>. Coordenou TPRM de <strong>mais de 30 fornecedores críticos mensais</strong> (cloud, core banking, pagamentos) com due diligence L1/L2/L3. Entregou relatório executivo para Board com roadmap de <strong>18 meses</strong> e investimento estimado em <strong>mais de R$ 15M</strong>."
       highlights: []
-      stack: "GRC frameworks · BACEN · SOX · Operational Risk · IBM OpenPages"
+      stack: "BACEN 4.557 · SOX · COSO ERM · TPRM"
       metrics: ""
     - name: "SUSEP Benchmarking Platform (SaaS)"
       status: "Em produção"
-      description: "Plataforma analítica para <strong>150+ seguradoras</strong>: <strong>5M+ registros/mês</strong>, score proprietário 10 pilares, 10+ dashboards. ETL automatizado com dados públicos SUSEP."
+      description: "Plataforma analítica cobrindo <strong>todas as seguradoras cadastradas na SUSEP</strong> (dados públicos): <strong>5M+ registros/mês</strong>, score proprietário de <strong>10 pilares</strong>, <strong>10+ dashboards</strong>. ETL automatizado com atualização semanal. <strong>Em produção até maio/2026</strong>, em validação com <strong>3 prospects</strong> no mercado segurador brasileiro em junho/2026."
       highlights: []
       stack: "Python · FastAPI · PostgreSQL · Docker"
       metrics: ""
@@ -160,21 +145,21 @@ pt:
 
   recognition_leadership:
     - "30+ reconhecimentos formais EY (Ovation, Shine, Applause) — realizações de alto impacto e esforço extra"
-    - "Mentor formal EY — 2 mentees, <strong>100% promovidos</strong>, avaliação de performance top 20%"
-    - "Instrutor interno — programa Power BI para <strong>200+ consultores</strong> EY América do Sul"
+    - "Mentor formal EY — 2 mentees"
+    - "Instrutor interno — programa Power BI para <strong>mais de 200 profissionais de todos os níveis</strong> EY América do Sul"
 
   early_career:
     - role: "Tribunal de Contas do Estado do Piauí (TCE-PI)"
       period: "2017 – 2019"
       description: "Auditoria governamental de órgãos públicos estaduais; análise de conformidade, controle interno e fiscalização de contratos. Base sólida em auditoria pública e conformidade regulatória que antecede a atuação no setor financeiro privado."
     - role: "Auxiliar Contábil / Escritório de Contabilidade"
-      period: "[DATA]"  # Preencher com as datas reais
+      period: "2019 – 2022"
       description: "Conciliações bancárias, escrituração contábil, cumprimento de obrigações acessórias (SPED, DCTF, ECF) e apoio fiscal a pequenas e médias empresas. CRC 1SP336304 ativo desde 2019."
     - role: "Produtor de Infoprodutos / Social Media"
-      period: "[DATA]"  # Preencher com as datas reais
+      period: "2019 – 2020"
       description: "Empreendedorismo digital: criação, lançamento e gestão de infoprodutos; estratégia de conteúdo e campanhas em redes sociais; desenvolvimento de audiência e automação de marketing."
     - role: "Atividades Autônomas (Comércio)"
-      period: "desde os 15 anos (~2010)"
+      period: "2010 – 2013"
       description: "Iniciação profissional precoce: comércio e revenda informal, desenvolvimento de espírito empreendedor, gestão de relacionamento com clientes e noções de fluxo de caixa desde a adolescência."
 
 en:
@@ -187,16 +172,16 @@ en:
     linkedin: "linkedin.com/in/oleaoicaro"
     github: "github.com/oleaoicaro"
 
-  headline: "GRC & Compliance Specialist | Insurance · Banking · Fintechs | IBM OpenPages · SOX · BACEN (4.557/4.658/4.966) · SUSEP (Circ. 648 / CNSP 416) · ANS · AML/KYC · TPRM · ISO 37301 | Python · Power BI · CRC 1SP336304"
+  headline: "GRC & Compliance Specialist | Insurance · Banking · Fintechs | IBM OpenPages · SOX · BACEN (4.557/4.893/4.966) · SUSEP (Circ. 648 / CNSP 416) · ANS · AML/KYC · TPRM · ISO 37301 | Python · Power BI · CRC 1SP336304"
 
   executive_summary: >
-    ~4 years in GRC/Compliance within the regulated financial sector (EY FSO, Top 5 insurers,
-    Top 3 BR conglomerates, ANS health operators) · 15+ years of total professional trajectory
+    Over 7 years in GRC/Compliance within the regulated financial sector (EY FSO, Top 5 insurers,
+    Top 3 BR conglomerates, ANS health operators) · 15 years of total professional trajectory
     (government audit TCE-PI, active CRC accounting registration, digital entrepreneurship).
     Track record in risk-based audit, SOX, ERM, BACEN/SUSEP/ANS compliance, TPRM and IBM
     OpenPages implementation. Combines regulatory expertise with automation (Python, Power BI,
-    applied generative AI), delivering up to 99% reduction in risk reporting cycles and
-    governance of 150+ controls in environments with R$ 500bn+ in assets.
+    applied generative AI), delivering estimated up to 99% reduction in risk reporting cycles and
+    governance of controls in environments with R$ 14bn+ in assets.
 
   competencies:
     - group: "GRC & Compliance"
@@ -250,37 +235,22 @@ en:
     - name: "Portuguese"
       level: "Native"
     - name: "English"
-      level: "Business Working Proficiency — multi-timezone engagement with Microsoft and EY/Microsoft USA teams · Duolingo English Test certification planned (30 days)"
+      level: "Intermediate B2 — Business Working Proficiency — multi-timezone engagement with Microsoft and EY/Microsoft USA teams"
 
   certifications:
     - name: "CRC 1SP336304"
       issuer: "Brazilian Accounting Council (CRC)"
       status: "active"
       year: 2019
-    - name: "ISO 37301 Lead Implementer (PECB)"
-      issuer: "PECB"
-      status: "in progress"
-      expected: "2026"
-    - name: "CRISC"
-      issuer: "ISACA"
-      status: "planned"
-      expected: "2026"
-    - name: "CISA"
-      issuer: "ISACA"
-      status: "planned"
-      expected: "2026"
-    - name: "CPA-20"
-      issuer: "ANBIMA"
-      status: "planned"
-      expected: "60 days"
-    - name: "Duolingo English Test"
-      issuer: "Duolingo"
-      status: "planned"
-      expected: "30 days"
-    - name: "COBIT 2019 Foundation"
-      issuer: "ISACA"
-      status: "planned"
-      expected: "90 days"
+
+  certifications_in_progress:
+    label: "In progress (2026–2028)"
+    certs:
+      - "ISO 37301 Lead Implementer (PECB)"
+      - "CRISC (ISACA)"
+      - "CISA (ISACA)"
+      - "CPA-20 (ANBIMA)"
+      - "COBIT 2019 Foundation (ISACA)"
 
   experience:
     - company: "Ernst & Young (EY)"
@@ -290,41 +260,41 @@ en:
           period: "Aug/2025 – Present"
           client: "Property & Casualty Insurance Company | Multi-Year Compliance Transformation Programme"
           bullets:
-            - "Led multi-year Compliance transformation programme at <strong>Top 5 insurer</strong>, managing cross-functional team of 5+ consultants and coordinating with C-Level stakeholders (CEO, CFO, CRO, CCO)"
-            - "Implemented end-to-end GRC framework via <strong>IBM OpenPages</strong> aligned with <strong>SOX, COSO and ISO 37301</strong>: mapped <strong>200+ regulations</strong> across 5 risk pillars, trained <strong>350+ users</strong> in internal controls testing"
-            - "Reduced regulatory assessment cycle by <strong>60% (45→18 days)</strong> and eliminated <strong>99% of manual effort</strong> in risk reporting (<strong>16h→8min</strong>), freeing 200+ monthly executive hours"
-            - "Structured compliance intelligence with <strong>22 KRIs</strong> across 4 dashboards, <strong>TPRM</strong> for 50+ critical vendors and regulatory self-assessment solution adopted by <strong>13 insurers</strong>"
+            - "Coordinated multi-year Compliance transformation programme at <strong>Top 5 insurer</strong>, leading a team of more than 5 participants (analysts and consultants) and reporting directly to C-Level stakeholders"
+            - "Led end-to-end GRC implementation via <strong>IBM OpenPages</strong> aligned with <strong>SOX, COSO and ISO 37301</strong>, resulting in the mapping of <strong>more than 200 regulations</strong> (SUSEP, ANS, BACEN, LGPD)"
+            - "Reduced regulatory assessment and monitoring cycle by <strong>60% (45→18 days)</strong> and eliminated <strong>99% of manual effort</strong> in risk reporting (<strong>16h→8min</strong>)"
+            - "Structured compliance intelligence with <strong>22 KRIs</strong> across 4 dashboards, TPRM with more than <strong>50 critical vendors</strong> and regulatory non-compliance event identification solution"
         - title: "Risk Consultant"
           period: "Oct/2023 – Jul/2025"
           client: "Dental Health Plan Operator (ANS) | Internal Audit"
           bullets:
-            - "Planned and executed <strong>12 risk-based internal audits</strong> at ANS operator (<strong>600k+ beneficiaries</strong>), covering loss ratio, claim denials, AML/KYC and LGPD"
-            - "Tested <strong>200+ internal controls</strong> (design + effectiveness), classified <strong>35 findings</strong> (15 critical) and conducted root-cause analysis with action plans negotiated at C-Level"
-            - "Applied <strong>human-reviewed AI (GPT-4)</strong> to screen <strong>150+ regulatory norms</strong> (ANS/BACEN/LGPD): <strong>+45% analytical efficiency</strong>, reading time 8h→4.5h"
+            - "Conducted <strong>3</strong> and supported <strong>9 risk-based internal audits</strong> at ANS operator (<strong>600k+ beneficiaries</strong>), covering loss ratio, claim denials, AML/KYC and LGPD"
+            - "Tested <strong>more than 60 internal controls</strong> (design + effectiveness), classified <strong>35 findings</strong> (15 critical) and conducted root-cause analysis with negotiated action plans"
+            - "Applied <strong>human-reviewed generative AI (GenEY)</strong> to screen <strong>more than 150 regulatory norms</strong> (ANS/BACEN/LGPD), increasing analytical efficiency by <strong>85%</strong>"
         - title: "Business Consultant / Consulting FSO Trainee"
           period: "Feb/2022 – Sep/2023"
           client: "Traditional Insurance Company | Revitalisation Programme (8 mos) · Banking & Fintechs"
           bullets:
-            - "Served as <strong>Strategic PO</strong> of revitalisation programme at insurer (R$ 2bi+ premiums): orchestrated <strong>25+ initiatives</strong>, steering committee governance C-Level, <strong>ROI 300%+</strong>"
-            - "Redesigned <strong>8 customer journeys</strong> and lifecycle of <strong>15 products</strong>, integrating quoting, CRM and ERP systems: <strong>time-to-quote −50%</strong>"
-            - "Led <strong>BACEN compliance (Res. 4.557/4.658/4.595), SOX, TPRM for 30+ vendors</strong> and regulatory due diligence for <strong>M&A R$ 3bi+</strong> across 3 institutions (Top 3 conglomerate, 10M+ digital bank, Series B fintech)"
+            - "Served as <strong>Strategic PO</strong> of revitalisation programme at insurer with approximately <strong>R$ 200M in premiums</strong>: orchestrated <strong>25 initiatives</strong> with biweekly Steering Committee"
+            - "Designed <strong>8 customer journeys</strong> and lifecycle of <strong>15 products</strong>"
+            - "Led <strong>BACEN compliance (Res. 4.557/4.893/4.595)</strong>, SOX and TPRM with <strong>more than 30 monthly vendors</strong> and regulatory due diligence on <strong>more than R$ 14bn annually</strong> (Top 3 BR conglomerate)"
 
   projects:
-    - name: "Corporate Risk Heatmap (IBM OpenPages)"
+    - name: "Corporate Risk Heatmap (IBM OpenPages + Python)"
       status: "Delivered (EY)"
-      description: "200+ regulations (SUSEP/ANS/BACEN/LGPD) integrated via Python ETL; quarterly risk reporting reduced from <strong>16h → 8min (−99%)</strong>. Power BI dashboard for Risk Committee with drill-down by pillar and time evolution."
+      description: "200+ regulations (SUSEP/ANS/BACEN/LGPD) integrated via Python ETL; quarterly risk reporting reduced from <strong>16h → 8min (−99%)</strong>. Interactive visualisation integrating probability × impact × regulatory criticality in Power BI. Adopted by the client as the reporting standard for working groups and replicated across 3 additional EY engagements."
       highlights: []
       stack: "Python · IBM OpenPages · Power BI · SQL Server"
       metrics: ""
-    - name: "BACEN Regulatory Advisory — Banking"
+    - name: "Banking Advisory Program"
       status: "Delivered (EY)"
-      description: "3 institutions (Top 3 BR conglomerate, 10M+ digital bank, Series B fintech); <strong>150+ controls</strong> SOX/Operational Risk; M&A due diligence <strong>R$ 3bi+</strong> and IPO readiness; TPRM for 30+ critical vendors."
+      description: "Architected governance framework integrating <strong>BACEN 4.557 + SOX + COSO ERM</strong> for <strong>Top 3 BR</strong> conglomerate. Coordinated TPRM for <strong>more than 30 critical monthly vendors</strong> (cloud, core banking, payments) with L1/L2/L3 due diligence. Delivered executive report to the Board with an <strong>18-month</strong> roadmap and estimated investment of <strong>more than R$ 15M</strong>."
       highlights: []
-      stack: "GRC frameworks · BACEN · SOX · Operational Risk · IBM OpenPages"
+      stack: "BACEN 4.557 · SOX · COSO ERM · TPRM"
       metrics: ""
     - name: "SUSEP Benchmarking Platform (SaaS)"
       status: "In production"
-      description: "Analytical platform for <strong>150+ insurers</strong>: <strong>5M+ records/month</strong>, proprietary 10-pillar risk score, 10+ dashboards. Automated ETL processing public SUSEP data."
+      description: "Analytical platform covering <strong>all insurers registered with SUSEP</strong> (public data): <strong>5M+ records/month</strong>, proprietary <strong>10-pillar</strong> risk score, <strong>10+ dashboards</strong>. Automated ETL with weekly updates. <strong>In production until May/2026</strong>, in validation with <strong>3 prospects</strong> in the Brazilian insurance market in June/2026."
       highlights: []
       stack: "Python · FastAPI · PostgreSQL · Docker"
       metrics: ""
@@ -339,19 +309,19 @@ en:
 
   recognition_leadership:
     - "30+ formal EY awards (Ovation, Shine, Applause) — high-impact achievements and extra effort"
-    - "Formal EY Mentor — 2 mentees, <strong>100% promoted</strong>, top 20% performance rating"
-    - "Internal instructor — Power BI programme for <strong>200+ EY consultants</strong> across South America"
+    - "Formal EY Mentor — 2 mentees"
+    - "Internal instructor — Power BI programme for <strong>more than 200 professionals across all levels</strong> at EY South America"
 
   early_career:
     - role: "State Audit Court of Piauí (TCE-PI)"
       period: "2017 – 2019"
       description: "Government audit of state public bodies; compliance analysis, internal controls assessment and contract oversight. Solid foundation in public auditing and regulatory compliance preceding the private financial sector career."
     - role: "Accounting Assistant / Accounting Firm"
-      period: "[DATE]"  # Fill in with actual dates
+      period: "2019 – 2022"
       description: "Bank reconciliations, bookkeeping, ancillary obligations (SPED, DCTF, ECF) and fiscal support for SMEs. CRC 1SP336304 registration active since 2019."
     - role: "Digital Entrepreneur / Social Media Manager"
-      period: "[DATE]"  # Fill in with actual dates
+      period: "2019 – 2020"
       description: "Digital entrepreneurship: creation, launch and management of info-products; content strategy and social media campaigns; audience growth and marketing automation."
     - role: "Autonomous Commerce"
-      period: "since age 15 (~2010)"
+      period: "2010 – 2013"
       description: "Early professional initiation: informal trade and resale, entrepreneurial mindset development, customer relationship management and basic cash-flow awareness since adolescence."

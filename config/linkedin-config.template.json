@@ -1,0 +1,20 @@
+{
+  "resumePath": "../curriculo.pdf",
+  "personalInfo": {
+    "name": "Seu Nome Completo",
+    "email": "seuemail@exemplo.com",
+    "phone": "+55 (XX) XXXXX-XXXX",
+    "location": "Cidade, Estado — Brasil"
+  },
+  "jobSearch": {
+    "keywords": ["Analista", "Especialista", "Consultor"],
+    "location": "Brasil",
+    "remote": true,
+    "experienceLevel": ["mid-senior", "senior"]
+  },
+  "autoSubmit": false,
+  "dryRun": true,
+  "maxApplications": 10,
+  "answerBankPath": "../config/answer-bank.md",
+  "candidateProfilePath": "../config/candidate-profile.md"
+}

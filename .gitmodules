@@ -1,0 +1,3 @@
+[submodule "ai-job-agent"]
+	path = ai-job-agent
+	url = https://github.com/AkbarDevop/ai-job-agent.git

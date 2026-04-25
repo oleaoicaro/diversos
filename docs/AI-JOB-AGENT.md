@@ -29,25 +29,23 @@ bash setup.sh
 cd ..
 ```
 
-### 3. Instalar WeasyPrint (geração de PDF)
+### 3. Instalar dependências do CV (geração de PDF)
 
 ```bash
-pip install -r scripts/requirements.txt
+pip install -r cv/scripts/requirements.txt
 ```
 
 ---
 
 ## Gerar o PDF do Currículo
 
-O script converte o currículo em português (HTML) para `curriculo.pdf` na raiz do repositório:
+O agente consome diretamente o PDF gerado pelo build do CV em `cv/output/Icaro_Leao_CV_PT.pdf`:
 
 ```bash
-python scripts/gerar_curriculo_pdf.py
+python cv/scripts/build_cv.py
 ```
 
-O arquivo `curriculo.pdf` é gerado a partir de `cv/output/Icaro_Leao_CV_PT.html` e será usado como entrada para o agente.
-
-> **Nota:** `curriculo.pdf` está no `.gitignore` e não será commitado.
+O script gera HTML + PDF em PT e EN dentro de `cv/output/`. O template `config/linkedin-config.template.json` já aponta `resumePath` para `../cv/output/Icaro_Leao_CV_PT.pdf`.
 
 ---
 
@@ -109,13 +107,14 @@ node ai-job-agent/scripts/linkedin-easy-apply.js \
 │   ├── answer-bank.template.md        # Template de respostas (commitado)
 │   └── answer-bank.md                  # Suas respostas reais (ignoradas pelo git)
 ├── cv/
+│   ├── scripts/
+│   │   ├── build_cv.py                # Build HTML + PDF (PT/EN) — fonte do resumo
+│   │   └── requirements.txt           # Dependências Python (jinja2, pyyaml, weasyprint…)
 │   └── output/
-│       ├── Icaro_Leao_CV_PT.html      # Currículo PT (fonte do PDF)
-│       └── Icaro_Leao_CV_EN.html      # Currículo EN
-├── scripts/
-│   ├── gerar_curriculo_pdf.py         # Converte HTML → curriculo.pdf
-│   └── requirements.txt               # Dependência: weasyprint
-├── curriculo.pdf                       # PDF gerado (ignorado pelo git)
+│       ├── Icaro_Leao_CV_PT.html
+│       ├── Icaro_Leao_CV_PT.pdf       # PDF consumido pelo agente (resumePath)
+│       ├── Icaro_Leao_CV_EN.html
+│       └── Icaro_Leao_CV_EN.pdf
 └── docs/
     └── AI-JOB-AGENT.md                # Este documento
 ```

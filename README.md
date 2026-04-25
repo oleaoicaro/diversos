@@ -12,20 +12,34 @@ Sou auditor / consultor com trajetória em **risco, conformidade regulatória e 
 
 Este repositório é a **infraestrutura** que sustenta meu reposicionamento profissional: o currículo é gerado a partir de dados estruturados (YAML) com templates Jinja2 + WeasyPrint, e o outreach segue um plano operacional com KPIs semanais.
 
-- 📄 **CV (PDF)** — [`cv/output/Icaro_Leao_CV_PT.pdf`](cv/output/Icaro_Leao_CV_PT.pdf) · [`Icaro_Leao_CV_EN.pdf`](cv/output/Icaro_Leao_CV_EN.pdf)
 - 💼 **LinkedIn** — [linkedin.com/in/oleaoicaro](https://www.linkedin.com/in/oleaoicaro)
 - ✉️ **E-mail** — icaro.vl@outlook.com
 - 🐙 **GitHub** — [github.com/oleaoicaro](https://github.com/oleaoicaro)
 
-## O que tem aqui
+## 👤 Para Recrutadores — comece por aqui
+
+Tudo que você precisa para avaliar minha aderência a uma vaga está em **um único diretório**: [`cv/`](cv/).
+
+| Material | Arquivo | Descrição |
+|---|---|---|
+| 📄 Currículo (PT) | [`cv/output/Icaro_Leao_CV_PT.pdf`](cv/output/Icaro_Leao_CV_PT.pdf) | CV executivo em português, 2 páginas |
+| 📄 Currículo (EN) | [`cv/output/Icaro_Leao_CV_EN.pdf`](cv/output/Icaro_Leao_CV_EN.pdf) | Executive CV in English, 2 pages |
+| 🎓 Cursos & Certificações | [`cv/Cursos_e_Certificacoes.md`](cv/Cursos_e_Certificacoes.md) | **284 treinamentos (2022–2026)** organizados por área temática — destaques em GenAI, AML, LGPD, Banking & Insurance |
+| 📊 Planilha de cursos | [`cv/Cursos_e_Certificacoes.csv`](cv/Cursos_e_Certificacoes.csv) | Mesma listagem, filtrável em Excel/Google Sheets |
+
+> **Em uma frase**: 7+ anos em GRC/Compliance no setor financeiro regulado (EY FSO, Top 5 seguradoras, Top 3 conglomerados BR), com track record em SOX, IBM OpenPages, BACEN/SUSEP/ANS, automação (Python · Power BI) e governança de IA. CRC ativo (1SP336304).
+
+## O que mais tem aqui
+
+O restante deste repositório é **infraestrutura** que sustenta o portfólio acima — código que gera o CV, plano de outreach e integração com agente de candidaturas. Não é necessário para avaliação de aderência:
 
 | Diretório | Conteúdo | README |
 |---|---|---|
-| [`cv/`](cv/) | Geração do currículo executivo (PT + EN, HTML + PDF) a partir de `profile.yaml` com Jinja2 + WeasyPrint. | [cv/README.md](cv/README.md) |
+| [`cv/`](cv/) | Materiais para recrutador (acima) **+** geração automatizada do CV (PT/EN, HTML + PDF) a partir de `profile.yaml` com Jinja2 + WeasyPrint. | [cv/README.md](cv/README.md) |
 | [`outreach/`](outreach/) | Plano de outreach de 4 semanas com templates de mensagens (connection request, InMail, follow-up, pós-entrevista) por ICP. | [outreach/README.md](outreach/README.md) |
 | [`ai-job-agent/`](ai-job-agent/) | Submódulo: agente externo de candidaturas no LinkedIn ([AkbarDevop/ai-job-agent](https://github.com/AkbarDevop/ai-job-agent)). | [docs/AI-JOB-AGENT.md](docs/AI-JOB-AGENT.md) |
 | [`config/`](config/) | Templates de configuração para o agente (credenciais, perfil, banco de respostas) — arquivos reais ficam fora do git. | — |
-| [`docs/`](docs/) | Documentação operacional + `archive/` com histórico do projeto. | [docs/archive/README.md](docs/archive/README.md) |
+| [`docs/`](docs/) | Documentação operacional + `archive/` com histórico do projeto e dados-fonte dos cursos. | [docs/archive/README.md](docs/archive/README.md) |
 
 ## Quickstart — Gerar o currículo
 
@@ -64,4 +78,4 @@ Saída em [`cv/output/`](cv/output/). Detalhes (paleta, fontes, fallback Playwri
 
 Personal repository of **Ícaro Vieira Leão** — Risk, Compliance & Audit professional (TCE-PI, EY Banking & Insurance Advisory). Hosts an automated executive CV builder (PT/EN, HTML + PDF) driven by a single YAML source, a 4-week outreach playbook, and a LinkedIn auto-apply agent integration.
 
-Generated CV (English): [`cv/output/Icaro_Leao_CV_EN.pdf`](cv/output/Icaro_Leao_CV_EN.pdf) · LinkedIn: [linkedin.com/in/oleaoicaro](https://www.linkedin.com/in/oleaoicaro)
+Generated CV (English): [`cv/output/Icaro_Leao_CV_EN.pdf`](cv/output/Icaro_Leao_CV_EN.pdf) · Courses & Certifications (PT, 284 trainings 2022–2026): [`cv/Cursos_e_Certificacoes.md`](cv/Cursos_e_Certificacoes.md) · LinkedIn: [linkedin.com/in/oleaoicaro](https://www.linkedin.com/in/oleaoicaro)

@@ -2,10 +2,19 @@
 
 Geração automatizada do currículo executivo de Ícaro Leão em português (PT) e inglês (EN), nos formatos HTML e PDF, a partir de uma única fonte de dados YAML.
 
+> 👤 **Recrutador?** Os arquivos prontos para você estão neste diretório:
+> - 📄 [`output/Icaro_Leao_CV_PT.pdf`](output/Icaro_Leao_CV_PT.pdf) · [`output/Icaro_Leao_CV_EN.pdf`](output/Icaro_Leao_CV_EN.pdf)
+> - 🎓 [`Cursos_e_Certificacoes.md`](Cursos_e_Certificacoes.md) — listagem estruturada de **284 treinamentos (2022–2026)** organizados por área temática
+> - 📊 [`Cursos_e_Certificacoes.csv`](Cursos_e_Certificacoes.csv) — mesma listagem em planilha filtrável
+>
+> O restante deste README cobre o **builder** que gera o CV (uso interno).
+
 ## Estrutura
 
 ```
 cv/
+├── Cursos_e_Certificacoes.md     # 🎓 Listagem de cursos para recrutador (estruturada)
+├── Cursos_e_Certificacoes.csv    # 📊 Mesma listagem em planilha
 ├── data/
 │   └── profile.yaml              # Fonte única de dados PT+EN (não editar estrutura)
 ├── templates/

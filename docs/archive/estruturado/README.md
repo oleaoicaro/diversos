@@ -1,5 +1,11 @@
 # Estrutura Organizada de Treinamentos EY
 
+> ⚠️ **Para recrutadores e visualização externa**, use a versão canônica em `cv/`:
+> - 🎓 [`cv/Cursos_e_Certificacoes.md`](../../../cv/Cursos_e_Certificacoes.md) — listagem estruturada por área
+> - 📊 [`cv/Cursos_e_Certificacoes.csv`](../../../cv/Cursos_e_Certificacoes.csv) — planilha filtrável
+>
+> Este diretório (`docs/archive/estruturado/`) preserva os **dados brutos pré-processados** do EY Learning report. É insumo do builder, não material de portfólio.
+
 Este diretório contém os dados de treinamentos do `report.csv` organizados em formatos úteis para atualização de CV e LinkedIn.
 
 ## Arquivos Gerados
